@@ -3,9 +3,16 @@
 
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>Models.AssignmentEntity</class>
+        <class>Models.ClassesEntity</class>
+        <class>Models.ScheduleEntity</class>
+        <class>Models.StudentEntity</class>
+        <class>Models.SyllabusEntity</class>
+        <class>Models.TaEntity</class>
+        <class>Models.UserEntity</class>
         <properties>
-            <property name="eclipselink.jdbc.url" value=""/>
-            <property name="eclipselink.jdbc.driver" value=""/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="eclipselink.jdbc.user" value=""/>
             <property name="eclipselink.jdbc.password" value=""/>
         </properties>

@@ -6,7 +6,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="EclipseLink" />
         <datasource-mapping>
-          <factory-entry name="NewPersistenceUnit" />
+          <factory-entry name="NewPersistenceUnit" value="7ea55f14-46ec-4dd6-b685-1458aec4fbab" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
@@ -32,5 +32,6 @@
     <orderEntry type="library" name="JPA 2.0-2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174 - RESTful Web Service" level="application_server_libraries" />
+    <orderEntry type="library" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" level="project" />
   </component>
 </module>
