@@ -11,5 +11,13 @@
       <user-name>root</user-name>
       <introspection-schemas>*:project_515</introspection-schemas>
     </data-source>
+    <data-source name="NewPersistenceUnit/EclipseLink" uuid="43c87e37-6ef5-4b4c-8b66-20c83efb8691">
+      <database-info product="MySQL" version="5.5.5-10.1.26-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <introspection-schemas>*:</introspection-schemas>
+    </data-source>
   </component>
 </project>

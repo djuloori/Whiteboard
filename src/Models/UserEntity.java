@@ -55,14 +55,14 @@ public class UserEntity implements Serializable{
 
     @OneToMany(cascade=CascadeType.ALL)
     @JoinColumn(name="user_name")
-    private List<ClassesEntity> classes;
+    private List<ClassesEntity> classList;
 
     public List<ClassesEntity> getClasses() {
-        return classes;
+        return classList;
     }
 
     public void setClasses(List<ClassesEntity> classes) {
-        this.classes = classes;
+        this.classList = classList;
     }
 
 
