@@ -2,6 +2,7 @@
   <library name="JPA 2.0-2.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Whiteboard/web/WEB-INF/lib/commons-io-2.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

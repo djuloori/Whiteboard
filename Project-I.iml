@@ -34,8 +34,9 @@
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174 - RESTful Web Service" level="application_server_libraries" />
     <orderEntry type="library" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.44-bin" level="project" />
-    <orderEntry type="library" name="commons-io-2.2" level="project" />
-    <orderEntry type="library" name="jersey-container-servlet-core-2.2" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-5.1.44-bin" level="project" />
+    <orderEntry type="library" exported="" name="commons-io-2.2" level="project" />
+    <orderEntry type="library" exported="" name="jersey-container-servlet-core-2.2" level="project" />
+    <orderEntry type="library" name="org.glassfish.jersey.containers:jersey-container-servlet-core:2.3" level="project" />
   </component>
 </module>
