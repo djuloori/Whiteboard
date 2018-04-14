@@ -1,6 +1,6 @@
 package Dao;
 
-import Models.StudentEntity;
+import Model.StudentEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 public class StudentDao {
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
     public List getAllStudents(){
         em.getTransaction().begin();

@@ -3,13 +3,13 @@
 
     <persistence-unit name="PersistenceUnit">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>Models.AssignmentEntity</class>
-        <class>Models.ClassesEntity</class>
-        <class>Models.ScheduleEntity</class>
-        <class>Models.StudentEntity</class>
-        <class>Models.SyllabusEntity</class>
-        <class>Models.TaEntity</class>
-        <class>Models.UserEntity</class>
+        <class>Model.AssignmentEntity</class>
+        <class>Model.ClassesEntity</class>
+        <class>Model.ScheduleEntity</class>
+        <class>Model.StudentEntity</class>
+        <class>Model.SyllabusEntity</class>
+        <class>Model.TaEntity</class>
+        <class>Model.UserEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

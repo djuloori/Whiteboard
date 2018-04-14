@@ -1,21 +1,19 @@
 package Dao;
 
-import Models.AssignmentEntity;
-import Models.ClassesEntity;
-import Models.UserEntity;
+import Model.ClassesEntity;
+import Model.UserEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Dhruva Juloori on 11/26/2017.
  */
 public class ClassesDao {
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
     public String addClass(String classid, String classname, String username){

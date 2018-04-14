@@ -1,8 +1,6 @@
 package Dao;
 
-import Models.ClassesEntity;
-import Models.TaEntity;
-import Models.UserEntity;
+import Model.TaEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,7 +9,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 public class TaDao {
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
     public List getAllTa(){

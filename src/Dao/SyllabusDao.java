@@ -1,7 +1,6 @@
 package Dao;
 
-import Models.ClassesEntity;
-import Models.SyllabusEntity;
+import Model.SyllabusEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -12,7 +11,7 @@ import java.io.InputStream;
 import java.util.List;
 
 public class SyllabusDao {
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
     public List getAllSyllubus(){
         em.getTransaction().begin();

@@ -6,15 +6,14 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.io.*;
 import java.util.List;
-import Models.AssignmentEntity;
-import Models.ClassesEntity;
+import Model.AssignmentEntity;
 import org.apache.commons.io.IOUtils;
 
 /**
  * Created by Dhruva Juloori on 11/26/2017.
  */
 public class AssignmentDao {
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
     public String addAssignment(String assignment_id, String total_points, String assignment_name, InputStream test, String class_id)throws IOException {

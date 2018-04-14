@@ -7,6 +7,7 @@
         <setting name="provider-name" value="EclipseLink" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="7ea55f14-46ec-4dd6-b685-1458aec4fbab" />
+          <factory-entry name="PersistenceUnit" value="7ea55f14-46ec-4dd6-b685-1458aec4fbab" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
@@ -35,5 +36,6 @@
     <orderEntry type="library" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.44-bin" level="project" />
     <orderEntry type="library" name="commons-io-2.2" level="project" />
+    <orderEntry type="library" name="jersey-container-servlet-core-2.2" level="project" />
   </component>
 </module>

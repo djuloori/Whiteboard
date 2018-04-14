@@ -1,7 +1,6 @@
 package Dao;
 
-import Models.ScheduleEntity;
-import Models.SyllabusEntity;
+import Model.ScheduleEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -10,7 +9,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 public class ScheduleDao{
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit-1");
+    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
     public List getAllschedule(){

@@ -11,6 +11,9 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+   <h2>Jersey Web Application</h2>
+   <p><a href="app/Users">Jersey Resource </a>
+   <p>Visit <a href="http://jersey.java.net">Project Jersey Website</a>
+   for more information on Jersey!
   </body>
 </html>

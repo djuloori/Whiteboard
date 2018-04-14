@@ -1,6 +1,6 @@
 package Dao;
 
-import Models.UserEntity;
+import Model.UserEntity;
 
 import javax.persistence.*;
 import java.math.BigInteger;
