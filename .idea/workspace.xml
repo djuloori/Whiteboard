@@ -103,7 +103,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="255">
               <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
@@ -486,16 +486,15 @@
       <workItem from="1523679526551" duration="105000" />
       <workItem from="1523679654548" duration="637000" />
       <workItem from="1523680313773" duration="1015000" />
-      <workItem from="1523718831093" duration="4887000" />
+      <workItem from="1523718831093" duration="4952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37635000" />
+    <option name="totallyTimeSpent" value="37700000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5013405" side_tool="true" weight="0.32954547" />
@@ -516,10 +515,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32954547" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.4403409" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49865952" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.4403409" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49865952" visible="true" weight="0.32954547" />
       <window_info id="Persistence" order="2" sideWeight="0.5084746" side_tool="true" weight="0.29088473" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4915254" visible="true" weight="0.29088473" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4915254" visible="true" weight="0.29088473" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -930,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="255">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
@@ -952,7 +951,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited />
+          <last-edited>Project-I:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
