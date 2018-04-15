@@ -1,7 +1,6 @@
 package Dao;
 
-import Model.UserEntity;
-
+import Model.UserEO;
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -13,14 +12,14 @@ public class UserDao {
 
     public String findUser(String username, String password){
         em.getTransaction().begin();
-        Query q = em.createNamedQuery("UserEntity.Validation", UserEntity.class);
+        Query q = em.createNamedQuery("UserEntity.Validation", UserEO.class);
         String hashed_password = getMD5(password);
         q.setParameter("username",username);
         q.setParameter("password",hashed_password);
         em.getTransaction().commit();
-        UserEntity un;
+        UserEO un;
         try {
-            un = (UserEntity) q.getSingleResult();
+            un = (UserEO) q.getSingleResult();
             em.close();
             emf.close();
             if(username.equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
@@ -34,7 +33,7 @@ public class UserDao {
     }
 
     public String createUser(String username, String password, String usertype){
-        UserEntity user = new UserEntity();
+        UserEO user = new UserEO();
         user.setUsername(username);
         String hashed_password = getMD5(password);
         user.setPassword(hashed_password);

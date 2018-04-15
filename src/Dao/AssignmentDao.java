@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.io.*;
 import java.util.List;
-import Model.AssignmentEntity;
+import Model.AssignmentEO;
 import org.apache.commons.io.IOUtils;
 
 /**
@@ -17,7 +17,7 @@ public class AssignmentDao {
     EntityManager em = emf.createEntityManager();
 
     public String addAssignment(String assignment_id, String total_points, String assignment_name, InputStream test, String class_id)throws IOException {
-        AssignmentEntity assignmentEntity = new AssignmentEntity();
+        AssignmentEO assignmentEntity = new AssignmentEO();
         assignmentEntity.setAssignmentId(assignment_id);
         assignmentEntity.setAssignmentName(assignment_name);
         assignmentEntity.setTotalPoints(total_points);
@@ -37,14 +37,14 @@ public class AssignmentDao {
 
     public List getAllAssignments(){
         em.getTransaction().begin();
-        Query a_q = em.createNamedQuery("AssignmentsEntity.findAll", AssignmentEntity.class);;
-        List<AssignmentEntity> ae;
+        Query a_q = em.createNamedQuery("AssignmentsEntity.findAll", AssignmentEO.class);;
+        List<AssignmentEO> ae;
         ae = a_q.getResultList();
         return ae;
     }
 
     public String editAssignment(String assignmentid, String assignment_name, String total_points, InputStream test2,String classid) throws IOException {
-        AssignmentEntity assignmentEntity1 = new AssignmentEntity();
+        AssignmentEO assignmentEntity1 = new AssignmentEO();
         assignmentEntity1.setAssignmentId(assignmentid);
         assignmentEntity1.setAssignmentName(assignment_name);
         assignmentEntity1.setAssignment(IOUtils.toByteArray(test2));
@@ -64,7 +64,7 @@ public class AssignmentDao {
 
     public String removeAssignment(String assignment_id){
         em.getTransaction().begin();
-        AssignmentEntity ae = em.find(AssignmentEntity.class,assignment_id);
+        AssignmentEO ae = em.find(AssignmentEO.class,assignment_id);
         em.remove(ae);
         try {
             em.getTransaction().commit();

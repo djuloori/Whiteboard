@@ -1,7 +1,6 @@
 package Dao;
 
-import Model.SyllabusEntity;
-
+import Model.SyllabusEO;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -15,13 +14,13 @@ public class SyllabusDao {
     EntityManager em = emf.createEntityManager();
     public List getAllSyllubus(){
         em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEntity.class);;
-        List<SyllabusEntity> se = s_q.getResultList();
+        Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;
+        List<SyllabusEO> se = s_q.getResultList();
         return se;
     }
 
     public String addsyllubus(String class_id, InputStream inputStream, String syllabus) throws IOException {
-        SyllabusEntity syllubusEntity = new SyllabusEntity();
+        SyllabusEO syllubusEntity = new SyllabusEO();
         syllubusEntity.setCLASS_ID(class_id);
         syllubusEntity.setIdsyllabus(syllabus);
         syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
@@ -38,7 +37,7 @@ public class SyllabusDao {
 
     public String removeSyllabus(String syllabus_id){
         em.getTransaction().begin();
-        SyllabusEntity syllabus = em.find(SyllabusEntity.class,syllabus_id);
+        SyllabusEO syllabus = em.find(SyllabusEO.class,syllabus_id);
         em.remove(syllabus);
         try {
             em.getTransaction().commit();

@@ -1,7 +1,6 @@
 package Dao;
 
-import Model.ScheduleEntity;
-
+import Model.ScheduleEO;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -14,14 +13,14 @@ public class ScheduleDao{
 
     public List getAllschedule(){
         em.getTransaction().begin();
-        Query q = em.createNamedQuery("ScheduleEntity.findAll", ScheduleEntity.class);
-        List<ScheduleEntity> se;
+        Query q = em.createNamedQuery("ScheduleEntity.findAll", ScheduleEO.class);
+        List<ScheduleEO> se;
         se = q.getResultList();
         return se;
     }
 
     public String addSchedule(String timings, String location, String class_id, String schedule_id, String day){
-        ScheduleEntity se = new ScheduleEntity();
+        ScheduleEO se = new ScheduleEO();
         se.setTimings(timings);
         se.setDay(day);
         se.setLocation(location);
@@ -39,7 +38,7 @@ public class ScheduleDao{
     }
 
     public String editSchedule(String timings, String location, String class_id, String schedule_id, String day){
-        ScheduleEntity se1 = new ScheduleEntity();
+        ScheduleEO se1 = new ScheduleEO();
         se1.setTimings(timings);
         se1.setDay(day);
         se1.setLocation(location);
@@ -58,7 +57,7 @@ public class ScheduleDao{
 
     public String removeSchedule(String schedule_id){
         em.getTransaction().begin();
-        ScheduleEntity se2 = em.find(ScheduleEntity.class,schedule_id);
+        ScheduleEO se2 = em.find(ScheduleEO.class,schedule_id);
         em.remove(se2);
         try {
             em.getTransaction().commit();

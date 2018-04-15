@@ -1,7 +1,6 @@
 package Dao;
 
-import Model.StudentEntity;
-
+import Model.StudentEO;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -13,8 +12,8 @@ public class StudentDao {
     EntityManager em = emf.createEntityManager();
     public List getAllStudents(){
         em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("StudentEntity.findAll", StudentEntity.class);
-        List<StudentEntity> se;
+        Query s_q = em.createNamedQuery("StudentEntity.findAll", StudentEO.class);
+        List<StudentEO> se;
         se = s_q.getResultList();
         return se;
     }

@@ -1,7 +1,7 @@
 package Dao;
 
-import Model.ClassesEntity;
-import Model.UserEntity;
+import Model.ClassesEO;
+import Model.UserEO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -16,10 +16,11 @@ public class ClassesDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
+
     public String addClass(String classid, String classname, String username){
-        UserEntity user = new UserEntity();
+        UserEO user = new UserEO();
         user.setUsername(username);
-        ClassesEntity ce = new ClassesEntity();
+        ClassesEO ce = new ClassesEO();
         ce.setClassId(classid);
         ce.setClassName(classname);
         ce.setUSER_NAME(username);
@@ -37,16 +38,16 @@ public class ClassesDao {
 
     public List getAllCourses() {
         em.getTransaction().begin();
-        Query q = em.createNamedQuery("ClassesEntity.findAll",ClassesEntity.class);
-        List<ClassesEntity> cs;
+        Query q = em.createNamedQuery("ClassesEntity.findAll",ClassesEO.class);
+        List<ClassesEO> cs;
         cs = q.getResultList();
         return cs;
     }
 
     public String editClass(String classid, String classname, String username) {
-        UserEntity user = new UserEntity();
+        UserEO user = new UserEO();
         user.setUsername(username);
-        ClassesEntity ce = new ClassesEntity();
+        ClassesEO ce = new ClassesEO();
         ce.setClassId(classid);
         ce.setClassName(classname);
         ce.setUSER_NAME(username);
@@ -64,7 +65,7 @@ public class ClassesDao {
 
     public String removeClass(String classid){
         em.getTransaction().begin();
-        ClassesEntity ce = em.find(ClassesEntity.class,classid);
+        ClassesEO ce = em.find(ClassesEO.class,classid);
         em.remove(ce);
         try {
             em.getTransaction().commit();

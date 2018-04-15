@@ -2,14 +2,15 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
 
     <persistence-unit name="PersistenceUnit">
+
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>Model.AssignmentEntity</class>
-        <class>Model.ClassesEntity</class>
-        <class>Model.ScheduleEntity</class>
-        <class>Model.StudentEntity</class>
-        <class>Model.SyllabusEntity</class>
-        <class>Model.TaEntity</class>
-        <class>Model.UserEntity</class>
+        <class>Model.AssignmentEO</class>
+        <class>Model.ClassesEO</class>
+        <class>Model.ScheduleEO</class>
+        <class>Model.StudentEO</class>
+        <class>Model.SyllabusEO</class>
+        <class>Model.TaEO</class>
+        <class>Model.UserEO</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
