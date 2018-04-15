@@ -7,33 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Resource/AssignmentResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resource/ClassResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resource/ScheduleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resource/SyllabusResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resource/TaResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/AssignmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/AssignmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ClassesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ScheduleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ScheduleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SyllabusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SyllabusDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/TaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/TaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/AssignmentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AssignmentEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ClassesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ClassesEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ScheduleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ScheduleEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/StudentEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/SyllabusEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SyllabusEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/TaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/TaEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_I_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Project_I_war_exploded.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +59,8 @@
       <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="544">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
@@ -255,7 +229,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -330,10 +304,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2.jar!/" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -580,12 +554,12 @@
       <workItem from="1523679654548" duration="637000" />
       <workItem from="1523680313773" duration="1015000" />
       <workItem from="1523718831093" duration="4952000" />
-      <workItem from="1523748464142" duration="8161000" />
+      <workItem from="1523748464142" duration="8704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50987000" />
+    <option name="totallyTimeSpent" value="51530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -610,8 +584,8 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32954547" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.4403409" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" weight="0.66903406" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.4403409" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" weight="0.6676136" />
       <window_info id="Persistence" order="2" sideWeight="0.5099432" side_tool="true" weight="0.29088473" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4900568" visible="true" weight="0.29088473" />
       <window_info anchor="right" id="Bean Validation" order="8" />
@@ -980,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#298#299#0" expanded="true" />
@@ -1007,7 +981,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Project-I:war exploded</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1079,7 +1053,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.glassfish.jersey.containers:jersey-container-servlet-core:2.3</last-edited>
+          <last-edited>org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
