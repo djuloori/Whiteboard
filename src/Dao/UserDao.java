@@ -1,6 +1,8 @@
 package Dao;
 
 import Model.UserEO;
+import Rest.UserRO;
+
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -10,11 +12,11 @@ public class UserDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
-    public String findUser(String username, String password){
+    public String findUser(UserRO userRO){
         em.getTransaction().begin();
         Query q = em.createNamedQuery("UserEntity.Validation", UserEO.class);
-        String hashed_password = getMD5(password);
-        q.setParameter("username",username);
+        String hashed_password = getMD5(userRO.getPassword());
+        q.setParameter("username",userRO.getUsername());
         q.setParameter("password",hashed_password);
         em.getTransaction().commit();
         UserEO un;
@@ -22,7 +24,7 @@ public class UserDao {
             un = (UserEO) q.getSingleResult();
             em.close();
             emf.close();
-            if(username.equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
+            if(userRO.getUsername().equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
                 return un.getUsertype();
             }else{
                 return "failed";
@@ -32,12 +34,12 @@ public class UserDao {
         }
     }
 
-    public String createUser(String username, String password, String usertype){
+    public String createUser(UserRO userRO){
         UserEO user = new UserEO();
-        user.setUsername(username);
-        String hashed_password = getMD5(password);
+        user.setUsername(userRO.getUsername());
+        String hashed_password = getMD5(userRO.getPassword());
         user.setPassword(hashed_password);
-        user.setUsertype(usertype);
+        user.setUsertype(userRO.getUsertype());
         em.getTransaction().begin();
         em.persist(user);
         try {

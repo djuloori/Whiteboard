@@ -1,7 +1,12 @@
 package Resource;
 
 import Dao.SyllabusDao;
+import Service.SyllabusService;
 
 public class SyllabusResource {
-    SyllabusDao syllabusDao = new SyllabusDao();
+
+    SyllabusService syllabusService = new SyllabusService();
+
+
+
 }

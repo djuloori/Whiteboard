@@ -2,6 +2,7 @@ package Dao;
 
 import Model.ClassesEO;
 import Model.UserEO;
+import Rest.ClassesRO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,13 +18,13 @@ public class ClassesDao {
     EntityManager em = emf.createEntityManager();
 
 
-    public String addClass(String classid, String classname, String username){
-        UserEO user = new UserEO();
-        user.setUsername(username);
+    public String addClass(ClassesRO classesRO){
+        //UserEO user = new UserEO();
+        //user.setUsername(classesRO.getUserName());
         ClassesEO ce = new ClassesEO();
-        ce.setClassId(classid);
-        ce.setClassName(classname);
-        ce.setUSER_NAME(username);
+        ce.setClassId(classesRO.getClassId());
+        ce.setClassName(classesRO.getClassName());
+        ce.setUSER_NAME(classesRO.getUserName());
         em.getTransaction().begin();
         em.persist(ce);
         try {
@@ -44,13 +45,13 @@ public class ClassesDao {
         return cs;
     }
 
-    public String editClass(String classid, String classname, String username) {
-        UserEO user = new UserEO();
-        user.setUsername(username);
+    public String editClass(ClassesRO classesRO) {
+        //UserEO user = new UserEO();
+        //user.setUsername(username);
         ClassesEO ce = new ClassesEO();
-        ce.setClassId(classid);
-        ce.setClassName(classname);
-        ce.setUSER_NAME(username);
+        ce.setClassId(classesRO.getClassId());
+        ce.setClassName(classesRO.getClassName());
+        ce.setUSER_NAME(classesRO.getUserName());
         em.getTransaction().begin();
         em.merge(ce);
         try {
@@ -63,9 +64,9 @@ public class ClassesDao {
         }
     }
 
-    public String removeClass(String classid){
+    public String removeClass(ClassesRO classesRO){
         em.getTransaction().begin();
-        ClassesEO ce = em.find(ClassesEO.class,classid);
+        ClassesEO ce = em.find(ClassesEO.class,classesRO.getClassId());
         em.remove(ce);
         try {
             em.getTransaction().commit();

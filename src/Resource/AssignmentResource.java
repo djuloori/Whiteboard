@@ -1,9 +1,10 @@
 package Resource;
 
-import Dao.AssignmentDao;
+import Service.AssignmentService;
 
 public class AssignmentResource {
-    AssignmentDao assignmentDao = new AssignmentDao();
+
+    AssignmentService assignmentService = new AssignmentService();
 
 
 }

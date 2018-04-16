@@ -1,7 +1,12 @@
 package Resource;
 
 import Dao.ScheduleDao;
+import Service.ScheduleService;
 
 public class ScheduleResource {
-    ScheduleDao scheduleDao = new ScheduleDao();
+
+    ScheduleService scheduleService = new ScheduleService();
+
+
+
 }
