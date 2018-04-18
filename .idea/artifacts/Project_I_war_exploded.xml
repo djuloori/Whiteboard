@@ -15,6 +15,15 @@
           <element id="library" level="project" name="jersey-container-servlet-core-2.2" />
           <element id="library" level="project" name="org.glassfish.jersey.containers:jersey-container-servlet-core:2.3" />
           <element id="library" level="project" name="jackson-annotations" />
+          <element id="library" level="project" name="spring-aop" />
+          <element id="library" level="project" name="spring-aspects" />
+          <element id="library" level="project" name="spring-beans" />
+          <element id="library" level="project" name="spring-context" />
+          <element id="library" level="project" name="spring-core" />
+          <element id="library" level="project" name="spring-expression" />
+          <element id="library" level="project" name="spring-context-support" />
+          <element id="library" level="project" name="spring-web" />
+          <element id="library" level="project" name="commons-logging" />
         </element>
       </element>
     </root>

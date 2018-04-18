@@ -22,6 +22,15 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/MyApplication.java</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/context.xml</file>
+          <file>file://$MODULE_DIR$/out/production/Project-I/MyApplication.class</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -38,5 +47,14 @@
     <orderEntry type="library" exported="" name="commons-io-2.2" level="project" />
     <orderEntry type="library" exported="" name="org.glassfish.jersey.containers:jersey-container-servlet-core:2.3" level="project" />
     <orderEntry type="library" name="jackson-annotations" level="project" />
+    <orderEntry type="library" name="spring-aop" level="project" />
+    <orderEntry type="library" name="spring-aspects" level="project" />
+    <orderEntry type="library" name="spring-beans" level="project" />
+    <orderEntry type="library" name="spring-context" level="project" />
+    <orderEntry type="library" name="spring-core" level="project" />
+    <orderEntry type="library" name="spring-expression" level="project" />
+    <orderEntry type="library" name="spring-context-support" level="project" />
+    <orderEntry type="library" name="spring-web" level="project" />
+    <orderEntry type="library" name="commons-logging" level="project" />
   </component>
 </module>
