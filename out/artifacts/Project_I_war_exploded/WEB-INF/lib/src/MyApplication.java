@@ -1,11 +1,12 @@
 import Dao.ClassesDao;
 import Rest.ClassesRO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+
 
 @ComponentScan(basePackages = {"Dao","Rest"})
-@Configuration
 public class MyApplication {
 
     @Autowired
@@ -14,15 +15,16 @@ public class MyApplication {
     @Autowired
     private ClassesRO classesRO;
 
-    public void testDataPersist(){
-      classesRO.setClassId("aaa");
+    public void testDataPersist(String[] args){
+      classesRO.setClassId("aaaccaa");
       classesRO.setClassName("dddd");
       classesDao.addClass(classesRO);
     }
 
     public static void main(String[] args){
-        MyApplication m1 = new MyApplication();
-        m1.testDataPersist();
+        ApplicationContext context = new AnnotationConfigApplicationContext(MyApplication.class);
+        MyApplication m1 = context.getBean(MyApplication.class);
+        m1.testDataPersist(args);
     }
 
 

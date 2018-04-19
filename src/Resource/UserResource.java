@@ -22,7 +22,7 @@ public class UserResource  {
 
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public UserRO testUser(){
         String type = userService.evaluateUser("user","root");
         UserRO u1 = new UserRO();

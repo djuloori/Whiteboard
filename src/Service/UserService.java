@@ -3,11 +3,19 @@ package Service;
 
 import Dao.UserDao;
 import Rest.UserRO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
+@Component
+@ComponentScan(basePackages = {"Dao","Rest"})
 public class UserService {
-   UserRO userRO = new UserRO();
 
-   UserDao userDao = new UserDao();
+   @Autowired
+   private UserRO userRO;
+
+   @Autowired
+   private UserDao userDao;
 
    public String evaluateUser(String username, String Password){
        userRO.setUsername(username);

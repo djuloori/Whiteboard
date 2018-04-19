@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="classdao"    class="Dao.ClassesDao"></bean>
-    <bean id="classro"  class="Rest.ClassesRO"></bean>
-    <!--<bean id="department"    class="com.howtodoinjava.spring.beans.Department"></bean>-->
-
-
+    <context:component-scan base-package="Dao,Rest" />
+    <bean id = "classdao"  class ="Dao.ClassesDao"/>
+    <bean id = "classro"   class ="Rest.ClassesRO"/>
+    <bean id = "userro"    class = "Rest.UserRO"/>
+    <bean id = "userdao"   class = "Dao.UserDao"/>
 </beans>

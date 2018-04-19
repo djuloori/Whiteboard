@@ -54,5 +54,7 @@
     <orderEntry type="library" name="spring-core" level="project" />
     <orderEntry type="library" name="spring-expression" level="project" />
     <orderEntry type="library" name="spring-context-support" level="project" />
+    <orderEntry type="library" name="spring-web" level="project" />
+    <orderEntry type="library" name="commons-logging" level="project" />
   </component>
 </module>

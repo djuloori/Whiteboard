@@ -2,12 +2,14 @@ package Dao;
 
 import Model.UserEO;
 import Rest.UserRO;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+@Component
 public class UserDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();

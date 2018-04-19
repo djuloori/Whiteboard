@@ -22,6 +22,8 @@
           <element id="library" level="project" name="spring-core" />
           <element id="library" level="project" name="spring-expression" />
           <element id="library" level="project" name="spring-context-support" />
+          <element id="library" level="project" name="spring-web" />
+          <element id="library" level="project" name="commons-logging" />
         </element>
       </element>
     </root>
