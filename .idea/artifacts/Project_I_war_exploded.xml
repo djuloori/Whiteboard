@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="Project-I:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Project_I_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Project-I/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Project-I" />
@@ -12,8 +11,6 @@
           <element id="library" level="project" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" />
           <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
           <element id="library" level="project" name="commons-io-2.2" />
-          <element id="library" level="project" name="jersey-container-servlet-core-2.2" />
-          <element id="library" level="project" name="org.glassfish.jersey.containers:jersey-container-servlet-core:2.3" />
           <element id="library" level="project" name="jackson-annotations" />
           <element id="library" level="project" name="spring-aop" />
           <element id="library" level="project" name="spring-aspects" />
@@ -24,8 +21,10 @@
           <element id="library" level="project" name="spring-context-support" />
           <element id="library" level="project" name="spring-web" />
           <element id="library" level="project" name="commons-logging" />
+          <element id="library" level="project" name="jersey-container-servlet-core-2.27" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="Project-I/web/Web" />
     </root>
   </artifact>
 </component>

@@ -45,7 +45,6 @@
     <orderEntry type="library" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-5.1.44-bin" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.2" level="project" />
-    <orderEntry type="library" exported="" name="org.glassfish.jersey.containers:jersey-container-servlet-core:2.3" level="project" />
     <orderEntry type="library" name="jackson-annotations" level="project" />
     <orderEntry type="library" name="spring-aop" level="project" />
     <orderEntry type="library" name="spring-aspects" level="project" />
@@ -56,5 +55,6 @@
     <orderEntry type="library" name="spring-context-support" level="project" />
     <orderEntry type="library" name="spring-web" level="project" />
     <orderEntry type="library" name="commons-logging" level="project" />
+    <orderEntry type="library" name="jersey-container-servlet-core-2.27" level="project" />
   </component>
 </module>
