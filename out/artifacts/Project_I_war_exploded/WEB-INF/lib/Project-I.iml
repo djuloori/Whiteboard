@@ -55,6 +55,24 @@
     <orderEntry type="library" name="spring-context-support" level="project" />
     <orderEntry type="library" name="spring-web" level="project" />
     <orderEntry type="library" name="commons-logging" level="project" />
-    <orderEntry type="library" name="jersey-container-servlet-core-2.27" level="project" />
+    <orderEntry type="library" name="gmbal-api-only" level="project" />
+    <orderEntry type="library" name="hk2-api" level="project" />
+    <orderEntry type="library" name="hk2-core" level="project" />
+    <orderEntry type="library" name="hk2-locator" level="project" />
+    <orderEntry type="library" name="hk2-runlevel" level="project" />
+    <orderEntry type="library" name="hk2-utils" level="project" />
+    <orderEntry type="library" name="javax.ws.rs-api" level="project" />
+    <orderEntry type="library" name="jersey-client" level="project" />
+    <orderEntry type="library" name="jersey-common" level="project" />
+    <orderEntry type="library" name="jersey-container-servlet" level="project" />
+    <orderEntry type="library" name="jersey-container-servlet-core" level="project" />
+    <orderEntry type="library" name="jersey-declarative-linking" level="project" />
+    <orderEntry type="library" name="jersey-entity-filter" level="project" />
+    <orderEntry type="library" name="jersey-guava" level="project" />
+    <orderEntry type="library" name="jersey-media-json-jackson" level="project" />
+    <orderEntry type="library" name="jersey-media-multipart" level="project" />
+    <orderEntry type="library" name="jersey-server" level="project" />
+    <orderEntry type="library" name="jersey-spring3" level="project" />
+    <orderEntry type="library" name="spring-bridge" level="project" />
   </component>
 </module>

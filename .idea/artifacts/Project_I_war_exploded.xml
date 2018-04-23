@@ -21,7 +21,25 @@
           <element id="library" level="project" name="spring-context-support" />
           <element id="library" level="project" name="spring-web" />
           <element id="library" level="project" name="commons-logging" />
-          <element id="library" level="project" name="jersey-container-servlet-core-2.27" />
+          <element id="library" level="project" name="gmbal-api-only" />
+          <element id="library" level="project" name="hk2-api" />
+          <element id="library" level="project" name="hk2-core" />
+          <element id="library" level="project" name="hk2-locator" />
+          <element id="library" level="project" name="hk2-runlevel" />
+          <element id="library" level="project" name="hk2-utils" />
+          <element id="library" level="project" name="javax.ws.rs-api" />
+          <element id="library" level="project" name="jersey-client" />
+          <element id="library" level="project" name="jersey-common" />
+          <element id="library" level="project" name="jersey-container-servlet" />
+          <element id="library" level="project" name="jersey-container-servlet-core" />
+          <element id="library" level="project" name="jersey-declarative-linking" />
+          <element id="library" level="project" name="jersey-entity-filter" />
+          <element id="library" level="project" name="jersey-guava" />
+          <element id="library" level="project" name="jersey-media-json-jackson" />
+          <element id="library" level="project" name="jersey-media-multipart" />
+          <element id="library" level="project" name="jersey-server" />
+          <element id="library" level="project" name="jersey-spring3" />
+          <element id="library" level="project" name="spring-bridge" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Project-I/web/Web" />

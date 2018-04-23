@@ -9,4 +9,5 @@
     <bean id = "classro"   class ="Rest.ClassesRO"/>
     <bean id = "userro"    class = "Rest.UserRO"/>
     <bean id = "userdao"   class = "Dao.UserDao"/>
+    <bean id = "userservice" class="Service.UserService"/>
 </beans>

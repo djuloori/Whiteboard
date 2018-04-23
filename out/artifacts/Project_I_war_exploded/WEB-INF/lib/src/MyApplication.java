@@ -27,7 +27,4 @@ public class MyApplication {
         m1.testDataPersist(args);
     }
 
-
-
-
 }

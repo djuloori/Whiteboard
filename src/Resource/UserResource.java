@@ -3,6 +3,7 @@ package Resource;
 import Dao.UserDao;
 import Rest.UserRO;
 import Service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import sun.security.util.Password;
 
 import javax.ws.rs.*;
@@ -11,7 +12,12 @@ import javax.ws.rs.core.Response;
 
 @Path("Users")
 public class UserResource  {
-     UserService userService = new UserService();
+
+    @Autowired
+     private UserService userService;
+
+    @Autowired
+    private UserRO userRO;
 
     @GET
     @Path("/{id}")
@@ -22,12 +28,12 @@ public class UserResource  {
 
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public UserRO testUser(){
         String type = userService.evaluateUser("user","root");
-        UserRO u1 = new UserRO();
-        u1.setUsertype(type);
-        return u1;
+        //UserRO u1 = new UserRO();
+        userRO.setUsertype(type);
+        return userRO;
     }
 
     @GET
