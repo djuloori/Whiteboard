@@ -8,10 +8,9 @@ import java.io.*;
 import java.util.List;
 import Model.AssignmentEO;
 import org.apache.commons.io.IOUtils;
+import org.springframework.stereotype.Component;
 
-/**
- * Created by Dhruva Juloori on 11/26/2017.
- */
+@Component
 public class AssignmentDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
@@ -56,9 +55,9 @@ public class AssignmentDao {
             em.getTransaction().commit();
             em.close();
             emf.close();
-            return "Editing Succesful";
+            return "Editing Successful";
         } catch (Exception e) {
-            return "Not Succesful";
+            return "Not Successful";
         }
     }
 
@@ -68,12 +67,10 @@ public class AssignmentDao {
         em.remove(ae);
         try {
             em.getTransaction().commit();
-            //System.out.println("Removed");
             em.close();
             emf.close();
             return "Removed";
         }catch (Exception e){
-            //System.out.println("I am here!");
             return "Not Removed";
         }
     }

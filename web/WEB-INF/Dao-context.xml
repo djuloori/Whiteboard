@@ -4,10 +4,13 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="Dao,Rest" />
-    <bean id = "classdao"  class ="Dao.ClassesDao"/>
-    <bean id = "classro"   class ="Rest.ClassesRO"/>
-    <bean id = "userro"    class = "Rest.UserRO"/>
-    <bean id = "userdao"   class = "Dao.UserDao"/>
-    <bean id = "userservice" class="Service.UserService"/>
+    <context:component-scan base-package="Dao" />
+     <bean id = "classdao"       class = "Dao.ClassesDao"/>
+     <bean id = "userdao"        class = "Dao.UserDao"/>
+     <bean id = "tadao"          class = "Dao.TaDao"/>
+     <bean id = "syllabusdao"    class = "Dao.SyllabusDao"/>
+     <bean id = "scheduledao"    class = "Dao.ScheduleDao"/>
+     <bean id = "assignmentdao"  class = "Dao.AssignmentDao"/>
+     <bean id = "studentdao"     class = "Dao.StudentDao"/>
+
 </beans>
