@@ -16,25 +16,6 @@ public class UserResource  {
     @Autowired
      private UserService userService;
 
-    @Autowired
-    private UserRO userRO;
-
-    @GET
-    @Path("/{id}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getUser(@PathParam("id") String id){
-        return  "Dhruva" + " " + id;
-    }
-
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public UserRO testUser(){
-        String type = userService.evaluateUser("user","root");
-        //UserRO u1 = new UserRO();
-        userRO.setUsertype(type);
-        return userRO;
-    }
 
     @GET
     @Path("login/{username}/{password}")
