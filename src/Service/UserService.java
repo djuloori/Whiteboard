@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
-@ComponentScan(basePackages = {"Dao","Rest"})
 public class UserService {
 
    @Autowired

@@ -1,6 +1,8 @@
 package Dao;
 
 import Model.SyllabusEO;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -9,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+@Component
 public class SyllabusDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();

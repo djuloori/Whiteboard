@@ -2,13 +2,19 @@ package Service;
 
 import Dao.ClassesDao;
 import Rest.ClassesRO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class ClassService {
-    ClassesDao classesDao = new ClassesDao();
 
-    ClassesRO classesRO = new ClassesRO();
+    @Autowired
+    private ClassesDao classesDao;
+
+    @Autowired
+    private ClassesRO classesRO;
 
     public String syncClass(String Classid,String ClassName,String Username){
         classesRO.setClassId(Classid);
