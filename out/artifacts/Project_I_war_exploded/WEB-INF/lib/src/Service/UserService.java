@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
-@ComponentScan(basePackages = {"Dao","Rest"})
 public class UserService {
 
    @Autowired
@@ -17,16 +16,11 @@ public class UserService {
    @Autowired
    private UserDao userDao;
 
-   public String evaluateUser(String username, String Password){
-       userRO.setUsername(username);
-       userRO.setPassword(Password);
+   public String evaluateUser(UserRO userRO){
        return userDao.findUser(userRO);
    }
 
-   public String syncUser(String username, String Password, String usertype){
-       userRO.setUsername(username);
-       userRO.setPassword(Password);
-       userRO.setUsertype(usertype);
+   public String syncUser(UserRO userRO){
        return userDao.createUser(userRO);
    }
 

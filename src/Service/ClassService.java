@@ -16,17 +16,17 @@ public class ClassService {
     @Autowired
     private ClassesRO classesRO;
 
-    public String syncClass(String Classid,String ClassName,String Username){
-        classesRO.setClassId(Classid);
-        classesRO.setClassName(ClassName);
-        classesRO.setUserName(Username);
+    public String syncClass(ClassesRO classesRO){
+        //classesRO.setClassId(Classid);
+        //classesRO.setClassName(ClassName);
+        //classesRO.setUserName(Username);
         return classesDao.addClass(classesRO);
     }
 
-    public String modifyClass(String Classid, String ClassName, String Username){
-        classesRO.setClassId(Classid);
-        classesRO.setClassName(ClassName);
-        classesRO.setUserName(Username);
+    public String modifyClass(ClassesRO classesRO){
+        //classesRO.setClassId(Classid);
+        //classesRO.setClassName(ClassName);
+        //classesRO.setUserName(Username);
         return classesDao.editClass(classesRO);
     }
 

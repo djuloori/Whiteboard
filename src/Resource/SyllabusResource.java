@@ -2,10 +2,12 @@ package Resource;
 
 import Dao.SyllabusDao;
 import Service.SyllabusService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class SyllabusResource {
 
-    SyllabusService syllabusService = new SyllabusService();
+    @Autowired
+    private SyllabusService syllabusService;
 
 
 

@@ -9,6 +9,9 @@ import sun.security.util.Password;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+import java.util.Random;
 
 @Path("Users")
 public class UserResource  {
@@ -19,10 +22,23 @@ public class UserResource  {
 
     @GET
     @Path("login/{username}/{password}")
-    @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response login(@PathParam("username") String username, @PathParam("password") String password){
-        String result = userService.evaluateUser(username,password);
+    public Response login(UserRO userRO){
+        String result = userService.evaluateUser(userRO);
+        if(result.equals("Failed")){
+            //String sessionid = issueToken(username); - ToDO
+            return Response.status(400).build();
+        }else {
+            return Response.ok(result).build();
+        }
+    }
+
+
+    @POST
+    @Path("Signup")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response register(UserRO userRO){
+        String result = userService.syncUser(userRO);
         if(result.equals("success")){
             return Response.ok().build();
         }else {
@@ -30,11 +46,12 @@ public class UserResource  {
         }
     }
 
-    @POST
-    @Path("register/{username}/{password}/{usertype}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public String register(@PathParam("username") String username, @PathParam("password") String password, @PathParam("usertype") String usertype){
-        return userService.syncUser(username,password,usertype);
-    }
+
+    //ToDo-Sessions
+    /*private String issueToken(String username){
+        Random random = new SecureRandom();
+        String token = new BigInteger(130, random).toString(32);
+        return token;
+    }*/
 
 }

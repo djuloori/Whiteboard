@@ -1,10 +1,12 @@
 package Resource;
 
 import Service.AssignmentService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class AssignmentResource {
 
-    AssignmentService assignmentService = new AssignmentService();
+    @Autowired
+    private AssignmentService assignmentService;
 
 
 }

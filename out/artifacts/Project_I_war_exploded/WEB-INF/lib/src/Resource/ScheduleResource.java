@@ -2,10 +2,14 @@ package Resource;
 
 import Dao.ScheduleDao;
 import Service.ScheduleService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class ScheduleResource {
 
-    ScheduleService scheduleService = new ScheduleService();
+    @Autowired
+    private ScheduleService scheduleService;
+
+
 
 
 

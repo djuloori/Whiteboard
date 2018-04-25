@@ -1,9 +1,14 @@
 package Service;
 
 import Dao.TaDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TaService {
-    TaDao taDao = new TaDao();
+
+    @Autowired
+    private TaDao taDao;
 
 
 
