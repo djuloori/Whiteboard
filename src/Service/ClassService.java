@@ -17,16 +17,10 @@ public class ClassService {
     private ClassesRO classesRO;
 
     public String syncClass(ClassesRO classesRO){
-        //classesRO.setClassId(Classid);
-        //classesRO.setClassName(ClassName);
-        //classesRO.setUserName(Username);
         return classesDao.addClass(classesRO);
     }
 
     public String modifyClass(ClassesRO classesRO){
-        //classesRO.setClassId(Classid);
-        //classesRO.setClassName(ClassName);
-        //classesRO.setUserName(Username);
         return classesDao.editClass(classesRO);
     }
 

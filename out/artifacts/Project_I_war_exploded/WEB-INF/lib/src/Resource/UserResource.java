@@ -17,7 +17,7 @@ import java.util.Random;
 public class UserResource  {
 
     @Autowired
-     private UserService userService;
+    private UserService userService;
 
     @Autowired
     private UserRO userRO;
@@ -28,42 +28,23 @@ public class UserResource  {
         userRO.setUsername("user");
         userRO.setPassword("root");
         String type = userService.evaluateUser(userRO);
-        return Response.ok("Professor").build();
+        return Response.ok(type).build();
     }
 
 
     @GET
-    @Path("login/{username}/{password}")
+    @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response login(UserRO userRO){
-        String result = userService.evaluateUser(userRO);
-        if(result.equals("success")){
-            //String sessionid = issueToken(username); - ToDO
-            return Response.ok(userRO.getUsertype()).build();
-        }else {
-            return Response.status(400).build();
-        }
+        return Response.ok(userService.evaluateUser(userRO)).build();
     }
 
 
     @POST
-    @Path("Signup")
+    @Path("/Signup")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response register(UserRO userRO){
-        String result = userService.syncUser(userRO);
-        if(result.equals("success")){
-            return Response.ok().build();
-        }else {
-            return Response.status(400).build();
-        }
+        return Response.ok(userService.syncUser(userRO)).build();
     }
-
-
-    //ToDo-Sessions
-    /*private String issueToken(String username){
-        Random random = new SecureRandom();
-        String token = new BigInteger(130, random).toString(32);
-        return token;
-    }*/
 
 }

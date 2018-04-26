@@ -1,6 +1,7 @@
 package Dao;
 
 import Model.TaEO;
+import Rest.TaRO;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
@@ -22,15 +23,15 @@ public class TaDao {
         return ts;
     }
 
-    public String addTa(String ta_id, String ta_name, String ta_email, String ta_phone, String ta_timings, String class_id, String day){
+    public String addTa(TaRO taRO){
        TaEO ta = new TaEO();
-       ta.setTaId(ta_id);
-       ta.setTaName(ta_name);
-       ta.setTaEmail(ta_email);
-       ta.setTaPhone(ta_phone);
-       ta.setTaTimings(ta_timings);
-       ta.setCLASS_ID(class_id);
-       ta.setDay(day);
+       ta.setTaId(taRO.getTaId());
+       ta.setTaName(taRO.getTaName());
+       ta.setTaEmail(taRO.getTaEmail());
+       ta.setTaPhone(taRO.getTaPhone());
+       ta.setTaTimings(taRO.getTaTimings());
+       ta.setCLASS_ID(taRO.getCLASS_ID());
+       ta.setDay(taRO.getDay());
         em.getTransaction().begin();
         em.persist(ta);
         try {

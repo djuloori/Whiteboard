@@ -24,4 +24,12 @@ public class UserService {
        return userDao.createUser(userRO);
    }
 
+
+    //ToDo-Sessions
+    /*private String issueToken(String username){
+        Random random = new SecureRandom();
+        String token = new BigInteger(130, random).toString(32);
+        return token;
+    }*/
+
 }

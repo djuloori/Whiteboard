@@ -1,6 +1,7 @@
 package Dao;
 
 import Model.ScheduleEO;
+import Rest.ScheduleRO;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
@@ -22,13 +23,13 @@ public class ScheduleDao{
         return se;
     }
 
-    public String addSchedule(String timings, String location, String class_id, String schedule_id, String day){
+    public String addSchedule(ScheduleRO scheduleRO){
         ScheduleEO se = new ScheduleEO();
-        se.setTimings(timings);
-        se.setDay(day);
-        se.setLocation(location);
-        se.setCLASS_ID(class_id);
-        se.setScheduleId(schedule_id);
+        se.setTimings(scheduleRO.getTimings());
+        se.setDay(scheduleRO.getDay());
+        se.setLocation(scheduleRO.getLocation());
+        se.setCLASS_ID(scheduleRO.getCLASS_ID());
+        se.setScheduleId(scheduleRO.getScheduleId());
         em.getTransaction().begin();
         em.persist(se);
         try {
@@ -40,13 +41,13 @@ public class ScheduleDao{
         }
     }
 
-    public String editSchedule(String timings, String location, String class_id, String schedule_id, String day){
+    public String editSchedule(ScheduleRO scheduleRO){
         ScheduleEO se1 = new ScheduleEO();
-        se1.setTimings(timings);
-        se1.setDay(day);
-        se1.setLocation(location);
-        se1.setCLASS_ID(class_id);
-        se1.setScheduleId(schedule_id);
+        se1.setTimings(scheduleRO.getTimings());
+        se1.setDay(scheduleRO.getDay());
+        se1.setLocation(scheduleRO.getLocation());
+        se1.setCLASS_ID(scheduleRO.getCLASS_ID());
+        se1.setScheduleId(scheduleRO.getScheduleId());
         em.getTransaction().begin();
         em.merge(se1);
         try {

@@ -22,10 +22,10 @@ public class SyllabusDao {
         return se;
     }
 
-    public String addsyllubus(String class_id, InputStream inputStream, String syllabus) throws IOException {
+    public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
         SyllabusEO syllubusEntity = new SyllabusEO();
         syllubusEntity.setCLASS_ID(class_id);
-        syllubusEntity.setIdsyllabus(syllabus);
+        syllubusEntity.setIdsyllabus(syllabusid);
         syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
         em.getTransaction().begin();
         em.persist(syllubusEntity);
