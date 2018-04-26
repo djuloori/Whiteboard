@@ -9,51 +9,42 @@ import sun.security.util.Password;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.math.BigInteger;
+import java.security.SecureRandom;
+import java.util.Random;
 
 @Path("Users")
 public class UserResource  {
 
     @Autowired
-     private UserService userService;
+    private UserService userService;
 
     @Autowired
     private UserRO userRO;
 
     @GET
-    @Path("/{id}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getUser(@PathParam("id") String id){
-        return  "Dhruva" + " " + id;
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response testUser(){
+        userRO.setUsername("user");
+        userRO.setPassword("root");
+        String type = userService.evaluateUser(userRO);
+        return Response.ok(type).build();
     }
 
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public UserRO testUser(){
-        String type = userService.evaluateUser("user","root");
-        //UserRO u1 = new UserRO();
-        userRO.setUsertype(type);
-        return userRO;
-    }
-
-    @GET
-    @Path("login/{username}/{password}")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response login(@PathParam("username") String username, @PathParam("password") String password){
-        String result = userService.evaluateUser(username,password);
-        if(result.equals("success")){
-            return Response.ok().build();
-        }else {
-            return Response.status(400).build();
-        }
+    public Response login(UserRO userRO){
+        return Response.ok(userService.evaluateUser(userRO)).build();
     }
+
 
     @POST
-    @Path("register/{username}/{password}/{usertype}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public String register(@PathParam("username") String username, @PathParam("password") String password, @PathParam("usertype") String usertype){
-        return userService.syncUser(username,password,usertype);
+    @Path("/Signup")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response register(UserRO userRO){
+        return Response.ok(userService.syncUser(userRO)).build();
     }
 
 }

@@ -2,25 +2,25 @@ package Service;
 
 import Dao.ClassesDao;
 import Rest.ClassesRO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class ClassService {
-    ClassesDao classesDao = new ClassesDao();
 
-    ClassesRO classesRO = new ClassesRO();
+    @Autowired
+    private ClassesDao classesDao;
 
-    public String syncClass(String Classid,String ClassName,String Username){
-        classesRO.setClassId(Classid);
-        classesRO.setClassName(ClassName);
-        classesRO.setUserName(Username);
+    @Autowired
+    private ClassesRO classesRO;
+
+    public String syncClass(ClassesRO classesRO){
         return classesDao.addClass(classesRO);
     }
 
-    public String modifyClass(String Classid, String ClassName, String Username){
-        classesRO.setClassId(Classid);
-        classesRO.setClassName(ClassName);
-        classesRO.setUserName(Username);
+    public String modifyClass(ClassesRO classesRO){
         return classesDao.editClass(classesRO);
     }
 

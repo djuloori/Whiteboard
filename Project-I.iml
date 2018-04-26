@@ -31,6 +31,7 @@
           <file>file://$MODULE_DIR$/web/WEB-INF/Rest-context.xml</file>
           <file>file://$MODULE_DIR$/web/WEB-INF/Service-context.xml</file>
           <file>file://$MODULE_DIR$/web/WEB-INF/EO-context.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/Dao-context.xml</file>
         </fileset>
       </configuration>
     </facet>
