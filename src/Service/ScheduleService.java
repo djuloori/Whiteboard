@@ -23,7 +23,8 @@ public class ScheduleService {
     }
 
     public String removeSchedule(String scheduleid){
-        return scheduleDao.removeSchedule(scheduleid);
+        scheduleRO.setScheduleId(scheduleid);
+        return scheduleDao.removeSchedule(scheduleRO);
     }
 
 }

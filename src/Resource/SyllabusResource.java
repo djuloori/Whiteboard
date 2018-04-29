@@ -1,24 +1,28 @@
 package Resource;
 
 import Service.SyllabusService;
+import org.glassfish.jersey.media.multipart.FormDataMultiPart;
 import org.glassfish.jersey.media.multipart.FormDataParam;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.servlet.annotation.MultipartConfig;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Path("/Syllabus")
+@MultipartConfig
 public class SyllabusResource {
 
     @Autowired
     private SyllabusService syllabusService;
 
     @POST
-    @Path("/AddSyllabus/{classid}/{inputstream}/{syllabusid}")
-    @Consumes({MediaType.MULTIPART_FORM_DATA,MediaType.TEXT_PLAIN})
-    public Response SaveSyllabus(@PathParam("classid") String classid, @FormDataParam("inputstream") InputStream inputStream, @PathParam("syllabusid") String syllabusid) throws IOException {
+    @Path("/AddSyllabus")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response SaveSyllabus(@FormDataParam("courseId") String classid, @FormDataParam("Assignment-doc") InputStream inputStream, @FormDataParam("idsyllabus") String syllabusid) throws IOException {
         String result = syllabusService.syncSyllabus(classid,inputStream,syllabusid);
         return Response.ok(result).build();
     }

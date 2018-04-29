@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "syllabus", schema = "project_515")
-@NamedQuery(name="SyllabusEntity.findAll", query="Select s from SyllabusEO s")
+@NamedQuery(name="SyllabusEntity.findAll", query="Select s from SyllabusEO s ")
 public class SyllabusEO {
     @Basic
     @Column(name = "syllabus", nullable = true)
