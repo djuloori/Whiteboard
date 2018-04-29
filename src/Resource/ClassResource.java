@@ -4,7 +4,10 @@ import Rest.ClassesRO;
 import Service.ClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -17,16 +20,22 @@ public class ClassResource {
     @POST
     @Path("/AddClass")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response RegisterClass(ClassesRO classesRO){
-       return Response.ok(classService.syncClass(classesRO)).build();
+    public Response RegisterClass(ClassesRO classesRO, @Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String username = (String) session.getAttribute("username");
+        classesRO.setUserName(username);
+        return Response.ok(classService.syncClass(classesRO)).build();
 
     }
 
    @PUT
    @Path("/UpdateClass")
-   @Produces(MediaType.APPLICATION_JSON)
-   public Response UpdateClass(ClassesRO classesRO){
-       return Response.ok(classService.modifyClass(classesRO)).build();
+   @Consumes(MediaType.APPLICATION_JSON)
+   public Response UpdateClass(ClassesRO classesRO, @Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String username = (String) session.getAttribute("username");
+        classesRO.setUserName(username);
+        return Response.ok(classService.modifyClass(classesRO)).build();
    }
 
    /*@GET - Not Needed

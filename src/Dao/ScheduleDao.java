@@ -34,7 +34,6 @@ public class ScheduleDao{
         em.persist(se);
         try {
             em.getTransaction().commit();
-            em.close();
             return "Schedule Added";
         }catch (Exception e){
             return "not done";
@@ -52,21 +51,18 @@ public class ScheduleDao{
         em.merge(se1);
         try {
             em.getTransaction().commit();
-            em.close();
             return "Schedule Edited";
         }catch (Exception e){
             return "not done";
         }
     }
 
-    public String removeSchedule(String schedule_id){
+    public String removeSchedule(ScheduleRO scheduleRO){
         em.getTransaction().begin();
-        ScheduleEO se2 = em.find(ScheduleEO.class,schedule_id);
+        ScheduleEO se2 = em.find(ScheduleEO.class,scheduleRO.getScheduleId());
         em.remove(se2);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Schedule Removed";
         }catch (Exception e){
             return "Not Removed";

@@ -6,30 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project-I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project-I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/AssignmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/AssignmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ScheduleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ScheduleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/SyllabusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/SyllabusDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/TaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/TaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rest/AssignmentRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rest/AssignmentRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rest/ScheduleRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rest/ScheduleRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rest/StudentRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rest/StudentRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rest/SyllabusRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rest/SyllabusRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rest/TaRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rest/TaRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/AssignmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AssignmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ScheduleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/SyllabusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/SyllabusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/TaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/TaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/Dao-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,87 +47,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/StudentRO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding>
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduleRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/ScheduleRO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassesRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/ClassesRO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssignmentRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/AssignmentRO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="187">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SyllabusRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/SyllabusRO.java">
+      <file leaf-file-name="SyllabusResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resource/SyllabusResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/TaRO.java">
+      <file leaf-file-name="AssignmentResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resource/AssignmentResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rest/UserRO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/TaService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="153">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/UserService.java">
+      <file leaf-file-name="SyllabusService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Service/SyllabusService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="102">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyllabusDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dao/SyllabusDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -261,6 +195,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,9 +209,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,13 +221,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spring-bridge.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
@@ -563,7 +497,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117798000" />
+    <option name="totallyTimeSpent" value="118594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -589,9 +523,9 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.359375" />
       <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" weight="0.30113637" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" visible="true" weight="0.30113637" />
       <window_info id="Persistence" order="2" sideWeight="0.5121951" side_tool="true" weight="0.29490617" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.32104558" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.33042896" />
       <window_info id="Web" order="7" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -599,22 +533,23 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.359375" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.359375" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.32104558" />
+      <window_info id="Persistence" order="2" sideWeight="0.5121951" side_tool="true" weight="0.29490617" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32954547" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" visible="true" weight="0.30113637" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info id="Web" order="7" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Persistence" order="2" sideWeight="0.5121951" side_tool="true" weight="0.29490617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
@@ -627,7 +562,6 @@
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32954547" />
-      <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="Designer" order="3" />
     </layout>
@@ -727,15 +661,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/SyllabusResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/AssignmentResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="153">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,13 +772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/EO-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/EO-context.xml" />
     <entry file="file://$PROJECT_DIR$/src/Model/AssignmentEO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -868,8 +799,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dao/SyllabusDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="391">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -933,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/SyllabusService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="102">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1013,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="187">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>

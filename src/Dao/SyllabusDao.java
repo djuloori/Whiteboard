@@ -31,7 +31,6 @@ public class SyllabusDao {
         em.persist(syllubusEntity);
         try {
             em.getTransaction().commit();
-            em.close();
             return "done";
         }catch (Exception e){
             return "not done";
@@ -44,8 +43,6 @@ public class SyllabusDao {
         em.remove(syllabus);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Syllabus Removed";
         }catch (Exception e){
             return "Not Removed";

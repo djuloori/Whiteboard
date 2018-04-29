@@ -36,8 +36,6 @@ public class TaDao {
         em.persist(ta);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Ta Added";
         }catch (Exception e){
             return "Not Added";
@@ -50,8 +48,6 @@ public class TaDao {
         em.remove(te);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Ta Removed";
         }catch (Exception e){
             return "Not Removed";
