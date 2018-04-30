@@ -22,18 +22,6 @@ public class UserResource  {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private UserRO userRO;
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public UserRO test(){
-        userRO.setUsername("user");
-        userRO.setPassword("root");
-        userRO.setUsertype(userService.evaluateUser(userRO));
-        return userRO;
-    }
-
 
     @POST
     @Path("/login")
