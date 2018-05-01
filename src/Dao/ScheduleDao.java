@@ -12,6 +12,8 @@ import java.util.List;
 
 @Component
 public class ScheduleDao{
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 

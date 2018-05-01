@@ -13,8 +13,11 @@ import java.util.List;
 
 @Component
 public class SyllabusDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
+
     public List getAllSyllubus(){
         em.getTransaction().begin();
         Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;

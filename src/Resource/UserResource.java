@@ -22,23 +22,13 @@ public class UserResource  {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private UserRO userRO;
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public UserRO test(){
-        userRO.setUsername("user");
-        userRO.setPassword("root");
-        userRO.setUsertype(userService.evaluateUser(userRO));
-        return userRO;
-    }
-
 
     @POST
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response login(UserRO userRO, @Context HttpServletRequest request){
+
+        //@Huh - Shouldn't do in this way [Change in the next tag] - BUG
         HttpSession session = request.getSession();
         session.setAttribute("username",userRO.getUsername());
         return Response.ok(userService.evaluateUser(userRO)).build();

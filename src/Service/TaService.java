@@ -11,8 +11,6 @@ public class TaService {
     @Autowired
     private TaDao taDao;
 
-    @Autowired
-    private TaRO taRO;
 
     public String syncTa(TaRO taRO){
         return taDao.addTa(taRO);
