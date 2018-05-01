@@ -12,25 +12,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 
 
-@ComponentScan(basePackages = {"Dao","Rest","Service"})
 public class MyApplication {
 
-    @Autowired
-    private ClassesRO classesRO;
-
-    @Autowired
-    private ClassesDao classesDao;
-
-    public void testDataPersist(){
-      classesRO.setClassId("1");
-      classesDao.removeClass(classesRO);
-
-    }
-
-    public static void main(String[] args){
-        ApplicationContext context = new AnnotationConfigApplicationContext(MyApplication.class);
-        MyApplication m1 = context.getBean(MyApplication.class);
-        m1.testDataPersist();
-    }
+    //Used this class to run the methods locally.
 
 }
