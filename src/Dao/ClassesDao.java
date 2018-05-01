@@ -13,6 +13,8 @@ import java.util.List;
 
 @Component
 public class ClassesDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
@@ -26,6 +28,8 @@ public class ClassesDao {
         em.persist(ce);
         try {
             em.getTransaction().commit();
+            emf.close();
+            em.close();
             return "Inserted";
         }catch (Exception e){
             return "Not Inserted";

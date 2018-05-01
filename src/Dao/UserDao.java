@@ -11,6 +11,8 @@ import java.security.NoSuchAlgorithmException;
 
 @Component
 public class UserDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 

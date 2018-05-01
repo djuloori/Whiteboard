@@ -17,8 +17,8 @@ public class SyllabusService {
   @Autowired
   private SyllabusRO syllabusRO;
 
-  //ToDo - Make use of RO's
 
+  //ToDo - Make use of RO's
   public String syncSyllabus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
     return syllabusDao.addsyllubus(class_id,inputStream,syllabusid);
   }

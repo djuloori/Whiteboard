@@ -27,6 +27,8 @@ public class UserResource  {
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response login(UserRO userRO, @Context HttpServletRequest request){
+
+        //@Huh - Shouldn't do in this way [Change in the next tag] - BUG
         HttpSession session = request.getSession();
         session.setAttribute("username",userRO.getUsername());
         return Response.ok(userService.evaluateUser(userRO)).build();

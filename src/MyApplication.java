@@ -16,18 +16,14 @@ import org.springframework.context.annotation.ComponentScan;
 public class MyApplication {
 
     @Autowired
-    private TaDao taDao;
+    private ClassesRO classesRO;
 
     @Autowired
-    private TaRO taRO;
-
-    @Autowired
-    private TaService taService;
+    private ClassesDao classesDao;
 
     public void testDataPersist(){
-      taRO.setCLASS_ID("1");
-        taRO.setTaId("1");
-        taService.syncTa(taRO);
+      classesRO.setClassId("1");
+      classesDao.removeClass(classesRO);
 
     }
 
