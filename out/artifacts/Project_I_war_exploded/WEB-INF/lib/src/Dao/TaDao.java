@@ -12,6 +12,8 @@ import java.util.List;
 
 @Component
 public class TaDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
@@ -36,8 +38,6 @@ public class TaDao {
         em.persist(ta);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Ta Added";
         }catch (Exception e){
             return "Not Added";
@@ -50,8 +50,6 @@ public class TaDao {
         em.remove(te);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Ta Removed";
         }catch (Exception e){
             return "Not Removed";

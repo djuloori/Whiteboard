@@ -11,6 +11,8 @@ import java.security.NoSuchAlgorithmException;
 
 @Component
 public class UserDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
@@ -24,8 +26,6 @@ public class UserDao {
         UserEO un;
         try {
             un = (UserEO) q.getSingleResult();
-            em.close();
-            emf.close();
             if(userRO.getUsername().equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
                 return un.getUsertype();
             }else{
@@ -46,8 +46,6 @@ public class UserDao {
         em.persist(user);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Success";
         }catch (Exception e){
             return "failed";

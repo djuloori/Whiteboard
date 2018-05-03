@@ -25,7 +25,7 @@ public class UserService {
    }
 
 
-    //ToDo-Sessions
+    //ToDo - Might not need!
     /*private String issueToken(String username){
         Random random = new SecureRandom();
         String token = new BigInteger(130, random).toString(32);

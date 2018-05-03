@@ -13,8 +13,11 @@ import java.util.List;
 
 @Component
 public class SyllabusDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
+
     public List getAllSyllubus(){
         em.getTransaction().begin();
         Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;
@@ -31,7 +34,6 @@ public class SyllabusDao {
         em.persist(syllubusEntity);
         try {
             em.getTransaction().commit();
-            em.close();
             return "done";
         }catch (Exception e){
             return "not done";
@@ -44,8 +46,6 @@ public class SyllabusDao {
         em.remove(syllabus);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Syllabus Removed";
         }catch (Exception e){
             return "Not Removed";

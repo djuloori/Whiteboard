@@ -11,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.awt.*;
 
+@Path("/Schedule")
 public class ScheduleResource {
 
     @Autowired
@@ -25,7 +26,7 @@ public class ScheduleResource {
 
     @PUT
     @Path("/UpdateSchedule")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response UpdateSchedule(ScheduleRO scheduleRO){
         return Response.ok(scheduleService.modifySchedule(scheduleRO)).build();
     }
@@ -33,7 +34,7 @@ public class ScheduleResource {
 
     @DELETE
     @Path("/DeleteSchedule/{Scheduleid}")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public Response DeleteSchedule(@PathParam("Scheduleid") String Scheduleid){
         return Response.ok(scheduleService.removeSchedule(Scheduleid)).build();
     }

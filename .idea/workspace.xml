@@ -6,7 +6,79 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="" />
+    <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_I_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Project_I_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_2_0_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JPA_2_0_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_org_eclipse_persistence_jpa_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project-I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project-I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/AssignmentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/AssignmentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/ClassesDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/ClassesDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/ScheduleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/ScheduleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/SyllabusDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/SyllabusDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/TaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/TaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Model/SyllabusEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Model/SyllabusEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/MyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/AssignmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/AssignmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/ClassResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/ClassResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/ScheduleResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/ScheduleResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/SyllabusResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/SyllabusResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/TaResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/TaResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Resource/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Service/ScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Service/ScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Service/TaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/Service/TaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/artifacts/Project_I_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/artifacts/Project_I_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/JPA_2_0_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/JPA_2_0_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/Project-I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/Project-I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/AssignmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/AssignmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/ClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/ClassesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/ScheduleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/ScheduleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/SyllabusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/SyllabusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/TaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/TaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Model/SyllabusEO.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Model/SyllabusEO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/AssignmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/AssignmentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/ClassResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/ClassResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/ScheduleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/ScheduleResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/SyllabusResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/SyllabusResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/TaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/TaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Resource/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/ScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/SyllabusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/SyllabusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/TaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/TaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/AssignmentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/AssignmentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/ClassesDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/ClassesDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/ScheduleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/ScheduleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/SyllabusDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/SyllabusDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/TaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/TaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Model/SyllabusEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Model/SyllabusEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/MyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/AssignmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/AssignmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/ClassResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/ClassResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/ScheduleResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/ScheduleResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/SyllabusResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/SyllabusResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/TaResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/TaResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Resource/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Service/ScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Service/ScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/Service/TaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/Service/TaService.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <ignored path=".idea/" />
@@ -47,11 +119,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="76" lean-forward="true" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -59,7 +140,7 @@
       <file leaf-file-name="SyllabusResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resource/SyllabusResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="51">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
@@ -68,20 +149,8 @@
       <file leaf-file-name="AssignmentResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resource/AssignmentResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SyllabusService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/SyllabusService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="442">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +161,8 @@
       <file leaf-file-name="SyllabusDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dao/SyllabusDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="595">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -138,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/Resource/TaResource.java" />
         <option value="$PROJECT_DIR$/src/Dao/ClassesDao.java" />
         <option value="$PROJECT_DIR$/src/Rest/ClassesRO.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/Dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/MyApplication.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/context.xml" />
@@ -165,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/Service/SyllabusService.java" />
         <option value="$PROJECT_DIR$/src/Service/TaService.java" />
         <option value="$PROJECT_DIR$/src/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -195,15 +264,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTful-Webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,12 +312,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/META-INF/MANIFEST.MF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.19212963" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
@@ -493,17 +584,19 @@
       <workItem from="1524445959231" duration="6526000" />
       <workItem from="1524452707082" duration="198000" />
       <workItem from="1524523211117" duration="6597000" />
+      <workItem from="1525308063050" duration="3798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118594000" />
+    <option name="totallyTimeSpent" value="122392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.359375" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.30113637" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -521,49 +614,22 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32954547" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.359375" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49731904" visible="true" weight="0.359375" />
       <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" visible="true" weight="0.30113637" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49731904" weight="0.30113637" />
       <window_info id="Persistence" order="2" sideWeight="0.5121951" side_tool="true" weight="0.29490617" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.33042896" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.32573727" />
       <window_info id="Web" order="7" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.359375" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.359375" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878049" visible="true" weight="0.32104558" />
-      <window_info id="Persistence" order="2" sideWeight="0.5121951" side_tool="true" weight="0.29490617" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32954547" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" visible="true" weight="0.30113637" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info id="Web" order="7" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="REST Client" order="14" weight="0.4502841" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="REST Client" order="14" weight="0.4502841" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,55 +669,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Model/ScheduleEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/StudentEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jackson-annotations.jar!/com/fasterxml/jackson/annotation/JsonInclude.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="212" column="13" lean-forward="true" selection-start-line="212" selection-start-column="13" selection-end-line="212" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/SyllabusEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/UserEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/TaEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ClassesEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ScheduleEO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/StudentEO.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/jackson-annotations.jar!/com/fasterxml/jackson/annotation/JsonInclude.class" />
+    <entry file="file://$PROJECT_DIR$/src/Model/SyllabusEO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/UserEO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/TaEO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/ClassesEO.java" />
     <entry file="file://$PROJECT_DIR$/src/Resource/TaResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -661,15 +685,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/SyllabusResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="51">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resource/AssignmentResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="442">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -704,13 +728,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-context.jar!/org/springframework/context/ApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context.jar!/org/springframework/context/ApplicationContext.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -721,13 +739,7 @@
     <entry file="jar://$PROJECT_DIR$/lib/jersey-spring4-2.27.jar!/org/glassfish/jersey/server/spring/LocalizationMessages.class" />
     <entry file="jar://$PROJECT_DIR$/lib/jersey-server-2.27.jar!/org/glassfish/jersey/server/spi/ComponentProvider.class" />
     <entry file="jar://$PROJECT_DIR$/lib/jersey-common-2.27.jar!/org/glassfish/jersey/internal/inject/InjectionResolver.class" />
-    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java" />
     <entry file="jar://$PROJECT_DIR$/lib/jersey-spring4-2.27.jar!/org/glassfish/jersey/server/spring/SpringComponentProvider.class" />
     <entry file="jar://$PROJECT_DIR$/lib/jersey-server-2.27.jar!/org/glassfish/jersey/server/ApplicationHandler.class" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -737,13 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Dao-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Dao-context.xml" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -751,35 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Service-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Rest-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Service-context.xml" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Rest-context.xml" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/EO-context.xml" />
-    <entry file="file://$PROJECT_DIR$/src/Model/AssignmentEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AssignmentEO.java" />
     <entry file="file://$PROJECT_DIR$/src/Dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -799,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dao/SyllabusDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="595">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -835,117 +816,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/AssignmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/ClassService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/ScheduleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/SyllabusService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/TaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/UserRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/TaRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/SyllabusRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/StudentRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/ScheduleRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/ClassesRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rest/AssignmentRO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/AssignmentService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Service/ClassService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Service/ScheduleService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Service/SyllabusService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Service/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Service/TaService.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/UserRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/TaRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/SyllabusRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/StudentRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/ScheduleRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/ClassesRO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rest/AssignmentRO.java" />
     <entry file="file://$PROJECT_DIR$/src/Resource/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="76" lean-forward="true" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -966,11 +860,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Project-I:war exploded</last-edited>
+          <last-edited>Project-I:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.19212963" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1039,11 +933,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spring-bridge</last-edited>
+          <last-edited>org.eclipse.persistence.jpa-2.5.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.19212963" />
               </list>
             </option>
           </splitter-proportions>

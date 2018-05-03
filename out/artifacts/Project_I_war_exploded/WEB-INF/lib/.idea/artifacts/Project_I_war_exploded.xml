@@ -8,8 +8,6 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="JPA 2.0-2.0" />
-          <element id="library" level="project" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" />
-          <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
           <element id="library" level="project" name="commons-io-2.2" />
           <element id="library" level="project" name="jackson-annotations" />
           <element id="library" level="project" name="spring-aop" />
@@ -40,6 +38,13 @@
           <element id="library" level="project" name="jersey-server" />
           <element id="library" level="project" name="jersey-spring3" />
           <element id="library" level="project" name="spring-bridge" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
+          <element id="library" level="project" name="javax.persistence-2.1.0" />
+          <element id="library" level="project" name="org.eclipse.persistence.antlr-2.5.0" />
+          <element id="library" level="project" name="org.eclipse.persistence.asm-2.5.0" />
+          <element id="library" level="project" name="org.eclipse.persistence.core-2.5.0" />
+          <element id="library" level="project" name="org.eclipse.persistence.jpa.jpql-2.5.0" />
+          <element id="library" level="project" name="org.eclipse.persistence.jpa-2.5.0" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Project-I/web/Web" />

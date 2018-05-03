@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AssignmentDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
@@ -26,8 +28,6 @@ public class AssignmentDao {
         em.persist(assignmentEntity);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Perfect";
         }catch (Exception e){
             return "Not Inserted";
@@ -53,8 +53,6 @@ public class AssignmentDao {
         em.merge(assignmentEntity1);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Editing Successful";
         } catch (Exception e) {
             return "Not Successful";
@@ -67,8 +65,6 @@ public class AssignmentDao {
         em.remove(ae);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Removed";
         }catch (Exception e){
             return "Not Removed";

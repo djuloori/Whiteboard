@@ -9,10 +9,23 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+@Path("/Ta")
 public class TaResource {
 
     @Autowired
     private TaService taService;
+
+    @Autowired
+    private TaRO taRO;
+
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public TaRO test(){
+        taRO.setCLASS_ID("1");
+        taRO.setTaId("1");
+        return taRO;
+    }
 
     @POST
     @Path("/AddTa")

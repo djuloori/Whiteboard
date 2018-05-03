@@ -13,13 +13,13 @@ import java.util.List;
 
 @Component
 public class ClassesDao {
+
+    //@Huh - Shouldn't do in this way [Change in the next tag]
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
 
     public String addClass(ClassesRO classesRO){
-        //UserEO user = new UserEO();
-        //user.setUsername(classesRO.getUserName());
         ClassesEO ce = new ClassesEO();
         ce.setClassId(classesRO.getClassId());
         ce.setClassName(classesRO.getClassName());
@@ -28,8 +28,8 @@ public class ClassesDao {
         em.persist(ce);
         try {
             em.getTransaction().commit();
-            em.close();
             emf.close();
+            em.close();
             return "Inserted";
         }catch (Exception e){
             return "Not Inserted";
@@ -55,8 +55,6 @@ public class ClassesDao {
         em.merge(ce);
         try {
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             return "Edited";
         } catch (Exception e) {
             return "Not Edited";
@@ -69,12 +67,8 @@ public class ClassesDao {
         em.remove(ce);
         try {
             em.getTransaction().commit();
-            System.out.println("Removed");
-            em.close();
-            emf.close();
             return "Removed";
         }catch (Exception e){
-            System.out.println("I am here!");
             return "Not Removed";
         }
     }

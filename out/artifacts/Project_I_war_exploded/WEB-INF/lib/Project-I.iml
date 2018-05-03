@@ -46,8 +46,6 @@
     <orderEntry type="library" name="JPA 2.0-2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="Payara 4.1.2.174 - RESTful Web Service" level="application_server_libraries" />
-    <orderEntry type="library" name="org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="mysql-connector-java-5.1.44-bin" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.2" level="project" />
     <orderEntry type="library" name="jackson-annotations" level="project" />
     <orderEntry type="library" name="spring-aop" level="project" />
@@ -78,5 +76,12 @@
     <orderEntry type="library" name="jersey-server" level="project" />
     <orderEntry type="library" name="jersey-spring3" level="project" />
     <orderEntry type="library" name="spring-bridge" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.44-bin" level="project" />
+    <orderEntry type="library" name="javax.persistence-2.1.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence.antlr-2.5.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence.asm-2.5.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence.core-2.5.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence.jpa.jpql-2.5.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence.jpa-2.5.0" level="project" />
   </component>
 </module>
