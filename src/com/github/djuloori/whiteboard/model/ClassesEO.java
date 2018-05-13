@@ -67,7 +67,7 @@ public class ClassesEO {
         this.students = students;
     }
 
-    @OneToMany(cascade=CascadeType.ALL)
+    @OneToMany(orphanRemoval = true)
     @JoinColumn(name="class_id")
     private List<TaEO> taEntities;
 
@@ -79,7 +79,7 @@ public class ClassesEO {
         this.taEntities = taEntities;
     }
 
-    @OneToMany(cascade=CascadeType.ALL)
+    @OneToMany(orphanRemoval = true)
     @JoinColumn(name="class_id")
     private List<AssignmentEO> assignmentEntities;
 
