@@ -1,19 +1,15 @@
-import Dao.ClassesDao;
-import Dao.TaDao;
-import Dao.UserDao;
-import Rest.ClassesRO;
-import Rest.TaRO;
-import Rest.UserRO;
-import Service.TaService;
-import Service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-
+import com.github.djuloori.whiteboard.dao.ClassesDao;
+import com.github.djuloori.whiteboard.model.ClassesEO;
+import com.github.djuloori.whiteboard.rest.ClassesRO;
 
 public class MyApplication {
 
     //Used this class to run the methods locally.
+    public static void main(String[] args){
+        ClassesDao classesDao = new ClassesDao();
+        ClassesRO classesRO = new ClassesRO();
+        classesRO.setClassId("1");
+        classesDao.removeClass(classesRO);
+    }
 
 }

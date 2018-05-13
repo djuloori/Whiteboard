@@ -2,13 +2,13 @@
 <%@ page import="org.eclipse.persistence.sessions.factories.SessionFactory" %>
 <%@ page import="javax.persistence.Query" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="Model.ClassesEO" %>
+<%@ page import="com.github.djuloori.whiteboard.model.ClassesEO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page import="javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManager" %>
-<%@ page import="Dao.AssignmentDao" %>
-<%@ page import="Model.AssignmentEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.AssignmentDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.AssignmentEO" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,13 +1,13 @@
 
 <%@ page import="java.util.List" %>
 
-<%@ page import="Dao.TaDao" %>
-<%@ page import="Model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
 <%@ page import="java.sql.Timestamp" %>
-<%@ page import="Dao.ScheduleDao" %>
-<%@ page import="Model.ScheduleEO" %>
-<%@ page import="Dao.SyllabusDao" %>
-<%@ page import="Model.SyllabusEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.ScheduleDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.SyllabusDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.SyllabusEO" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,7 +147,7 @@
                             List<SyllabusEO> se = sd.getAllSyllubus();
                             for(int i=0;i<se.size();i++){
                                 String syll_id = se.get(i).getIdsyllabus();
-                                String Class_id = se.get(i).getCLASS_ID();
+                                String Class_id = se.get(i).getClassId();
                                 byte[] syllubus = se.get(i).getSyllabus();
                                 session2.setAttribute("syllubus",syllubus);
                         %>

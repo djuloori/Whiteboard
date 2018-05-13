@@ -1,8 +1,8 @@
 
 <%@ page import="java.util.List" %>
 
-<%@ page import="Dao.TaDao" %>
-<%@ page import="Model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
 <%@ page import="java.sql.Timestamp" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -140,7 +140,7 @@
                             TaDao td = new TaDao();
                             List<TaEO> te = td.getAllTa();
                             for(int i=0;i<te.size();i++){
-                                String class_id = te.get(i).getCLASS_ID();
+                                String class_id = te.get(i).getClassId();
                                 String ta_id = te.get(i).getTaId();
                                 String ta_name = te.get(i).getTaName();
                                 String ta_ph = te.get(i).getTaPhone();

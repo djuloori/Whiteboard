@@ -4,12 +4,12 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="Service" />
-    <bean id = "classservice"       class = "Service.ClassService"/>
-    <bean id = "userservice"        class = "Service.UserService"/>
-    <bean id = "taservice"          class = "Service.TaService"/>
-    <bean id = "syllabusservice"    class = "Service.SyllabusService"/>
-    <bean id = "scheduleservice"    class = "Service.ScheduleService"/>
-    <bean id = "assignmentservice"  class = "Service.AssignmentService"/>
+    <context:component-scan base-package="com.github.djuloori.whiteboard.service" />
+    <bean id = "classservice"       class = "com.github.djuloori.whiteboard.service.ClassService"/>
+    <bean id = "userservice"        class = "com.github.djuloori.whiteboard.service.UserService"/>
+    <bean id = "taservice"          class = "com.github.djuloori.whiteboard.service.TaService"/>
+    <bean id = "syllabusservice"    class = "com.github.djuloori.whiteboard.service.SyllabusService"/>
+    <bean id = "scheduleservice"    class = "com.github.djuloori.whiteboard.service.ScheduleService"/>
+    <bean id = "assignmentservice"  class = "com.github.djuloori.whiteboard.service.AssignmentService"/>
 
 </beans>
