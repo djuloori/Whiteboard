@@ -1,11 +1,11 @@
 
 <%@ page import="java.util.List" %>
 
-<%@ page import="Dao.TaDao" %>
-<%@ page import="Model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
 <%@ page import="java.sql.Timestamp" %>
-<%@ page import="Dao.ScheduleDao" %>
-<%@ page import="Model.ScheduleEO" %>
+<%@ page import="com.github.djuloori.whiteboard.dao.ScheduleDao" %>
+<%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,7 +145,7 @@
                             List<ScheduleEO> se = sd.getAllschedule();
                             for(int i=0;i<se.size();i++){
                                 String sch_id = se.get(i).getScheduleId();
-                                String Class_id = se.get(i).getCLASS_ID();
+                                String Class_id = se.get(i).getClassId();
                                 String location = se.get(i).getLocation();
                                 String Class_timings = se.get(i).getTimings();
                                 String day = se.get(i).getDay();

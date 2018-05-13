@@ -4,13 +4,13 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="Dao" />
-     <bean id = "classdao"       class = "Dao.ClassesDao"/>
-     <bean id = "userdao"        class = "Dao.UserDao"/>
-     <bean id = "tadao"          class = "Dao.TaDao"/>
-     <bean id = "syllabusdao"    class = "Dao.SyllabusDao"/>
-     <bean id = "scheduledao"    class = "Dao.ScheduleDao"/>
-     <bean id = "assignmentdao"  class = "Dao.AssignmentDao"/>
-     <bean id = "studentdao"     class = "Dao.StudentDao"/>
+    <context:component-scan base-package="com.github.djuloori.whiteboard.dao" />
+     <bean id = "classdao"       class = "com.github.djuloori.whiteboard.dao.ClassesDao"/>
+     <bean id = "userdao"        class = "com.github.djuloori.whiteboard.dao.UserDao"/>
+     <bean id = "tadao"          class = "com.github.djuloori.whiteboard.dao.TaDao"/>
+     <bean id = "syllabusdao"    class = "com.github.djuloori.whiteboard.dao.SyllabusDao"/>
+     <bean id = "scheduledao"    class = "com.github.djuloori.whiteboard.dao.ScheduleDao"/>
+     <bean id = "assignmentdao"  class = "com.github.djuloori.whiteboard.dao.AssignmentDao"/>
+     <bean id = "studentdao"     class = "com.github.djuloori.whiteboard.dao.StudentDao"/>
 
 </beans>
