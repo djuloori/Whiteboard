@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="hk2-core">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/hk2-core.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

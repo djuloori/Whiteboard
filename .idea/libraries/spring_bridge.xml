@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="spring-bridge">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/spring-bridge.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
