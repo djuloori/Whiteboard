@@ -10,10 +10,7 @@ function loadDoc() {
             dataType: "json",
             type: 'POST',
             data: dataToJSON($("#username").val(),$("#password").val()),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
+            contentType: 'application/json',
             url: getContextPath()+"/app/Users/login",
             success: function(data){
                 if(data == 'Professor'||  data == 'Student'){
