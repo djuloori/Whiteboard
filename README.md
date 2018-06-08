@@ -1,4 +1,3 @@
-**Description**
 'Whiteboard' is an educational portal which allows Professors and Students to monitor their activities and progress in the university. It provides a platform where professors can upload assignments and students can submit them accordingly, And also Professor can assign a grader to his course and he gets a privilege to grade the assignments of students.
 
 **Tools and Technologies used:**
