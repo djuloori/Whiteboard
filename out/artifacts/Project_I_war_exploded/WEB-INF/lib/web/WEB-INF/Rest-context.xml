@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.github.djuloori.whiteboard.rest" />
+    <bean id = "classro"       class = "com.github.djuloori.whiteboard.rest.ClassesRO"/>
+    <bean id = "userro"        class = "com.github.djuloori.whiteboard.rest.UserRO"/>
+    <bean id = "taro"          class = "com.github.djuloori.whiteboard.rest.TaRO"/>
+    <bean id = "syllabusro"    class = "com.github.djuloori.whiteboard.rest.SyllabusRO"/>
+    <bean id = "schedulero"    class = "com.github.djuloori.whiteboard.rest.ScheduleRO"/>
+    <bean id = "assignmentro"  class = "com.github.djuloori.whiteboard.rest.AssignmentRO"/>
+    <bean id = "studentro"     class = "com.github.djuloori.whiteboard.rest.StudentRO"/>
+
+</beans>
