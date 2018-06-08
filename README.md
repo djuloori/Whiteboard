@@ -9,3 +9,10 @@ Steps to Setup:
 1) Install Maven, Tomcat/Glassfish, XAMP server, MySQLWorkBench and IntelliJ/Eclipse.
 2) Run 'mvn install' from the root directory of the project to add all the dependencies to the classpath
 3) To deploy the application run 'mvn package' and this generates war file which can be deployed in any J2EE container. 
+
+Link of the application:
+http://54.236.112.106:8080/whiteboard/
+
+Default Credentials:
+username: user
+password: root
