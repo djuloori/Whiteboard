@@ -6,6 +6,6 @@ Tools and Technologies used:
 3) Git is used as a VCS, Maven as a build tool and Glassfish as an app server.
 
 Steps to Setup:
-1) Install Maven, Tomcat/Glassfish and IntelliJ/Eclipse.
+1) Install Maven, Tomcat/Glassfish, XAMP server, MySQLWorkBench and IntelliJ/Eclipse.
 2) Run 'mvn install' from the root directory of the project to add all the dependencies to the classpath
 3) To deploy the application run 'mvn package' and this generates war file which can be deployed in any J2EE container. 
