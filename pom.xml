@@ -9,12 +9,22 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <name>Whiteboard Application</name>
+    <url>https://github.com/djuloori/Whiteboard</url>
+    <inceptionYear>2017</inceptionYear>
+
     <developers>
         <developer>
             <name>Dhruva Juloori</name>
             <email>djuloori@hawk.iit.edu</email>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git://github.com/djuloori/Whiteboard.git</connection>
+        <developerConnection>scm:git://github.com/djuloori/Whiteboard.git</developerConnection>
+        <url>https://github.com/djuloori/Whiteboard</url>
+    </scm>
 
     <dependencies>
         <dependency>
