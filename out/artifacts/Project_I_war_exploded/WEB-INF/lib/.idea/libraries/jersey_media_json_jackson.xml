@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jersey-media-json-jackson">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jersey-media-json-jackson.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

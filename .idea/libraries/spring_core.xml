@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-core">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

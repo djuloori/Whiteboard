@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jersey-media-multipart">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jersey-media-multipart.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jersey-declarative-linking">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jersey-declarative-linking.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

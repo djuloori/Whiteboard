@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jersey-container-servlet-core">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jersey-container-servlet-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
