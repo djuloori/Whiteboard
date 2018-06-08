@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jersey-entity-filter">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/jersey-entity-filter.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -6,24 +6,798 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/ClassesEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/ClassesEO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/ClassesEO.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/ClassesEO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/ClassesEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/ClassesEO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java" afterDir="false" />
+    <list default="true" id="23ef204f-a65e-4f9c-a8e0-9009a4647d31" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_I_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_I_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ea55f14-46ec-4dd6-b685-1458aec4fbab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_2_0_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gmbal_api_only.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hk2_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hk2_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hk2_locator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hk2_runlevel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hk2_utils.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jackson_annotations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_persistence_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_ws_rs_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_container_servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_container_servlet_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_declarative_linking.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_entity_filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_media_json_jackson.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_media_multipart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jersey_spring3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_antlr_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_asm_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_core_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_jpa_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_jpa_jpql_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_aop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_aspects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_bridge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_context_support.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_expression.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project-I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-logging.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-locator.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-runlevel.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hk2-utils.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-databind.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-dataformat-yaml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-jaxrs-base.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-jaxrs-json-provider.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-mapper-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-module-afterburner.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-module-jaxb-annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence-2.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ws.rs-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-common.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-container-servlet-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-container-servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-declarative-linking.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-entity-filter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-media-json-jackson.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-media-multipart.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jersey-spring3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.44-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.persistence.antlr-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.persistence.asm-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.persistence.core-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.persistence.jpa-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.eclipse.persistence.jpa.jpql-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-aop.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-aspects.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-beans.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-bridge.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-context-support.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-context.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-expression.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war/Project-I_war.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/.jsbeautifyrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/AddAssignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/Addsyllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/CourseRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/Syllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/Ta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/Dao-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/Rest-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/Service-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/MyApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/AssignmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/ClassesDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/ScheduleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/SyllabusDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/TaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/AssignmentEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/ClassesEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/ScheduleEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/StudentEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/SyllabusEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/TaEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/model/UserEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/AssignmentResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/ClassResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/ScheduleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/SyllabusResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/TaResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/resource/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/AssignmentRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/ClassesRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/ScheduleRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/StudentRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/SyllabusRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/TaRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/rest/UserRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/AssignmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/ClassService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/ScheduleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/SyllabusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/TaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/com/github/djuloori/whiteboard/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/artifacts/Project_I_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/artifacts/Project_I_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/dataSources/7ea55f14-46ec-4dd6-b685-1458aec4fbab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/JPA_2_0_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/commons_logging.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/gmbal_api_only.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/hk2_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/hk2_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/hk2_locator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/hk2_runlevel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/hk2_utils.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jackson_annotations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/javax_persistence_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/javax_ws_rs_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_common.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_container_servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_container_servlet_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_declarative_linking.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_entity_filter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_media_json_jackson.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_media_multipart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/jersey_spring3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/org_eclipse_persistence_antlr_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/org_eclipse_persistence_asm_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/org_eclipse_persistence_core_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/org_eclipse_persistence_jpa_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/org_eclipse_persistence_jpa_jpql_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_aop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_aspects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_bridge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_context_support.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_expression.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/libraries/spring_web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/Project-I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/commons-logging.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/hk2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/hk2-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/hk2-locator.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/hk2-runlevel.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/hk2-utils.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jackson-annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/javax.persistence-2.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/javax.ws.rs-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-common.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-container-servlet-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-container-servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-declarative-linking.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-entity-filter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-media-json-jackson.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-media-multipart.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/jersey-spring3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/commons-logging.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/gmbal-api-only.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/hk2-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/hk2-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/hk2-locator.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/hk2-runlevel.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/hk2-utils.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-core-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-databind.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-dataformat-yaml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-jaxrs-base.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-jaxrs-json-provider.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-mapper-asl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-module-afterburner.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jackson-module-jaxb-annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/javax.persistence-2.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/javax.ws.rs-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-common.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-container-servlet-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-container-servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-declarative-linking.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-entity-filter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-media-json-jackson.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-media-multipart.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/jersey-spring3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/mimepull.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/mysql-connector-java-5.1.44-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/org.eclipse.persistence.antlr-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/org.eclipse.persistence.asm-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/org.eclipse.persistence.core-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/org.eclipse.persistence.jpa-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/org.eclipse.persistence.jpa.jpql-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-aop.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-aspects.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-beans.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-bridge.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-context-support.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-context.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-expression.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/lib/spring-web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.44-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/org.eclipse.persistence.antlr-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/org.eclipse.persistence.asm-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/org.eclipse.persistence.core-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/org.eclipse.persistence.jpa-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/org.eclipse.persistence.jpa.jpql-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-aop.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-aspects.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-beans.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-bridge.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-context-support.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-context.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-expression.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/spring-web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/MyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/AssignmentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/ClassesDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/ScheduleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/SyllabusDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/TaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/AssignmentEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/ClassesEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/ScheduleEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/StudentEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/SyllabusEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/TaEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/model/UserEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/AssignmentResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/ClassResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/ScheduleResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/SyllabusResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/TaResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/resource/UserResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/AssignmentRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/ClassesRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/ScheduleRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/StudentRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/SyllabusRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/TaRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/rest/UserRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/AssignmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/ClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/ScheduleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/SyllabusService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/TaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/src/com/github/djuloori/whiteboard/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/.jsbeautifyrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/AddAssignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/Addsyllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/CourseRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/Syllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/Ta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/Dao-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/Rest-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/Service-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/addschedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/addta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/asgn_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/assignments.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/courses.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/css/sb-admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/css/sb-admin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/delete_assignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/delete_schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/deletecourse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/deleteta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/index1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/assignment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/course.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin-charts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin-datatables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin-datatables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/sb-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/schedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/syllabus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/js/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/blank.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/cards.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/charts.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/forgot-password.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/css/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/css/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/footer.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/js/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/js/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/modals/logout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/includes/scroll-to-top.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/login.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/register.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/pug/tables.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/navbar/_navbar_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/navbar/_navbar_fixed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/navbar/_navbar_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/navbar/_navbar_static.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/navbar/_navbar_toggle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/scss/sb-admin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/signup.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/students.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/syl_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/sylldelete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/chart.js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/chart.js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/datatables/dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/datatables/dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/datatables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/jquery-easing/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/lib/web/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/addschedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/addta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/asgn_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/assignments.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/courses.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/css/sb-admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/css/sb-admin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/delete_assignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/delete_schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/deletecourse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/deleteta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/index1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/assignment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/course.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin-charts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin-datatables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin-datatables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/sb-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/schedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/syllabus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/js/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/blank.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/cards.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/charts.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/forgot-password.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/css/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/css/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/footer.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/js/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/js/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/modals/logout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/includes/scroll-to-top.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/login.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/register.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/pug/tables.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/navbar/_navbar_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/navbar/_navbar_fixed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/navbar/_navbar_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/navbar/_navbar_static.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/navbar/_navbar_toggle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/scss/sb-admin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/signup.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/students.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/syl_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/sylldelete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/chart.js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/chart.js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/datatables/dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/datatables/dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/datatables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/jquery-easing/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/MyApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/AssignmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/ClassesDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/ScheduleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/SyllabusDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/TaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/AssignmentEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/ClassesEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/ScheduleEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/StudentEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/SyllabusEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/TaEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/model/UserEO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/AssignmentResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/ClassResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/ScheduleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/SyllabusResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/TaResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/resource/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/AssignmentRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/ClassesRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/ScheduleRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/StudentRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/SyllabusRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/TaRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/rest/UserRO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/AssignmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/ClassService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/ScheduleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/SyllabusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/TaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-I/com/github/djuloori/whiteboard/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/AssignmentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/ClassesDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/ScheduleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/SyllabusDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/TaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/AssignmentEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ScheduleEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/StudentEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/SyllabusEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/TaEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/UserEO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/AssignmentResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/ClassResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/ScheduleResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/SyllabusResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/TaResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/UserResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/AssignmentRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/ClassesRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/ScheduleRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/StudentRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/SyllabusRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/TaRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/UserRO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/AssignmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/ClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/ScheduleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/SyllabusService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/TaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.jsbeautifyrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/AddAssignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Addsyllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/CourseRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Syllubus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Ta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/Dao-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/Rest-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/Service-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addschedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/asgn_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/courses.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/sb-admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/sb-admin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/delete_assignment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/delete_schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/deletecourse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/deleteta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/assignment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/course.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin-charts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin-datatables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin-datatables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/sb-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/schedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/syllabus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/blank.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/cards.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/charts.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/forgot-password.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/css/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/css/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/footer.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/js/core.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/js/custom.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/modals/logout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/includes/scroll-to-top.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/login.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/navbar.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/register.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pug/tables.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/schedule.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/navbar/_navbar_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/navbar/_navbar_fixed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/navbar/_navbar_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/navbar/_navbar_static.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/navbar/_navbar_toggle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/scss/sb-admin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/students.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/syl_view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sylldelete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/chart.js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/chart.js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/datatables/dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/datatables/dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/datatables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/jquery-easing/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vendor/jquery/jquery.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
-    <ignored path=".idea/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Project_I$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1528077112474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,122 +810,48 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="NewPersistenceUnit/EclipseLink" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="129">
+              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AssignmentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+            <state relative-caret-position="191">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/ClassResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaEO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/TaEO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#1938#1939#0" expanded="true" />
-                <element signature="e#1976#1977#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassesEO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="89" column="65" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssignmentEO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/AssignmentEO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schedule.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2448">
-              <caret line="144" column="70" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
+            <state relative-caret-position="17">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="spring-beans.schema" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,62 +859,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Resource/TaResource.java" />
-        <option value="$PROJECT_DIR$/src/Rest/ClassesRO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/Rest/UserRO.java" />
-        <option value="$PROJECT_DIR$/src/Resource/UserResource.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/EO-context.xml" />
-        <option value="$PROJECT_DIR$/src/Dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/AssignmentDao.java" />
-        <option value="$PROJECT_DIR$/src/Rest/AssignmentRO.java" />
-        <option value="$PROJECT_DIR$/src/Rest/ScheduleRO.java" />
-        <option value="$PROJECT_DIR$/src/Rest/StudentRO.java" />
-        <option value="$PROJECT_DIR$/src/Rest/SyllabusRO.java" />
-        <option value="$PROJECT_DIR$/src/Rest/TaRO.java" />
-        <option value="$PROJECT_DIR$/src/Service/AssignmentService.java" />
-        <option value="$PROJECT_DIR$/src/Service/ClassService.java" />
-        <option value="$PROJECT_DIR$/src/Service/ScheduleService.java" />
-        <option value="$PROJECT_DIR$/src/Service/SyllabusService.java" />
-        <option value="$PROJECT_DIR$/src/Service/TaService.java" />
-        <option value="$PROJECT_DIR$/src/Service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/Model/TaEO.java" />
-        <option value="$PROJECT_DIR$/src/Model/SyllabusEO.java" />
-        <option value="$PROJECT_DIR$/src/Model/StudentEO.java" />
-        <option value="$PROJECT_DIR$/src/Model/ScheduleEO.java" />
-        <option value="$PROJECT_DIR$/src/Model/ClassesEO.java" />
-        <option value="$PROJECT_DIR$/src/Model/AssignmentEO.java" />
-        <option value="$PROJECT_DIR$/src/Dao/ClassesDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/ScheduleDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/SyllabusDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/TaDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/Rest-context.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/Dao-context.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/Service-context.xml" />
-        <option value="$PROJECT_DIR$/web/courses.jsp" />
-        <option value="$PROJECT_DIR$/web/asgn_view.jsp" />
-        <option value="$PROJECT_DIR$/web/assignments.jsp" />
-        <option value="$PROJECT_DIR$/web/students.jsp" />
-        <option value="$PROJECT_DIR$/web/syl_view.jsp" />
-        <option value="$PROJECT_DIR$/web/Ta.jsp" />
-        <option value="$PROJECT_DIR$/web/Syllubus.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/StudentEO.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/SyllabusEO.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/TaEO.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ScheduleEO.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/AssignmentEO.java" />
-        <option value="$PROJECT_DIR$/web/schedule.jsp" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/MyApplication.java" />
-        <option value="$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
+        <option value="$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/js/login.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-  </component>
-  <component name="JavaeeView">
-    <option name="showModules" value="false" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -229,18 +883,45 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Project-I" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Project-I" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Project-I" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Project-I" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.fasterxml.jackson.core:jackson-databind:2.9.5" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,60 +929,27 @@
               <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
               <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Whiteboard" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_I_war" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="7ea55f14-46ec-4dd6-b685-1458aec4fbab" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="ToolWindowREST Client.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.19212963" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
-  </component>
-  <component name="RecentsManager">
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="" />
-      <recent name="Models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sudha\Documents\GitHub\RESTful-Webservice\lib" />
-      <recent name="C:\Users\Sudha\Documents\GitHub\RESTful-Webservice\web\WEB-INF\lib" />
-      <recent name="C:\Users\Sudha\Documents\GitHub\RESTful-Webservice\src\Dao" />
-    </key>
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,27 +963,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.Payara 4.1.2.174">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="Project-I" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyApplication" />
-      <module name="Project-I" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="Payara 4.1.2.174" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 4.1.2.174" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:59298/Project_I_war_exploded" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:59298/Project_I_Web_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Project-I:war exploded">
+        <file path="$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT">
           <settings />
-        </artifact>
+        </file>
       </deployment>
       <server-settings>
         <option name="DOMAIN" value="Project-Domain" />
@@ -436,17 +1074,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.56" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.052" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Project-I:war exploded">
+        <file path="$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
-        </artifact>
+        </file>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Project-I" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Project-I_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -454,7 +1092,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59445" />
+        <option name="DEBUG_PORT" value="50843" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -502,497 +1140,239 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.Payara 4.1.2.174" />
       <item itemvalue="Tomcat Server.Tomcat" />
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.MyApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MyApplication" />
-        <item itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13f251b9-99cc-4774-b04c-6113eb256dfd" name="Default" comment="" />
-      <created>1523332754386</created>
+      <changelist id="23ef204f-a65e-4f9c-a8e0-9009a4647d31" name="Default" comment="" />
+      <created>1528007817198</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1523332754386</updated>
-      <workItem from="1523332761074" duration="789000" />
-      <workItem from="1523385375997" duration="3702000" />
-      <workItem from="1523497606905" duration="488000" />
-      <workItem from="1523498179338" duration="4108000" />
-      <workItem from="1523503376723" duration="1806000" />
-      <workItem from="1523505229074" duration="682000" />
-      <workItem from="1523584806990" duration="7688000" />
-      <workItem from="1523665234558" duration="11728000" />
-      <workItem from="1523679526551" duration="105000" />
-      <workItem from="1523679654548" duration="637000" />
-      <workItem from="1523680313773" duration="1015000" />
-      <workItem from="1523718831093" duration="4952000" />
-      <workItem from="1523748464142" duration="8704000" />
-      <workItem from="1523769517724" duration="275000" />
-      <workItem from="1523811076923" duration="13608000" />
-      <workItem from="1523846765398" duration="4225000" />
-      <workItem from="1523903518721" duration="9107000" />
-      <workItem from="1523937506819" duration="1113000" />
-      <workItem from="1524011832593" duration="6253000" />
-      <workItem from="1524018134738" duration="6397000" />
-      <workItem from="1524368812908" duration="1373000" />
-      <workItem from="1524413780856" duration="611000" />
-      <workItem from="1524440467939" duration="765000" />
-      <workItem from="1524445959231" duration="6526000" />
-      <workItem from="1524452707082" duration="198000" />
-      <workItem from="1524523211117" duration="6597000" />
-      <workItem from="1525308063050" duration="3798000" />
-      <workItem from="1525544511809" duration="1020000" />
-      <workItem from="1526177520128" duration="8329000" />
-      <workItem from="1526229300496" duration="4291000" />
+      <updated>1528007817198</updated>
+      <workItem from="1528007820774" duration="524000" />
+      <workItem from="1528047543532" duration="3910000" />
+      <workItem from="1528051707151" duration="1065000" />
+      <workItem from="1528052835426" duration="191000" />
+      <workItem from="1528053999600" duration="6185000" />
+      <workItem from="1528063380669" duration="5798000" />
+      <workItem from="1528069710550" duration="2062000" />
+      <workItem from="1528072019736" duration="694000" />
+      <workItem from="1528076576481" duration="13734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136032000" />
+    <option name="totallyTimeSpent" value="34163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.30113637" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32954547" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32908848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32954547" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32954547" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.359375" />
-      <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49731904" visible="true" weight="0.32102272" />
-      <window_info id="Persistence" order="2" sideWeight="0.5146443" side_tool="true" visible="true" weight="0.24865952" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48535565" visible="true" weight="0.24865952" />
-      <window_info id="Web" order="7" sideWeight="0.5056818" side_tool="true" weight="0.2707775" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.328125" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.54971594" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3252841" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27479893" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="REST Client" order="14" weight="0.4502841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/ClassResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/AssignmentEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" column="70" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/TaEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/rest/AssignmentRO.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/UserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/SyllabusResource.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/AssignmentResource.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="1224">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/ScheduleDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/StudentDao.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/SyllabusDao.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/TaDao.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="782">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/model/ClassesEO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/model/AssignmentEO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/dao/ClassesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/WEB-INF/web.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.17.RELEASE/spring-beans-4.3.17.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11565">
+          <caret line="780" selection-start-line="780" selection-end-line="780" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/WEB-INF/classes/com/github/djuloori/whiteboard/dao/ClassesDao.class" />
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/WEB-INF/classes/com/github/djuloori/whiteboard/dao/AssignmentDao.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/MyApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Rest-context.xml">
+    <entry file="file://$PROJECT_DIR$/target/Project-I-1.0-SNAPSHOT/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        <state relative-caret-position="323">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Dao-context.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+        <state relative-caret-position="129">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Service-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/asgn_view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Ta.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-886">
-          <caret line="147" column="74" lean-forward="true" selection-start-line="147" selection-start-column="74" selection-end-line="147" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Syllubus.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="149" column="72" selection-start-line="149" selection-start-column="72" selection-end-line="149" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sylldelete.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/syl_view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/students.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddAssignment.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/courses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="141" column="59" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/ClassesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/UserEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/SyllabusEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/StudentEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ScheduleEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/AssignmentEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" column="70" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/AssignmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/resource/ClassResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Project_I_war_exploded/WEB-INF/classes/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/TaEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/djuloori/whiteboard/model/ClassesEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="89" column="65" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1013,12 +1393,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Project-I:war</last-edited>
+          <last-edited>Project-I:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.19212963" />
-                <option value="0.5" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1026,7 +1405,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA</last-edited>
+          <last-edited>JPA (Project-I)|JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1061,12 +1440,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Project-I</last-edited>
+          <last-edited>JPA|Project-I</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1086,11 +1464,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.eclipse.persistence.jpa-2.5.0</last-edited>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-core:2.9.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.19212963" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
