@@ -7,7 +7,7 @@ function onReady() {
 function loadDoc() {
     $.ajax(
         {
-            dataType: "json",
+            datatype: "json",
             type: 'POST',
             data: dataToJSON($("#username").val(),$("#password").val()),
             contentType: 'application/json',
