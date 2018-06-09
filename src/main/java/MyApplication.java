@@ -6,10 +6,7 @@ public class MyApplication {
 
     //Used this class to run the methods locally.
     public static void main(String[] args){
-        ClassesDao classesDao = new ClassesDao();
-        ClassesRO classesRO = new ClassesRO();
-        classesRO.setClassId("1");
-        classesDao.removeClass(classesRO);
+
     }
 
 }
