@@ -24,9 +24,9 @@ public class UserDao {
             q.setParameter("username",userRO.getUsername());
             q.setParameter("password",hashed_password);
             em.getTransaction().commit();
-            UserEO un = (UserEO) q.getSingleResult();
-            if(userRO.getUsername().equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
-                return un.getUsertype();
+            UserEO user = (UserEO) q.getSingleResult();
+            if(userRO.getUsername().equals(user.getUsername()) && hashed_password.equals(user.getPassword())){
+                return user.getUsertype();
             }else{
                 return "failed";
             }

@@ -17,14 +17,14 @@ public class AssignmentDao {
     EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
     EntityManager em = emf.createEntityManager();
 
-    public String addAssignment(String assignment_id, String total_points, String assignment_name, InputStream test, String class_id)throws IOException {
+    public String addAssignment(String assignmentId, String totalPoints, String assignmentName, InputStream test, String classId)throws IOException {
         try {
             AssignmentEO assignmentEntity = new AssignmentEO();
-            assignmentEntity.setAssignmentId(assignment_id);
-            assignmentEntity.setAssignmentName(assignment_name);
-            assignmentEntity.setTotalPoints(total_points);
+            assignmentEntity.setAssignmentId(assignmentId);
+            assignmentEntity.setAssignmentName(assignmentName);
+            assignmentEntity.setTotalPoints(totalPoints);
             assignmentEntity.setAssignment(IOUtils.toByteArray(test));
-            assignmentEntity.setCLASS_ID(class_id);
+            assignmentEntity.setCLASS_ID(classId);
             em.getTransaction().begin();
             em.persist(assignmentEntity);
             em.getTransaction().commit();
@@ -42,14 +42,14 @@ public class AssignmentDao {
         return ae;
     }
 
-    public String editAssignment(String assignmentid, String assignment_name, String total_points, InputStream test2,String classid) throws IOException {
+    public String editAssignment(String assignmentId, String assignmentName, String totalPoints, InputStream stream, String classId) throws IOException {
         try {
             AssignmentEO assignmentEntity1 = new AssignmentEO();
-            assignmentEntity1.setAssignmentId(assignmentid);
-            assignmentEntity1.setAssignmentName(assignment_name);
-            assignmentEntity1.setAssignment(IOUtils.toByteArray(test2));
-            assignmentEntity1.setCLASS_ID(classid);
-            assignmentEntity1.setTotalPoints(total_points);
+            assignmentEntity1.setAssignmentId(assignmentId);
+            assignmentEntity1.setAssignmentName(assignmentName);
+            assignmentEntity1.setAssignment(IOUtils.toByteArray(stream));
+            assignmentEntity1.setCLASS_ID(classId);
+            assignmentEntity1.setTotalPoints(totalPoints);
             em.getTransaction().begin();
             em.merge(assignmentEntity1);
             em.getTransaction().commit();
@@ -59,10 +59,10 @@ public class AssignmentDao {
         }
     }
 
-    public String removeAssignment(String assignment_id){
+    public String removeAssignment(String assignmentId){
         try {
             em.getTransaction().begin();
-            AssignmentEO ae = em.find(AssignmentEO.class,assignment_id);
+            AssignmentEO ae = em.find(AssignmentEO.class,assignmentId);
             em.remove(ae);
             em.getTransaction().commit();
             return "Removed";

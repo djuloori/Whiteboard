@@ -20,21 +20,20 @@ public class ScheduleDao{
     public List getAllschedule(){
         em.getTransaction().begin();
         Query q = em.createNamedQuery("ScheduleEntity.findAll", ScheduleEO.class);
-        List<ScheduleEO> se;
-        se = q.getResultList();
+        List<ScheduleEO> se = q.getResultList();
         return se;
     }
 
     public String addSchedule(ScheduleRO scheduleRO){
         try {
-            ScheduleEO se = new ScheduleEO();
-            se.setTimings(scheduleRO.getTimings());
-            se.setDay(scheduleRO.getDay());
-            se.setLocation(scheduleRO.getLocation());
-            se.setClassId(scheduleRO.getCLASS_ID());
-            se.setScheduleId(scheduleRO.getScheduleId());
+            ScheduleEO schedule = new ScheduleEO();
+            schedule.setTimings(scheduleRO.getTimings());
+            schedule.setDay(scheduleRO.getDay());
+            schedule.setLocation(scheduleRO.getLocation());
+            schedule.setClassId(scheduleRO.getCLASS_ID());
+            schedule.setScheduleId(scheduleRO.getScheduleId());
             em.getTransaction().begin();
-            em.persist(se);
+            em.persist(schedule);
             em.getTransaction().commit();
             return "Schedule Added";
         }catch (Exception e){
@@ -44,14 +43,14 @@ public class ScheduleDao{
 
     public String editSchedule(ScheduleRO scheduleRO){
         try {
-            ScheduleEO se1 = new ScheduleEO();
-            se1.setTimings(scheduleRO.getTimings());
-            se1.setDay(scheduleRO.getDay());
-            se1.setLocation(scheduleRO.getLocation());
-            se1.setClassId(scheduleRO.getCLASS_ID());
-            se1.setScheduleId(scheduleRO.getScheduleId());
+            ScheduleEO schedule = new ScheduleEO();
+            schedule.setTimings(scheduleRO.getTimings());
+            schedule.setDay(scheduleRO.getDay());
+            schedule.setLocation(scheduleRO.getLocation());
+            schedule.setClassId(scheduleRO.getCLASS_ID());
+            schedule.setScheduleId(scheduleRO.getScheduleId());
             em.getTransaction().begin();
-            em.merge(se1);
+            em.merge(schedule);
             em.getTransaction().commit();
             return "Schedule Edited";
         }catch (Exception e){
@@ -62,8 +61,8 @@ public class ScheduleDao{
     public String removeSchedule(ScheduleRO scheduleRO){
         try {
             em.getTransaction().begin();
-            ScheduleEO se2 = em.find(ScheduleEO.class,scheduleRO.getScheduleId());
-            em.remove(se2);
+            ScheduleEO schedule = em.find(ScheduleEO.class,scheduleRO.getScheduleId());
+            em.remove(schedule);
             em.getTransaction().commit();
             return "Schedule Removed";
         }catch (Exception e){

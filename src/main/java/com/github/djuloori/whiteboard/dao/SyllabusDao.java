@@ -27,12 +27,12 @@ public class SyllabusDao {
 
     public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
         try {
-            SyllabusEO syllubusEntity = new SyllabusEO();
-            syllubusEntity.setClassId(class_id);
-            syllubusEntity.setIdsyllabus(syllabusid);
-            syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
+            SyllabusEO syllabus = new SyllabusEO();
+            syllabus.setClassId(class_id);
+            syllabus.setIdsyllabus(syllabusid);
+            syllabus.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
             em.getTransaction().begin();
-            em.persist(syllubusEntity);
+            em.persist(syllabus);
             em.getTransaction().commit();
             return "done";
         }catch (Exception e){

@@ -47,8 +47,8 @@ public class TaDao {
     public String removeTa(String ta_id){
         try {
             em.getTransaction().begin();
-            TaEO te = em.find(TaEO.class,ta_id);
-            em.remove(te);
+            TaEO ta = em.find(TaEO.class,ta_id);
+            em.remove(ta);
             em.getTransaction().commit();
             return "Ta Removed";
         }catch (Exception e){
