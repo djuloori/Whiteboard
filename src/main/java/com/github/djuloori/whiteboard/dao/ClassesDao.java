@@ -19,13 +19,13 @@ public class ClassesDao {
 
 
     public String addClass(ClassesRO classesRO){
-        ClassesEO ce = new ClassesEO();
-        ce.setClassId(classesRO.getClassId());
-        ce.setClassName(classesRO.getClassName());
-        ce.setUsername(classesRO.getUserName());
-        em.getTransaction().begin();
-        em.persist(ce);
         try {
+            ClassesEO ce = new ClassesEO();
+            ce.setClassId(classesRO.getClassId());
+            ce.setClassName(classesRO.getClassName());
+            ce.setUsername(classesRO.getUserName());
+            em.getTransaction().begin();
+            em.persist(ce);
             em.getTransaction().commit();
             return "Inserted";
         }catch (Exception e){
@@ -42,15 +42,13 @@ public class ClassesDao {
     }
 
     public String editClass(ClassesRO classesRO) {
-        //UserEO user = new UserEO();
-        //user.setUsername(username);
-        ClassesEO ce = new ClassesEO();
-        ce.setClassId(classesRO.getClassId());
-        ce.setClassName(classesRO.getClassName());
-        ce.setUsername(classesRO.getUserName());
-        em.getTransaction().begin();
-        em.merge(ce);
         try {
+            ClassesEO ce = new ClassesEO();
+            ce.setClassId(classesRO.getClassId());
+            ce.setClassName(classesRO.getClassName());
+            ce.setUsername(classesRO.getUserName());
+            em.getTransaction().begin();
+            em.merge(ce);
             em.getTransaction().commit();
             return "Edited";
         } catch (Exception e) {
@@ -59,10 +57,10 @@ public class ClassesDao {
     }
 
     public String removeClass(ClassesRO classesRO){
-        em.getTransaction().begin();
-        ClassesEO ce = em.find(ClassesEO.class,classesRO.getClassId());
-        em.remove(ce);
         try {
+            em.getTransaction().begin();
+            ClassesEO ce = em.find(ClassesEO.class,classesRO.getClassId());
+            em.remove(ce);
             em.getTransaction().commit();
             return "Removed";
         }catch (Exception e){

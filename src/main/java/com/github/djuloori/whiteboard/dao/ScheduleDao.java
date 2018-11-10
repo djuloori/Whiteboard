@@ -26,15 +26,15 @@ public class ScheduleDao{
     }
 
     public String addSchedule(ScheduleRO scheduleRO){
-        ScheduleEO se = new ScheduleEO();
-        se.setTimings(scheduleRO.getTimings());
-        se.setDay(scheduleRO.getDay());
-        se.setLocation(scheduleRO.getLocation());
-        se.setClassId(scheduleRO.getCLASS_ID());
-        se.setScheduleId(scheduleRO.getScheduleId());
-        em.getTransaction().begin();
-        em.persist(se);
         try {
+            ScheduleEO se = new ScheduleEO();
+            se.setTimings(scheduleRO.getTimings());
+            se.setDay(scheduleRO.getDay());
+            se.setLocation(scheduleRO.getLocation());
+            se.setClassId(scheduleRO.getCLASS_ID());
+            se.setScheduleId(scheduleRO.getScheduleId());
+            em.getTransaction().begin();
+            em.persist(se);
             em.getTransaction().commit();
             return "Schedule Added";
         }catch (Exception e){
@@ -43,15 +43,15 @@ public class ScheduleDao{
     }
 
     public String editSchedule(ScheduleRO scheduleRO){
-        ScheduleEO se1 = new ScheduleEO();
-        se1.setTimings(scheduleRO.getTimings());
-        se1.setDay(scheduleRO.getDay());
-        se1.setLocation(scheduleRO.getLocation());
-        se1.setClassId(scheduleRO.getCLASS_ID());
-        se1.setScheduleId(scheduleRO.getScheduleId());
-        em.getTransaction().begin();
-        em.merge(se1);
         try {
+            ScheduleEO se1 = new ScheduleEO();
+            se1.setTimings(scheduleRO.getTimings());
+            se1.setDay(scheduleRO.getDay());
+            se1.setLocation(scheduleRO.getLocation());
+            se1.setClassId(scheduleRO.getCLASS_ID());
+            se1.setScheduleId(scheduleRO.getScheduleId());
+            em.getTransaction().begin();
+            em.merge(se1);
             em.getTransaction().commit();
             return "Schedule Edited";
         }catch (Exception e){
@@ -60,10 +60,10 @@ public class ScheduleDao{
     }
 
     public String removeSchedule(ScheduleRO scheduleRO){
-        em.getTransaction().begin();
-        ScheduleEO se2 = em.find(ScheduleEO.class,scheduleRO.getScheduleId());
-        em.remove(se2);
         try {
+            em.getTransaction().begin();
+            ScheduleEO se2 = em.find(ScheduleEO.class,scheduleRO.getScheduleId());
+            em.remove(se2);
             em.getTransaction().commit();
             return "Schedule Removed";
         }catch (Exception e){

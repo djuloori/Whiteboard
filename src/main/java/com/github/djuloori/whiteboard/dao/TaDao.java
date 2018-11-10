@@ -26,17 +26,17 @@ public class TaDao {
     }
 
     public String addTa(TaRO taRO){
-       TaEO ta = new TaEO();
-       ta.setTaId(taRO.getTaId());
-       ta.setTaName(taRO.getTaName());
-       ta.setTaEmail(taRO.getTaEmail());
-       ta.setTaPhone(taRO.getTaPhone());
-       ta.setTaTimings(taRO.getTaTimings());
-       ta.setClassId(taRO.getCLASS_ID());
-       ta.setDay(taRO.getDay());
-        em.getTransaction().begin();
-        em.persist(ta);
         try {
+            TaEO ta = new TaEO();
+            ta.setTaId(taRO.getTaId());
+            ta.setTaName(taRO.getTaName());
+            ta.setTaEmail(taRO.getTaEmail());
+            ta.setTaPhone(taRO.getTaPhone());
+            ta.setTaTimings(taRO.getTaTimings());
+            ta.setClassId(taRO.getCLASS_ID());
+            ta.setDay(taRO.getDay());
+            em.getTransaction().begin();
+            em.persist(ta);
             em.getTransaction().commit();
             return "Ta Added";
         }catch (Exception e){
@@ -45,10 +45,10 @@ public class TaDao {
     }
 
     public String removeTa(String ta_id){
-        em.getTransaction().begin();
-        TaEO te = em.find(TaEO.class,ta_id);
-        em.remove(te);
         try {
+            em.getTransaction().begin();
+            TaEO te = em.find(TaEO.class,ta_id);
+            em.remove(te);
             em.getTransaction().commit();
             return "Ta Removed";
         }catch (Exception e){

@@ -26,13 +26,13 @@ public class SyllabusDao {
     }
 
     public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
-        SyllabusEO syllubusEntity = new SyllabusEO();
-        syllubusEntity.setClassId(class_id);
-        syllubusEntity.setIdsyllabus(syllabusid);
-        syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
-        em.getTransaction().begin();
-        em.persist(syllubusEntity);
         try {
+            SyllabusEO syllubusEntity = new SyllabusEO();
+            syllubusEntity.setClassId(class_id);
+            syllubusEntity.setIdsyllabus(syllabusid);
+            syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
+            em.getTransaction().begin();
+            em.persist(syllubusEntity);
             em.getTransaction().commit();
             return "done";
         }catch (Exception e){
@@ -41,10 +41,10 @@ public class SyllabusDao {
     }
 
     public String removeSyllabus(String syllabus_id){
-        em.getTransaction().begin();
-        SyllabusEO syllabus = em.find(SyllabusEO.class,syllabus_id);
-        em.remove(syllabus);
         try {
+            em.getTransaction().begin();
+            SyllabusEO syllabus = em.find(SyllabusEO.class,syllabus_id);
+            em.remove(syllabus);
             em.getTransaction().commit();
             return "Syllabus Removed";
         }catch (Exception e){
