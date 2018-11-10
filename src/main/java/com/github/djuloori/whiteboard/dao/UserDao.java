@@ -19,13 +19,13 @@ public class UserDao {
     public String findUser(UserRO userRO){
         try {
             em.getTransaction().begin();
-            Query q = em.createNamedQuery("UserEntity.Validation", UserEO.class);
-            String hashed_password = getMD5(userRO.getPassword());
-            q.setParameter("username",userRO.getUsername());
-            q.setParameter("password",hashed_password);
+            Query query = em.createNamedQuery("UserEntity.Validation", UserEO.class);
+            String hashedPassword = getMD5(userRO.getPassword());
+            query.setParameter("username",userRO.getUsername());
+            query.setParameter("password",hashedPassword);
             em.getTransaction().commit();
-            UserEO user = (UserEO) q.getSingleResult();
-            if(userRO.getUsername().equals(user.getUsername()) && hashed_password.equals(user.getPassword())){
+            UserEO user = (UserEO) query.getSingleResult();
+            if(userRO.getUsername().equals(user.getUsername()) && hashedPassword.equals(user.getPassword())){
                 return user.getUsertype();
             }else{
                 return "failed";
@@ -39,8 +39,8 @@ public class UserDao {
         try {
             UserEO user = new UserEO();
             user.setUsername(userRO.getUsername());
-            String hashed_password = getMD5(userRO.getPassword());
-            user.setPassword(hashed_password);
+            String hashedPassword = getMD5(userRO.getPassword());
+            user.setPassword(hashedPassword);
             user.setUsertype(userRO.getUsertype());
             em.getTransaction().begin();
             em.persist(user);

@@ -20,9 +20,9 @@ public class SyllabusDao {
 
     public List getAllSyllubus(){
         em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;
-        List<SyllabusEO> se = s_q.getResultList();
-        return se;
+        Query query = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;
+        List<SyllabusEO> syllabusList = query.getResultList();
+        return syllabusList;
     }
 
     public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {

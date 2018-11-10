@@ -20,12 +20,12 @@ public class ClassesDao {
 
     public String addClass(ClassesRO classesRO){
         try {
-            ClassesEO ce = new ClassesEO();
-            ce.setClassId(classesRO.getClassId());
-            ce.setClassName(classesRO.getClassName());
-            ce.setUsername(classesRO.getUserName());
+            ClassesEO course = new ClassesEO();
+            course.setClassId(classesRO.getClassId());
+            course.setClassName(classesRO.getClassName());
+            course.setUsername(classesRO.getUserName());
             em.getTransaction().begin();
-            em.persist(ce);
+            em.persist(course);
             em.getTransaction().commit();
             return "Inserted";
         }catch (Exception e){
@@ -35,20 +35,19 @@ public class ClassesDao {
 
     public List getAllCourses() {
         em.getTransaction().begin();
-        Query q = em.createNamedQuery("ClassesEntity.findAll",ClassesEO.class);
-        List<ClassesEO> cs;
-        cs = q.getResultList();
-        return cs;
+        Query query = em.createNamedQuery("ClassesEntity.findAll",ClassesEO.class);
+        List<ClassesEO> courseList = query.getResultList();
+        return courseList;
     }
 
     public String editClass(ClassesRO classesRO) {
         try {
-            ClassesEO ce = new ClassesEO();
-            ce.setClassId(classesRO.getClassId());
-            ce.setClassName(classesRO.getClassName());
-            ce.setUsername(classesRO.getUserName());
+            ClassesEO course = new ClassesEO();
+            course.setClassId(classesRO.getClassId());
+            course.setClassName(classesRO.getClassName());
+            course.setUsername(classesRO.getUserName());
             em.getTransaction().begin();
-            em.merge(ce);
+            em.merge(course);
             em.getTransaction().commit();
             return "Edited";
         } catch (Exception e) {
@@ -59,8 +58,8 @@ public class ClassesDao {
     public String removeClass(ClassesRO classesRO){
         try {
             em.getTransaction().begin();
-            ClassesEO ce = em.find(ClassesEO.class,classesRO.getClassId());
-            em.remove(ce);
+            ClassesEO course = em.find(ClassesEO.class,classesRO.getClassId());
+            em.remove(course);
             em.getTransaction().commit();
             return "Removed";
         }catch (Exception e){

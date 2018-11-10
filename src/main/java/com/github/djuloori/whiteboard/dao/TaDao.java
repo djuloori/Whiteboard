@@ -19,10 +19,9 @@ public class TaDao {
 
     public List getAllTa(){
         em.getTransaction().begin();
-        Query t_a = em.createNamedQuery("TaEntity.findAll", TaEO.class);
-        List<TaEO> ts;
-        ts  = t_a.getResultList();
-        return ts;
+        Query query = em.createNamedQuery("TaEntity.findAll", TaEO.class);
+        List<TaEO> taList = query.getResultList();
+        return taList;
     }
 
     public String addTa(TaRO taRO){

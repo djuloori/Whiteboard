@@ -19,9 +19,9 @@ public class ScheduleDao{
 
     public List getAllschedule(){
         em.getTransaction().begin();
-        Query q = em.createNamedQuery("ScheduleEntity.findAll", ScheduleEO.class);
-        List<ScheduleEO> se = q.getResultList();
-        return se;
+        Query query = em.createNamedQuery("ScheduleEntity.findAll", ScheduleEO.class);
+        List<ScheduleEO> scheduleList = query.getResultList();
+        return scheduleList;
     }
 
     public String addSchedule(ScheduleRO scheduleRO){

@@ -18,9 +18,8 @@ public class StudentDao {
 
     public List getAllStudents(){
         em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("StudentEntity.findAll", StudentEO.class);
-        List<StudentEO> se;
-        se = s_q.getResultList();
-        return se;
+        Query query = em.createNamedQuery("StudentEntity.findAll", StudentEO.class);
+        List<StudentEO> studentList =query.getResultList();
+        return studentList;
     }
 }
