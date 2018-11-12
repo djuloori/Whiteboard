@@ -1,22 +1,18 @@
 package com.github.djuloori.whiteboard.dao;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.io.*;
 import java.util.List;
 import com.github.djuloori.whiteboard.model.AssignmentEO;
 import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 @Component
-public class AssignmentDao {
+public class AssignmentDao extends AbstractDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
 
+    @Transactional
     public String addAssignment(String assignmentId, String totalPoints, String assignmentName, InputStream test, String classId)throws IOException {
         try {
             AssignmentEO assignment = new AssignmentEO();
@@ -25,23 +21,21 @@ public class AssignmentDao {
             assignment.setTotalPoints(totalPoints);
             assignment.setAssignment(IOUtils.toByteArray(test));
             assignment.setCLASS_ID(classId);
-            em.getTransaction().begin();
-            em.persist(assignment);
-            em.getTransaction().commit();
+            save(assignment);
             return "Perfect";
         }catch (Exception e){
             return "Not Inserted";
         }
     }
 
+    @Transactional
     public List getAllAssignments(){
-        em.getTransaction().begin();
-        Query a_q = em.createNamedQuery("AssignmentsEntity.findAll", AssignmentEO.class);;
-        List<AssignmentEO> ae;
-        ae = a_q.getResultList();
-        return ae;
+        Query query = createQuery("AssignmentsEntity.findAll", AssignmentEO.class);;
+        List<AssignmentEO> assignments = query.getResultList();
+        return assignments;
     }
 
+    @Transactional
     public String editAssignment(String assignmentId, String assignmentName, String totalPoints, InputStream stream, String classId) throws IOException {
         try {
             AssignmentEO assignment = new AssignmentEO();
@@ -50,21 +44,17 @@ public class AssignmentDao {
             assignment.setAssignment(IOUtils.toByteArray(stream));
             assignment.setCLASS_ID(classId);
             assignment.setTotalPoints(totalPoints);
-            em.getTransaction().begin();
-            em.merge(assignment);
-            em.getTransaction().commit();
+            update(assignment);
             return "Editing Successful";
         } catch (Exception e) {
             return "Not Successful";
         }
     }
 
+    @Transactional
     public String removeAssignment(String assignmentId){
         try {
-            em.getTransaction().begin();
-            AssignmentEO assignment = em.find(AssignmentEO.class,assignmentId);
-            em.remove(assignment);
-            em.getTransaction().commit();
+            delete(AssignmentEO.class,assignmentId);
             return "Removed";
         }catch (Exception e){
             return "Not Removed";

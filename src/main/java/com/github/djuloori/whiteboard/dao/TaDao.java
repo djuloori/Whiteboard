@@ -3,27 +3,22 @@ package com.github.djuloori.whiteboard.dao;
 import com.github.djuloori.whiteboard.model.TaEO;
 import com.github.djuloori.whiteboard.rest.TaRO;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 @Component
-public class TaDao {
+public class TaDao extends AbstractDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
-
+    @Transactional
     public List getAllTa(){
-        em.getTransaction().begin();
-        Query query = em.createNamedQuery("TaEntity.findAll", TaEO.class);
+        Query query = createQuery("TaEntity.findAll", TaEO.class);
         List<TaEO> taList = query.getResultList();
         return taList;
     }
 
+    @Transactional
     public String addTa(TaRO taRO){
         try {
             TaEO ta = new TaEO();
@@ -34,21 +29,17 @@ public class TaDao {
             ta.setTaTimings(taRO.getTaTimings());
             ta.setClassId(taRO.getCLASS_ID());
             ta.setDay(taRO.getDay());
-            em.getTransaction().begin();
-            em.persist(ta);
-            em.getTransaction().commit();
+            save(ta);
             return "Ta Added";
         }catch (Exception e){
             return "Not Added";
         }
     }
 
-    public String removeTa(String ta_id){
+    @Transactional
+    public String removeTa(String taId){
         try {
-            em.getTransaction().begin();
-            TaEO ta = em.find(TaEO.class,ta_id);
-            em.remove(ta);
-            em.getTransaction().commit();
+            delete(TaEO.class,taId);
             return "Ta Removed";
         }catch (Exception e){
             return "Not Removed";

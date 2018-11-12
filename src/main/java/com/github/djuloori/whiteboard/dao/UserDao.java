@@ -3,27 +3,22 @@ package com.github.djuloori.whiteboard.dao;
 import com.github.djuloori.whiteboard.model.UserEO;
 import com.github.djuloori.whiteboard.rest.UserRO;
 import org.springframework.stereotype.Component;
-
+import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 @Component
-public class UserDao {
+public class UserDao extends AbstractDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
-
+    @Transactional
     public String findUser(UserRO userRO){
         try {
-            em.getTransaction().begin();
-            Query query = em.createNamedQuery("UserEntity.Validation", UserEO.class);
+            Query query = createQuery("UserEntity.Validation", UserEO.class);
             String hashedPassword = getMD5(userRO.getPassword());
             query.setParameter("username",userRO.getUsername());
             query.setParameter("password",hashedPassword);
-            em.getTransaction().commit();
             UserEO user = (UserEO) query.getSingleResult();
             if(userRO.getUsername().equals(user.getUsername()) && hashedPassword.equals(user.getPassword())){
                 return user.getUsertype();
@@ -35,6 +30,7 @@ public class UserDao {
         }
     }
 
+    @Transactional
     public String createUser(UserRO userRO){
         try {
             UserEO user = new UserEO();
@@ -42,9 +38,7 @@ public class UserDao {
             String hashedPassword = getMD5(userRO.getPassword());
             user.setPassword(hashedPassword);
             user.setUsertype(userRO.getUsertype());
-            em.getTransaction().begin();
-            em.persist(user);
-            em.getTransaction().commit();
+            save(user);
             return "Success";
         }catch (Exception e){
             return "failed";

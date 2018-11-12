@@ -2,24 +2,18 @@ package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.model.StudentEO;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 @Component
-public class StudentDao {
+public class StudentDao extends AbstractDao{
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
-
+    @Transactional
     public List getAllStudents(){
-        em.getTransaction().begin();
-        Query query = em.createNamedQuery("StudentEntity.findAll", StudentEO.class);
-        List<StudentEO> studentList =query.getResultList();
+        Query query = createQuery("StudentEntity.findAll", StudentEO.class);
+        List<StudentEO> studentList = query.getResultList();
         return studentList;
     }
 }
