@@ -2,7 +2,8 @@ package com.github.djuloori.whiteboard.framework;
 
 import javax.persistence.TypedQuery;
 
-public interface EntityManagerService {
+
+public interface SecurableEntityManager {
 
     void save(Object var1);
 

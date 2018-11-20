@@ -1,13 +1,13 @@
-package com.github.djuloori.whiteboard.dao;
-
-import com.github.djuloori.whiteboard.framework.EntityManagerService;
+package com.github.djuloori.whiteboard.framework;
 import org.springframework.beans.factory.annotation.Autowired;
-import javax.persistence.EntityManager;
+import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.TypedQuery;
 
-public abstract class AbstractDao implements EntityManagerService {
+@Service
+public class SecurableEntityManagerImpl implements SecurableEntityManager  {
 
     @Autowired
     private EntityManagerFactory entityManagerFactory;
@@ -25,9 +25,9 @@ public abstract class AbstractDao implements EntityManagerService {
     }
 
     public <T> void delete(Class<T> var1,String var2) {
-       EntityManager em = getEntityManager();
-       Object object = search(var1,var2,em);
-       em.remove(object);
+        EntityManager em = getEntityManager();
+        Object object = search(var1,var2,em);
+        em.remove(object);
     }
 
     private <T> T search(Class<T> var1, Object var2, EntityManager em) {
@@ -37,5 +37,4 @@ public abstract class AbstractDao implements EntityManagerService {
     private EntityManager getEntityManager(){
         return entityManagerFactory.createEntityManager();
     }
-
 }

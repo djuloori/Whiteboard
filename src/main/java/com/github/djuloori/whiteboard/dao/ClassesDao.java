@@ -1,7 +1,11 @@
 package com.github.djuloori.whiteboard.dao;
 
+import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
+import com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl;
 import com.github.djuloori.whiteboard.model.ClassesEO;
 import com.github.djuloori.whiteboard.rest.ClassesRO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.Query;
@@ -9,7 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ClassesDao extends AbstractDao {
+public class ClassesDao {
+
+    @Autowired
+    private SecurableEntityManager m_SecurableEntityManager;
 
     @Transactional
     public String addClass(ClassesRO classesRO){
@@ -18,7 +25,7 @@ public class ClassesDao extends AbstractDao {
             course.setClassId(classesRO.getClassId());
             course.setClassName(classesRO.getClassName());
             course.setUsername(classesRO.getUserName());
-            save(course);
+            m_SecurableEntityManager.save(course);
             return "Inserted";
         }catch (Exception e){
             return "Not Inserted";
@@ -28,7 +35,7 @@ public class ClassesDao extends AbstractDao {
     @Transactional
     public List getAllCourses() {
         try {
-            Query query = createQuery("ClassesEntity.findAll", ClassesEO.class);
+            Query query = m_SecurableEntityManager.createQuery("ClassesEntity.findAll", ClassesEO.class);
             List<ClassesEO> courseList = query.getResultList();
             return courseList;
         } catch(Exception e){
@@ -43,7 +50,7 @@ public class ClassesDao extends AbstractDao {
             course.setClassId(classesRO.getClassId());
             course.setClassName(classesRO.getClassName());
             course.setUsername(classesRO.getUserName());
-            update(course);
+            m_SecurableEntityManager.update(course);
             return "Edited";
         } catch (Exception e) {
             return "Not Edited";
@@ -53,7 +60,7 @@ public class ClassesDao extends AbstractDao {
     @Transactional
     public String removeClass(ClassesRO classesRO){
         try {
-            delete(ClassesEO.class,classesRO.getClassId());
+            m_SecurableEntityManager.delete(ClassesEO.class,classesRO.getClassId());
             return "Removed";
         }catch (Exception e){
             return "Not Removed";
