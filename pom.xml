@@ -30,92 +30,103 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.3.19.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>4.3.19.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
-            <version>2.25.1</version>
+            <version>${glassfish.jersey.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.5</version>
+            <version>${fasterxml.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.jaxrs</groupId>
             <artifactId>jackson-jaxrs-json-provider</artifactId>
-            <version>2.9.5</version>
+            <version>${fasterxml.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>2.9.5</version>
+            <version>${fasterxml.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
+            <version>${codehausjackson.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa</artifactId>
-            <version>2.5.2</version>
+            <version>${eclipselink.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-multipart</artifactId>
-            <version>2.25.1</version>
+            <version>${glassfish.jersey.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
-            <version>2.25.1</version>
+            <version>${glassfish.jersey.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.ext</groupId>
             <artifactId>jersey-declarative-linking</artifactId>
-            <version>2.25.1</version>
+            <version>${glassfish.jersey.version}</version>
         </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>${javax.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.2</version>
+            <version>${commons-io.version}</version>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.44</version>
+            <version>${sql.jdbc.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.ext</groupId>
             <artifactId>jersey-spring3</artifactId>
-            <version>2.25.1</version>
+            <version>${glassfish.jersey.version}</version>
         </dependency>
     </dependencies>
+
+    <properties>
+        <spring.version>4.3.19.RELEASE</spring.version>
+        <glassfish.jersey.version>2.25.1</glassfish.jersey.version>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <codehausjackson.version>1.9.13</codehausjackson.version>
+        <fasterxml.version>2.9.7</fasterxml.version>
+        <commons-io.version>2.6</commons-io.version>
+        <eclipselink.version>2.7.2</eclipselink.version>
+        <sql.jdbc.version>5.1.44</sql.jdbc.version>
+    </properties>
 </project>
