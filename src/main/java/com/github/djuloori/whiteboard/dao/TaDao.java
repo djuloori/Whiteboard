@@ -1,11 +1,9 @@
 package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
-import com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl;
 import com.github.djuloori.whiteboard.model.TaEO;
 import com.github.djuloori.whiteboard.rest.TaRO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

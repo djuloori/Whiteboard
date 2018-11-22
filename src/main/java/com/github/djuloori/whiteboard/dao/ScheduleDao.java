@@ -1,11 +1,9 @@
 package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
-import com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl;
 import com.github.djuloori.whiteboard.model.ScheduleEO;
 import com.github.djuloori.whiteboard.rest.ScheduleRO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

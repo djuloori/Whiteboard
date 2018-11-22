@@ -1,11 +1,9 @@
 package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
-import com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl;
 import com.github.djuloori.whiteboard.model.ClassesEO;
 import com.github.djuloori.whiteboard.rest.ClassesRO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.Query;
@@ -17,6 +15,7 @@ public class ClassesDao {
 
     @Autowired
     private SecurableEntityManager m_SecurableEntityManager;
+
 
     @Transactional
     public String addClass(ClassesRO classesRO){
