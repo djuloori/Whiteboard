@@ -1,40 +1,35 @@
 package com.github.djuloori.whiteboard.framework;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
+import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
 @Service
 public class SecurableEntityManagerImpl implements SecurableEntityManager  {
 
-    @Autowired
-    private EntityManagerFactory entityManagerFactory;
+    @PersistenceContext
+    private EntityManager entityManager;
 
     public void save(Object var1) {
-        getEntityManager().persist(var1);
+        entityManager.persist(var1);
     }
 
     public <T> TypedQuery<T> createQuery(String var1, Class<T> var2) {
-        return getEntityManager().createNamedQuery(var1,var2);
+        return entityManager.createNamedQuery(var1,var2);
     }
 
     public <T> T update(T var1) {
-        return getEntityManager().merge(var1);
+        return entityManager.merge(var1);
     }
 
     public <T> void delete(Class<T> var1,String var2) {
-        EntityManager em = getEntityManager();
-        Object object = search(var1,var2,em);
-        em.remove(object);
+        Object object = search(var1,var2);
+        entityManager.remove(object);
     }
 
-    private <T> T search(Class<T> var1, Object var2, EntityManager em) {
-        return em.find(var1,var2);
+    private <T> T search(Class<T> var1, Object var2) {
+        return entityManager.find(var1,var2);
     }
 
-    private EntityManager getEntityManager(){
-        return entityManagerFactory.createEntityManager();
-    }
 }
