@@ -8,6 +8,12 @@
 <%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page import="javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManager" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="org.springframework.context.annotation.AnnotationConfigApplicationContext" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.SecurableEntityManager" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +144,7 @@
 
                         <tbody>
                         <%
-                            ClassesDao cd = new ClassesDao();
+                            ClassesDao cd = (ClassesDao) ApplicationContextProvider.getApplicationContext().getBean("classesDao");
                             List<ClassesEO> cs = cd.getAllCourses();
                             for(int i=0;i<cs.size();i++){
                                 String id = cs.get(i).getClassId();

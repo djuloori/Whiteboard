@@ -1,12 +1,12 @@
 package com.github.djuloori.whiteboard.dao;
 
+import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.SyllabusEO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -14,38 +14,34 @@ import java.util.List;
 @Component
 public class SyllabusDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
+    @Autowired
+    private SecurableEntityManager m_SecurableEntityManager;
 
+    @Transactional
     public List getAllSyllubus(){
-        em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("SyllabusEntity.findAll", SyllabusEO.class);;
-        List<SyllabusEO> se = s_q.getResultList();
-        return se;
+        Query query = m_SecurableEntityManager.createQuery("SyllabusEntity.findAll", SyllabusEO.class);;
+        List<SyllabusEO> syllabusList = query.getResultList();
+        return syllabusList;
     }
 
+    @Transactional
     public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
-        SyllabusEO syllubusEntity = new SyllabusEO();
-        syllubusEntity.setClassId(class_id);
-        syllubusEntity.setIdsyllabus(syllabusid);
-        syllubusEntity.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
-        em.getTransaction().begin();
-        em.persist(syllubusEntity);
         try {
-            em.getTransaction().commit();
+            SyllabusEO syllabus = new SyllabusEO();
+            syllabus.setClassId(class_id);
+            syllabus.setIdsyllabus(syllabusid);
+            syllabus.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
+            m_SecurableEntityManager.save(syllabus);
             return "done";
         }catch (Exception e){
             return "not done";
         }
     }
 
+    @Transactional
     public String removeSyllabus(String syllabus_id){
-        em.getTransaction().begin();
-        SyllabusEO syllabus = em.find(SyllabusEO.class,syllabus_id);
-        em.remove(syllabus);
         try {
-            em.getTransaction().commit();
+            m_SecurableEntityManager.delete(SyllabusEO.class,syllabus_id);
             return "Syllabus Removed";
         }catch (Exception e){
             return "Not Removed";

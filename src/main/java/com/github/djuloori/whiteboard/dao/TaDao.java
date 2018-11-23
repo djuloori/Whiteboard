@@ -1,55 +1,50 @@
 package com.github.djuloori.whiteboard.dao;
 
+import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.TaEO;
 import com.github.djuloori.whiteboard.rest.TaRO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 @Component
 public class TaDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
+    @Autowired
+    private SecurableEntityManager m_SecurableEntityManager;
 
+    @Transactional
     public List getAllTa(){
-        em.getTransaction().begin();
-        Query t_a = em.createNamedQuery("TaEntity.findAll", TaEO.class);
-        List<TaEO> ts;
-        ts  = t_a.getResultList();
-        return ts;
+        Query query = m_SecurableEntityManager.createQuery("TaEntity.findAll", TaEO.class);
+        List<TaEO> taList = query.getResultList();
+        return taList;
     }
 
+    @Transactional
     public String addTa(TaRO taRO){
-       TaEO ta = new TaEO();
-       ta.setTaId(taRO.getTaId());
-       ta.setTaName(taRO.getTaName());
-       ta.setTaEmail(taRO.getTaEmail());
-       ta.setTaPhone(taRO.getTaPhone());
-       ta.setTaTimings(taRO.getTaTimings());
-       ta.setClassId(taRO.getCLASS_ID());
-       ta.setDay(taRO.getDay());
-        em.getTransaction().begin();
-        em.persist(ta);
         try {
-            em.getTransaction().commit();
+            TaEO ta = new TaEO();
+            ta.setTaId(taRO.getTaId());
+            ta.setTaName(taRO.getTaName());
+            ta.setTaEmail(taRO.getTaEmail());
+            ta.setTaPhone(taRO.getTaPhone());
+            ta.setTaTimings(taRO.getTaTimings());
+            ta.setClassId(taRO.getCLASS_ID());
+            ta.setDay(taRO.getDay());
+            m_SecurableEntityManager.save(ta);
             return "Ta Added";
         }catch (Exception e){
             return "Not Added";
         }
     }
 
-    public String removeTa(String ta_id){
-        em.getTransaction().begin();
-        TaEO te = em.find(TaEO.class,ta_id);
-        em.remove(te);
+    @Transactional
+    public String removeTa(String taId){
         try {
-            em.getTransaction().commit();
+            m_SecurableEntityManager.delete(TaEO.class,taId);
             return "Ta Removed";
         }catch (Exception e){
             return "Not Removed";

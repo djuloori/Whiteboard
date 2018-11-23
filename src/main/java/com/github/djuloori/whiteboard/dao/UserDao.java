@@ -1,9 +1,11 @@
 package com.github.djuloori.whiteboard.dao;
 
+import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.UserEO;
 import com.github.djuloori.whiteboard.rest.UserRO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
+import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -12,22 +14,19 @@ import java.security.NoSuchAlgorithmException;
 @Component
 public class UserDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
+    @Autowired
+    private SecurableEntityManager m_SecurableEntityManager;
 
+    @Transactional
     public String findUser(UserRO userRO){
-        em.getTransaction().begin();
-        Query q = em.createNamedQuery("UserEntity.Validation", UserEO.class);
-        String hashed_password = getMD5(userRO.getPassword());
-        q.setParameter("username",userRO.getUsername());
-        q.setParameter("password",hashed_password);
-        em.getTransaction().commit();
-        UserEO un;
         try {
-            un = (UserEO) q.getSingleResult();
-            if(userRO.getUsername().equals(un.getUsername()) && hashed_password.equals(un.getPassword())){
-                return un.getUsertype();
+            Query query = m_SecurableEntityManager.createQuery("UserEntity.Validation", UserEO.class);
+            String hashedPassword = getMD5(userRO.getPassword());
+            query.setParameter("username",userRO.getUsername());
+            query.setParameter("password",hashedPassword);
+            UserEO user = (UserEO) query.getSingleResult();
+            if(userRO.getUsername().equals(user.getUsername()) && hashedPassword.equals(user.getPassword())){
+                return user.getUsertype();
             }else{
                 return "failed";
             }
@@ -36,23 +35,22 @@ public class UserDao {
         }
     }
 
+    @Transactional
     public String createUser(UserRO userRO){
-        UserEO user = new UserEO();
-        user.setUsername(userRO.getUsername());
-        String hashed_password = getMD5(userRO.getPassword());
-        user.setPassword(hashed_password);
-        user.setUsertype(userRO.getUsertype());
-        em.getTransaction().begin();
-        em.persist(user);
         try {
-            em.getTransaction().commit();
+            UserEO user = new UserEO();
+            user.setUsername(userRO.getUsername());
+            String hashedPassword = getMD5(userRO.getPassword());
+            user.setPassword(hashedPassword);
+            user.setUsertype(userRO.getUsertype());
+            m_SecurableEntityManager.save(user);
             return "Success";
         }catch (Exception e){
             return "failed";
         }
     }
 
-    public static String getMD5(String input) {
+    private String getMD5(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] messageDigest = md.digest(input.getBytes());

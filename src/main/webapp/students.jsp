@@ -10,6 +10,7 @@
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.StudentDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.StudentEO" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +139,7 @@
 
                         <tbody>
                         <%
-                            StudentDao sd = new StudentDao();
+                            StudentDao sd = (StudentDao) ApplicationContextProvider.getApplicationContext().getBean("studentDao");
                             List<StudentEO> se = sd.getAllStudents();
                             for(int i=0;i<se.size();i++){
                                 String stu_id = se.get(i).getStudentId();

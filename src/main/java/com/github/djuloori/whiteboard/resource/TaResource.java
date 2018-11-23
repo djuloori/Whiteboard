@@ -18,14 +18,6 @@ public class TaResource {
     private TaRO taRO;
 
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public TaRO test(){
-        taRO.setCLASS_ID("1");
-        taRO.setTaId("1");
-        return taRO;
-    }
-
     @POST
     @Path("/AddTa")
     @Consumes(MediaType.APPLICATION_JSON)

@@ -6,6 +6,7 @@
 <%@ page import="java.sql.Timestamp" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.ScheduleDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -141,7 +142,7 @@
 
                         <tbody>
                         <%
-                            ScheduleDao sd = new ScheduleDao();
+                            ScheduleDao sd = (ScheduleDao) ApplicationContextProvider.getApplicationContext().getBean("scheduleDao");
                             List<ScheduleEO> se = sd.getAllschedule();
                             for(int i=0;i<se.size();i++){
                                 String sch_id = se.get(i).getScheduleId();

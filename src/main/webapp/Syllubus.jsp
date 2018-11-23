@@ -8,6 +8,7 @@
 <%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.SyllabusDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.SyllabusEO" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,7 +144,7 @@
                         <tbody>
                         <%
                             HttpSession session2 = request.getSession();
-                            SyllabusDao sd = new SyllabusDao();
+                            SyllabusDao sd = (SyllabusDao) ApplicationContextProvider.getApplicationContext().getBean("syllabusDao");
                             List<SyllabusEO> se = sd.getAllSyllubus();
                             for(int i=0;i<se.size();i++){
                                 String syll_id = se.get(i).getIdsyllabus();

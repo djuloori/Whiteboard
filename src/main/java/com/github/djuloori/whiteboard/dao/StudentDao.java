@@ -1,26 +1,24 @@
 package com.github.djuloori.whiteboard.dao;
 
+import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.StudentEO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 @Component
 public class StudentDao {
 
-    //@Huh - Shouldn't do in this way [Change in the next tag]
-    EntityManagerFactory emf =  Persistence.createEntityManagerFactory("PersistenceUnit");
-    EntityManager em = emf.createEntityManager();
+    @Autowired
+    private SecurableEntityManager m_SecurableEntityManager;
 
+    @Transactional
     public List getAllStudents(){
-        em.getTransaction().begin();
-        Query s_q = em.createNamedQuery("StudentEntity.findAll", StudentEO.class);
-        List<StudentEO> se;
-        se = s_q.getResultList();
-        return se;
+        Query query = m_SecurableEntityManager.createQuery("StudentEntity.findAll", StudentEO.class);
+        List<StudentEO> studentList = query.getResultList();
+        return studentList;
     }
 }
