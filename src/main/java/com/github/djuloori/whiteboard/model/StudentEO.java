@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Table(name = "student", schema = "project_515")
 @NamedQuery(name="StudentEntity.findAll", query="Select s from StudentEO s")
 public class StudentEO implements Serializable {
+    //variables
     @Id
     @Column(name = "student_id", nullable = false, length = 45)
     private String studentId;
@@ -25,11 +26,11 @@ public class StudentEO implements Serializable {
 
     @Basic
     @Column(name = "student_phno", nullable = true, length = 45)
-    private String studentPhno;
+    private String studentPhoneNumber;
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-
+    //getter and setter methods
     public String getClassId() {
         return classId;
     }
@@ -76,12 +77,12 @@ public class StudentEO implements Serializable {
     }
 
 
-    public String getStudentPhno() {
-        return studentPhno;
+    public String getStudentPhoneNumber() {
+        return studentPhoneNumber;
     }
 
-    public void setStudentPhno(String studentPhno) {
-        this.studentPhno = studentPhno;
+    public void setStudentPhoneNumber(String studentPhoneNumber) {
+        this.studentPhoneNumber = studentPhoneNumber;
     }
 
 }

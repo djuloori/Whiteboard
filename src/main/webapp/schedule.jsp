@@ -2,7 +2,7 @@
 <%@ page import="java.util.List" %>
 
 <%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
-<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TeachingAssistantEO" %>
 <%@ page import="java.sql.Timestamp" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.ScheduleDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>

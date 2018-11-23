@@ -8,27 +8,28 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "ta", schema = "project_515")
-@NamedQuery(name="TaEntity.findAll", query="Select t from TaEO t")
-public class TaEO implements Serializable{
+@NamedQuery(name="TaEntity.findAll", query="Select t from TeachingAssistantEO t")
+public class TeachingAssistantEO implements Serializable{
+    //variables
     @Id
     @Column(name = "ta_id", nullable = false, length = 45)
-    private String taId;
+    private String Id;
 
     @Basic
     @Column(name = "ta_name", nullable = true, length = 45)
-    private String taName;
+    private String Name;
 
     @Basic
     @Column(name = "ta_email", nullable = true, length = 45)
-    private String taEmail;
+    private String Email;
 
     @Basic
     @Column(name = "ta_phone", nullable = true, length = 45)
-    private String taPhone;
+    private String Phone;
 
     @Basic
     @Column(name = "ta_timings", nullable = true, length = 45)
-    private String taTimings;
+    private String Timings;
 
     @Basic
     @Column(name = "day", nullable = true, length = 45)
@@ -36,12 +37,14 @@ public class TaEO implements Serializable{
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-
+    //getter and setter methods
     public String getClassId() {
+
         return classId;
     }
 
     public void setClassId(String classId) {
+
         this.classId = classId;
     }
 
@@ -50,62 +53,76 @@ public class TaEO implements Serializable{
     private ClassesEO classesEO;
 
     public ClassesEO getCle2() {
+
         return classesEO;
     }
 
     public void setCle2(ClassesEO classesEO) {
+
         this.classesEO = classesEO;
     }
 
 
-    public String getTaId() {
-        return taId;
+    public String getId() {
+
+        return Id;
     }
 
-    public void setTaId(String taId) {
-        this.taId = taId;
-    }
+    public void setId(String id) {
 
-
-    public String getTaName() {
-        return taName;
-    }
-
-    public void setTaName(String taName) {
-        this.taName = taName;
+        this.Id = id;
     }
 
 
-    public String getTaEmail() {
-        return taEmail;
+    public String getName() {
+
+        return Name;
     }
 
-    public void setTaEmail(String taEmail) {
-        this.taEmail = taEmail;
+    public void setName(String name) {
+
+        this.Name = name;
     }
 
 
-    public String getTaPhone() {
-        return taPhone;
+    public String getEmail() {
+
+        return Email;
     }
 
-    public void setTaPhone(String taPhone) {
-        this.taPhone = taPhone;
+    public void setEmail(String email) {
+
+        this.Email = email;
     }
 
-    public String getTaTimings() {
-        return taTimings;
+
+    public String getPhone() {
+
+        return Phone;
     }
 
-    public void setTaTimings(String taTimings) {
-        this.taTimings = taTimings;
+    public void setPhone(String phone) {
+
+        this.Phone = phone;
+    }
+
+    public String getTimings() {
+
+        return Timings;
+    }
+
+    public void setTimings(String timings) {
+
+        this.Timings = timings;
     }
 
     public String getDay() {
+
         return day;
     }
 
     public void setDay(String day) {
+
         this.day = day;
     }
 }

@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Table(name = "schedule", schema = "project_515")
 @NamedQuery(name="ScheduleEntity.findAll", query="Select s from ScheduleEO s")
 public class ScheduleEO {
+    //variables
     @Basic
     @Column(name = "timings", nullable = true, length = 45)
     private String timings;
@@ -27,7 +28,7 @@ public class ScheduleEO {
     @Basic
     @Column(name = "day", nullable = true, length = 45)
     private String day;
-
+    //getter and setter methods
     public String getTimings() {
         return timings;
     }

@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "syllabus", schema = "project_515")
 @NamedQuery(name="SyllabusEntity.findAll", query="Select s from SyllabusEO s ")
 public class SyllabusEO {
+    //variables
     @Basic
     @Column(name = "syllabus", nullable = true)
     private byte[] syllabus;
@@ -17,6 +18,7 @@ public class SyllabusEO {
     @Column(name = "class_id",nullable = true)
     private String classId;
 
+    //getter and setter methods
     public String getClassId() {
         return classId;
     }
@@ -34,11 +36,11 @@ public class SyllabusEO {
     }
 
 
-    public String getIdsyllabus() {
+    public String getSyllabusId() {
         return syllabusId;
     }
 
-    public void setIdsyllabus(String syllabusId) {
+    public void setSyllabusId(String syllabusId) {
         this.syllabusId = syllabusId;
     }
 
