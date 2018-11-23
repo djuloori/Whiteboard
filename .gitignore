@@ -4,3 +4,4 @@ target/
 .idea/
 .settings/
 *.iml
+src/main/resources/META-INF/db.properties
