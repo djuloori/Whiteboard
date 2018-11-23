@@ -7,5 +7,5 @@
     <context:component-scan base-package="com.github.djuloori.whiteboard.framework" />
     <context:annotation-config/>
     <bean id = "m_SecurableEntityManager"  class = "com.github.djuloori.whiteboard.framework.SecurableEntityManagerImpl"/>
-
+    <bean id="applicationContextProvder" class="com.github.djuloori.whiteboard.framework.ApplicationContextProvider"/>
 </beans>
