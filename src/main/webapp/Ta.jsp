@@ -4,6 +4,7 @@
 <%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
 <%@ page import="java.sql.Timestamp" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,7 +138,7 @@
 
                         <tbody>
                         <%
-                            TaDao td = new TaDao();
+                            TaDao td = (TaDao) ApplicationContextProvider.getApplicationContext().getBean("taDao");
                             List<TaEO> te = td.getAllTa();
                             for(int i=0;i<te.size();i++){
                                 String class_id = te.get(i).getClassId();

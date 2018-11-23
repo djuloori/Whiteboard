@@ -9,6 +9,7 @@
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.AssignmentDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.AssignmentEO" %>
+<%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,7 +143,7 @@
                         <tbody>
                         <%
                             HttpSession session1 = request.getSession();
-                            AssignmentDao ad = new AssignmentDao();
+                            AssignmentDao ad = (AssignmentDao) ApplicationContextProvider.getApplicationContext().getBean("assignmentDao");
                             List<AssignmentEO> asgn = ad.getAllAssignments();
                             for(int i=0;i<asgn.size();i++){
                                 String asgn_id = asgn.get(i).getAssignmentId();
