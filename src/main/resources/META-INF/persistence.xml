@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="PersistenceUnit" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.github.djuloori.whiteboard.model.AssignmentEO</class>
+        <class>com.github.djuloori.whiteboard.model.ClassesEO</class>
+        <class>com.github.djuloori.whiteboard.model.ScheduleEO</class>
+        <class>com.github.djuloori.whiteboard.model.StudentEO</class>
+        <class>com.github.djuloori.whiteboard.model.SyllabusEO</class>
+        <class>com.github.djuloori.whiteboard.model.TaEO</class>
+        <class>com.github.djuloori.whiteboard.model.UserEO</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.weaving" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

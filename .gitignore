@@ -4,4 +4,3 @@ target/
 .idea/
 .settings/
 *.iml
-*.properties
