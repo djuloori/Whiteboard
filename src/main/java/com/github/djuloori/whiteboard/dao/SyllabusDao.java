@@ -29,7 +29,7 @@ public class SyllabusDao {
         try {
             SyllabusEO syllabus = new SyllabusEO();
             syllabus.setClassId(class_id);
-            syllabus.setIdsyllabus(syllabusid);
+            syllabus.setSyllabusId(syllabusid);
             syllabus.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
             m_SecurableEntityManager.save(syllabus);
             return "done";

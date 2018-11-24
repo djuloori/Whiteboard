@@ -25,7 +25,7 @@ public class AssignmentDao {
             assignment.setAssignmentName(assignmentName);
             assignment.setTotalPoints(totalPoints);
             assignment.setAssignment(IOUtils.toByteArray(test));
-            assignment.setCLASS_ID(classId);
+            assignment.setClassId(classId);
             m_SecurableEntityManager.save(assignment);
             return "Perfect";
         }catch (Exception e){
@@ -47,7 +47,7 @@ public class AssignmentDao {
             assignment.setAssignmentId(assignmentId);
             assignment.setAssignmentName(assignmentName);
             assignment.setAssignment(IOUtils.toByteArray(stream));
-            assignment.setCLASS_ID(classId);
+            assignment.setClassId(classId);
             assignment.setTotalPoints(totalPoints);
             m_SecurableEntityManager.update(assignment);
             return "Editing Successful";

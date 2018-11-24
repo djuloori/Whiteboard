@@ -25,11 +25,11 @@ public class StudentEO implements Serializable {
 
     @Basic
     @Column(name = "student_phno", nullable = true, length = 45)
-    private String studentPhno;
+    private String studentPhoneNumber;
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-
+    //getter and setter methods
     public String getClassId() {
         return classId;
     }
@@ -49,6 +49,7 @@ public class StudentEO implements Serializable {
     public void setClassesEO(ClassesEO classesEO) {
         this.classesEO = classesEO;
     }
+
     public String getStudentId() {
         return studentId;
     }
@@ -57,15 +58,11 @@ public class StudentEO implements Serializable {
         this.studentId = studentId;
     }
 
-
-    public String getStudentName() {
-        return studentName;
-    }
+    public String getStudentName() { return studentName; }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-
 
     public String getStudentEmail() {
         return studentEmail;
@@ -75,13 +72,11 @@ public class StudentEO implements Serializable {
         this.studentEmail = studentEmail;
     }
 
-
-    public String getStudentPhno() {
-        return studentPhno;
+    public String getStudentPhoneNumber() {
+        return studentPhoneNumber;
     }
 
-    public void setStudentPhno(String studentPhno) {
-        this.studentPhno = studentPhno;
+    public void setStudentPhoneNumber(String studentPhoneNumber) {
+        this.studentPhoneNumber = studentPhoneNumber;
     }
-
 }

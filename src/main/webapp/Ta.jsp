@@ -2,7 +2,7 @@
 <%@ page import="java.util.List" %>
 
 <%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
-<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TeachingAssistantEO" %>
 <%@ page import="java.sql.Timestamp" %>
 <%@ page import="com.github.djuloori.whiteboard.framework.ApplicationContextProvider" %>
 <!DOCTYPE html>
@@ -139,14 +139,14 @@
                         <tbody>
                         <%
                             TaDao td = (TaDao) ApplicationContextProvider.getApplicationContext().getBean("taDao");
-                            List<TaEO> te = td.getAllTa();
+                            List<TeachingAssistantEO> te = td.getAllTa();
                             for(int i=0;i<te.size();i++){
                                 String class_id = te.get(i).getClassId();
-                                String ta_id = te.get(i).getTaId();
-                                String ta_name = te.get(i).getTaName();
-                                String ta_ph = te.get(i).getTaPhone();
-                                String ta_email = te.get(i).getTaEmail();
-                                String timings = te.get(i).getTaTimings();
+                                String ta_id = te.get(i).getId();
+                                String ta_name = te.get(i).getName();
+                                String ta_ph = te.get(i).getPhone();
+                                String ta_email = te.get(i).getEmail();
+                                String timings = te.get(i).getTimings();
                                 String day = te.get(i).getDay();
                         %>
 

@@ -27,7 +27,6 @@ public class ScheduleEO {
     @Basic
     @Column(name = "day", nullable = true, length = 45)
     private String day;
-
     public String getTimings() {
         return timings;
     }
@@ -36,7 +35,6 @@ public class ScheduleEO {
         this.timings = timings;
     }
 
-
     public String getLocation() {
         return location;
     }
@@ -44,7 +42,6 @@ public class ScheduleEO {
     public void setLocation(String location) {
         this.location = location;
     }
-
 
     public String getScheduleId() {
         return scheduleId;

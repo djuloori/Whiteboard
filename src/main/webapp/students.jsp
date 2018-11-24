@@ -144,7 +144,7 @@
                             for(int i=0;i<se.size();i++){
                                 String stu_id = se.get(i).getStudentId();
                                 String stu_name = se.get(i).getStudentName();
-                                String stu_ph = se.get(i).getStudentPhno();
+                                String stu_ph = se.get(i).getStudentPhoneNumber();
                                 String stu_email = se.get(i).getStudentEmail();
                         %>
 

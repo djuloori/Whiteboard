@@ -21,7 +21,6 @@ public class UserEO implements Serializable{
     @Column(name = "usertype", nullable = true, length = 45)
     private String usertype;
 
-
     public String getUsername() {
         return username;
     }
@@ -29,7 +28,6 @@ public class UserEO implements Serializable{
     public void setUsername(String username) {
         this.username = username;
     }
-
 
     public String getPassword() {
         return password;
@@ -39,12 +37,11 @@ public class UserEO implements Serializable{
         this.password = password;
     }
 
-
-    public String getUsertype() {
+    public String getUserType() {
         return usertype;
     }
 
-    public void setUsertype(String usertype) {
+    public void setUserType(String usertype) {
         this.usertype = usertype;
     }
 
@@ -56,9 +53,7 @@ public class UserEO implements Serializable{
         return classList;
     }
 
-    public void setClasses(List<ClassesEO> classes) {
-        this.classList = classList;
-    }
+    public void setClasses(List<ClassesEO> classes) {  this.classList = classList; }
 
 
 }

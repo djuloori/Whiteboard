@@ -26,7 +26,7 @@ public class UserDao {
             query.setParameter("password",hashedPassword);
             UserEO user = (UserEO) query.getSingleResult();
             if(userRO.getUsername().equals(user.getUsername()) && hashedPassword.equals(user.getPassword())){
-                return user.getUsertype();
+                return user.getUserType();
             }else{
                 return "failed";
             }
@@ -42,7 +42,7 @@ public class UserDao {
             user.setUsername(userRO.getUsername());
             String hashedPassword = getMD5(userRO.getPassword());
             user.setPassword(hashedPassword);
-            user.setUsertype(userRO.getUsertype());
+            user.setUserType(userRO.getUsertype());
             m_SecurableEntityManager.save(user);
             return "Success";
         }catch (Exception e){

@@ -2,7 +2,7 @@
 <%@ page import="java.util.List" %>
 
 <%@ page import="com.github.djuloori.whiteboard.dao.TaDao" %>
-<%@ page import="com.github.djuloori.whiteboard.model.TaEO" %>
+<%@ page import="com.github.djuloori.whiteboard.model.TeachingAssistantEO" %>
 <%@ page import="java.sql.Timestamp" %>
 <%@ page import="com.github.djuloori.whiteboard.dao.ScheduleDao" %>
 <%@ page import="com.github.djuloori.whiteboard.model.ScheduleEO" %>
@@ -147,7 +147,7 @@
                             SyllabusDao sd = (SyllabusDao) ApplicationContextProvider.getApplicationContext().getBean("syllabusDao");
                             List<SyllabusEO> se = sd.getAllSyllubus();
                             for(int i=0;i<se.size();i++){
-                                String syll_id = se.get(i).getIdsyllabus();
+                                String syll_id = se.get(i).getSyllabusId();
                                 String Class_id = se.get(i).getClassId();
                                 byte[] syllubus = se.get(i).getSyllabus();
                                 session2.setAttribute("syllubus",syllubus);
