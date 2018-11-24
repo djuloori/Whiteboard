@@ -42,27 +42,44 @@ public class AssignmentEO {
     @PrimaryKeyJoinColumn(name ="class_id")
     private ClassesEO classesEO;
 
-    public ClassesEO getCourses() { return classesEO; }
+    public ClassesEO getCourses() {
+        return classesEO;
+    }
 
-    public void setCourses(ClassesEO classesEO) { this.classesEO = classesEO; }
+    public void setCourses(ClassesEO classesEO) {
+        this.classesEO = classesEO;
+    }
 
-    public String getAssignmentId() { return assignmentId; }
+    public String getAssignmentId() {
+        return assignmentId;
+    }
 
-    public void setAssignmentId(String assignmentId) { this.assignmentId = assignmentId; }
+    public void setAssignmentId(String assignmentId) {
+        this.assignmentId = assignmentId;
+    }
 
+    public String getAssignmentName() {
+        return assignmentName;
+    }
 
-    public String getAssignmentName() { return assignmentName; }
+    public void setAssignmentName(String assignmentName) {
+        this.assignmentName = assignmentName;
+    }
 
-    public void setAssignmentName(String assignmentName) { this.assignmentName = assignmentName; }
+    public String getTotalPoints() {
+        return totalPoints;
+    }
 
+    public void setTotalPoints(String totalPoints) {
+        this.totalPoints = totalPoints;
+    }
 
-    public String getTotalPoints() { return totalPoints; }
+    public byte[] getAssignment() {
+        return assignment;
+    }
 
-    public void setTotalPoints(String totalPoints) { this.totalPoints = totalPoints; }
-
-
-    public byte[] getAssignment() { return assignment; }
-
-    public void setAssignment(byte[] assignment) {  this.assignment = assignment; }
+    public void setAssignment(byte[] assignment) {
+        this.assignment = assignment;
+    }
 
 }

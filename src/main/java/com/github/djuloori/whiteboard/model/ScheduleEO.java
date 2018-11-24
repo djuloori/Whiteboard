@@ -27,6 +27,7 @@ public class ScheduleEO {
     @Basic
     @Column(name = "day", nullable = true, length = 45)
     private String day;
+
     public String getTimings() {
         return timings;
     }
