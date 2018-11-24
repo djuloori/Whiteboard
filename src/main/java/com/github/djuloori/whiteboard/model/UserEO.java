@@ -9,7 +9,6 @@ import java.util.List;
 @NamedQueries({@NamedQuery(name="UserEntity.findAll", query="Select u from UserEO u"),
         @NamedQuery(name="UserEntity.Validation",query="Select u from UserEO u where u.username = :username and u.password = :password")})
 public class UserEO implements Serializable{
-    //variables
     @Id
     @Column(name = "username", nullable = false, updatable = false, length = 45)
     private String username;
@@ -22,7 +21,6 @@ public class UserEO implements Serializable{
     @Column(name = "usertype", nullable = true, length = 45)
     private String usertype;
 
-    //getter and setter methods
     public String getUsername() {
         return username;
     }
@@ -31,7 +29,6 @@ public class UserEO implements Serializable{
         this.username = username;
     }
 
-
     public String getPassword() {
         return password;
     }
@@ -39,7 +36,6 @@ public class UserEO implements Serializable{
     public void setPassword(String password) {
         this.password = password;
     }
-
 
     public String getUserType() {
         return usertype;
@@ -57,9 +53,7 @@ public class UserEO implements Serializable{
         return classList;
     }
 
-    public void setClasses(List<ClassesEO> classes) {
-        this.classList = classList;
-    }
+    public void setClasses(List<ClassesEO> classes) {  this.classList = classList; }
 
 
 }

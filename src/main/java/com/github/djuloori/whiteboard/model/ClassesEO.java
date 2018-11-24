@@ -69,14 +69,14 @@ public class ClassesEO {
 
     @OneToMany(orphanRemoval = true)
     @JoinColumn(name="class_id")
-    private List<TeachingAssistantEO> taEntities;
+    private List<TeachingAssistantEO> teachingAssistantEntities;
 
-    public List<TeachingAssistantEO> getTaEntities() {
-        return taEntities;
+    public List<TeachingAssistantEO> getTeachingAssistantEntities() {
+        return teachingAssistantEntities;
     }
 
-    public void setTaEntities(List<TeachingAssistantEO> taEntities) {
-        this.taEntities = taEntities;
+    public void setTeachingAssistantEntities(List<TeachingAssistantEO> teachingAssistantEntities) {
+        this.teachingAssistantEntities = teachingAssistantEntities;
     }
 
     @OneToMany(orphanRemoval = true)

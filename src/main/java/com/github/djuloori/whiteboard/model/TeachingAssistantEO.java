@@ -10,7 +10,6 @@ import java.io.Serializable;
 @Table(name = "ta", schema = "project_515")
 @NamedQuery(name="TaEntity.findAll", query="Select t from TeachingAssistantEO t")
 public class TeachingAssistantEO implements Serializable{
-    //variables
     @Id
     @Column(name = "ta_id", nullable = false, length = 45)
     private String Id;
@@ -37,92 +36,39 @@ public class TeachingAssistantEO implements Serializable{
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-    //getter and setter methods
-    public String getClassId() {
+    public String getClassId() { return classId; }
 
-        return classId;
-    }
-
-    public void setClassId(String classId) {
-
-        this.classId = classId;
-    }
+    public void setClassId(String classId) { this.classId = classId; }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @PrimaryKeyJoinColumn(name ="class_id")
     private ClassesEO classesEO;
 
-    public ClassesEO getCle2() {
+    public ClassesEO getCle2() {  return classesEO; }
 
-        return classesEO;
-    }
+    public void setCle2(ClassesEO classesEO) { this.classesEO = classesEO; }
 
-    public void setCle2(ClassesEO classesEO) {
+    public String getId() { return Id; }
 
-        this.classesEO = classesEO;
-    }
+    public void setId(String id) {  this.Id = id; }
 
+    public String getName() {   return Name; }
 
-    public String getId() {
+    public void setName(String name) {  this.Name = name; }
 
-        return Id;
-    }
+    public String getEmail() {  return Email; }
 
-    public void setId(String id) {
+    public void setEmail(String email) {  this.Email = email; }
 
-        this.Id = id;
-    }
+    public String getPhone() {  return Phone; }
 
+    public void setPhone(String phone) {  this.Phone = phone; }
 
-    public String getName() {
+    public String getTimings() {  return Timings; }
 
-        return Name;
-    }
+    public void setTimings(String timings) {  this.Timings = timings; }
 
-    public void setName(String name) {
+    public String getDay() {  return day; }
 
-        this.Name = name;
-    }
-
-
-    public String getEmail() {
-
-        return Email;
-    }
-
-    public void setEmail(String email) {
-
-        this.Email = email;
-    }
-
-
-    public String getPhone() {
-
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-
-        this.Phone = phone;
-    }
-
-    public String getTimings() {
-
-        return Timings;
-    }
-
-    public void setTimings(String timings) {
-
-        this.Timings = timings;
-    }
-
-    public String getDay() {
-
-        return day;
-    }
-
-    public void setDay(String day) {
-
-        this.day = day;
-    }
+    public void setDay(String day) {  this.day = day; }
 }

@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Table(name = "assignment", schema = "project_515")
 @NamedQuery(name="AssignmentsEntity.findAll", query="Select a from AssignmentEO a")
 public class AssignmentEO {
-    //variables
     @Id
     @Column(name = "assignment_id", nullable = false, length = 45)
     private String assignmentId;
@@ -29,7 +28,6 @@ public class AssignmentEO {
 
     @Column(name = "class_id",nullable = true)
     private String classId;
-    //getter and setter methods
     public String getClassId() {
 
         return classId;
@@ -44,57 +42,27 @@ public class AssignmentEO {
     @PrimaryKeyJoinColumn(name ="class_id")
     private ClassesEO classesEO;
 
-    public ClassesEO getCourses() {
+    public ClassesEO getCourses() { return classesEO; }
 
-        return classesEO;
-    }
+    public void setCourses(ClassesEO classesEO) { this.classesEO = classesEO; }
 
-    public void setCourses(ClassesEO classesEO) {
+    public String getAssignmentId() { return assignmentId; }
 
-        this.classesEO = classesEO;
-    }
-
-    public String getAssignmentId() {
-
-        return assignmentId;
-    }
-
-    public void setAssignmentId(String assignmentId) {
-
-        this.assignmentId = assignmentId;
-    }
+    public void setAssignmentId(String assignmentId) { this.assignmentId = assignmentId; }
 
 
-    public String getAssignmentName() {
+    public String getAssignmentName() { return assignmentName; }
 
-        return assignmentName;
-    }
-
-    public void setAssignmentName(String assignmentName) {
-
-        this.assignmentName = assignmentName;
-    }
+    public void setAssignmentName(String assignmentName) { this.assignmentName = assignmentName; }
 
 
-    public String getTotalPoints() {
+    public String getTotalPoints() { return totalPoints; }
 
-        return totalPoints;
-    }
-
-    public void setTotalPoints(String totalPoints) {
-
-        this.totalPoints = totalPoints;
-    }
+    public void setTotalPoints(String totalPoints) { this.totalPoints = totalPoints; }
 
 
-    public byte[] getAssignment() {
+    public byte[] getAssignment() { return assignment; }
 
-        return assignment;
-    }
-
-    public void setAssignment(byte[] assignment) {
-
-        this.assignment = assignment;
-    }
+    public void setAssignment(byte[] assignment) {  this.assignment = assignment; }
 
 }
