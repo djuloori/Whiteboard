@@ -17,7 +17,8 @@
 **DB Setup:**
 1) Download/Install standard version of XAMP server
 2) Open the XAMP server and start Apache and MySQL
-2) Make sure to run MYSQL on port 3306.
+3) Create a db.properties file according to db.properties.template
+4) Give your db connection properties in the properties file and save it.
  
 **Link of the application:**
 http://54.236.112.106:8080/whiteboard/
