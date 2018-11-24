@@ -25,7 +25,9 @@ public class SyllabusEO {
         this.classId = classId;
     }
 
-    public byte[] getSyllabus() {  return syllabus; }
+    public byte[] getSyllabus() {
+        return syllabus;
+    }
 
     public void setSyllabus(byte[] syllabus) {
         this.syllabus = syllabus;

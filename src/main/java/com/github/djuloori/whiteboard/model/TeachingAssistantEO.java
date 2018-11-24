@@ -36,39 +36,71 @@ public class TeachingAssistantEO implements Serializable{
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-    public String getClassId() { return classId; }
 
-    public void setClassId(String classId) { this.classId = classId; }
+    public String getClassId() {
+        return classId;
+    }
+
+    public void setClassId(String classId) {
+        this.classId = classId;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @PrimaryKeyJoinColumn(name ="class_id")
     private ClassesEO classesEO;
 
-    public ClassesEO getCle2() {  return classesEO; }
+    public ClassesEO getCourse() {
+        return classesEO;
+    }
 
-    public void setCle2(ClassesEO classesEO) { this.classesEO = classesEO; }
+    public void setCourse(ClassesEO classesEO) {
+        this.classesEO = classesEO;
+    }
 
-    public String getId() { return Id; }
+    public String getId() {
+        return Id;
+    }
 
-    public void setId(String id) {  this.Id = id; }
+    public void setId(String id) {
+        this.Id = id;
+    }
 
-    public String getName() {   return Name; }
+    public String getName() {
+        return Name;
+    }
 
-    public void setName(String name) {  this.Name = name; }
+    public void setName(String name) {
+        this.Name = name;
+    }
 
-    public String getEmail() {  return Email; }
+    public String getEmail() {
+        return Email;
+    }
 
-    public void setEmail(String email) {  this.Email = email; }
+    public void setEmail(String email) {
+        this.Email = email;
+    }
 
-    public String getPhone() {  return Phone; }
+    public String getPhone() {
+        return Phone;
+    }
 
-    public void setPhone(String phone) {  this.Phone = phone; }
+    public void setPhone(String phone) {
+        this.Phone = phone;
+    }
 
-    public String getTimings() {  return Timings; }
+    public String getTimings() {
+        return Timings;
+    }
 
-    public void setTimings(String timings) {  this.Timings = timings; }
+    public void setTimings(String timings) {
+        this.Timings = timings; }
 
-    public String getDay() {  return day; }
+    public String getDay() {
+        return day;
+    }
 
-    public void setDay(String day) {  this.day = day; }
+    public void setDay(String day) {
+        this.day = day;
+    }
 }
