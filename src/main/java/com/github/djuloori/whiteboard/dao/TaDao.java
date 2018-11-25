@@ -24,16 +24,8 @@ public class TaDao {
     }
 
     @Transactional
-    public String addTa(TaRO taRO){
+    public String addTa(TeachingAssistantEO ta){
         try {
-            TeachingAssistantEO ta = new TeachingAssistantEO();
-            ta.setId(taRO.getTaId());
-            ta.setName(taRO.getTaName());
-            ta.setEmail(taRO.getTaEmail());
-            ta.setPhone(taRO.getTaPhone());
-            ta.setTimings(taRO.getTaTimings());
-            ta.setClassId(taRO.getCLASS_ID());
-            ta.setDay(taRO.getDay());
             m_SecurableEntityManager.save(ta);
             return "Ta Added";
         }catch (Exception e){
@@ -50,6 +42,5 @@ public class TaDao {
             return "Not Removed";
         }
     }
-
 
 }

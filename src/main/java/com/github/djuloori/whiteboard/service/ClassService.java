@@ -1,6 +1,7 @@
 package com.github.djuloori.whiteboard.service;
 
 import com.github.djuloori.whiteboard.dao.ClassesDao;
+import com.github.djuloori.whiteboard.model.ClassesEO;
 import com.github.djuloori.whiteboard.rest.ClassesRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -13,15 +14,20 @@ public class ClassService {
     @Autowired
     private ClassesDao classesDao;
 
-    @Autowired
-    private ClassesRO classesRO;
-
     public String syncClass(ClassesRO classesRO){
-        return classesDao.addClass(classesRO);
+        ClassesEO course = new ClassesEO();
+        course.setClassId(classesRO.getClassId());
+        course.setClassName(classesRO.getClassName());
+        course.setUsername(classesRO.getUserName());
+        return classesDao.addClass(course);
     }
 
     public String modifyClass(ClassesRO classesRO){
-        return classesDao.editClass(classesRO);
+        ClassesEO course = new ClassesEO();
+        course.setClassId(classesRO.getClassId());
+        course.setClassName(classesRO.getClassName());
+        course.setUsername(classesRO.getUserName());
+        return classesDao.editClass(course);
     }
 
     public List viewAllClasses(){
@@ -29,8 +35,9 @@ public class ClassService {
     }
 
     public String removeClass(String Classid){
-        classesRO.setClassId(Classid);
-        return classesDao.removeClass(classesRO);
+        ClassesEO course = new ClassesEO();
+        course.setClassId(Classid);
+        return classesDao.removeClass(course);
     }
 
 }

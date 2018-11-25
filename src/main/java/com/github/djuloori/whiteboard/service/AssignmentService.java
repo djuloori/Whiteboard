@@ -1,7 +1,9 @@
 package com.github.djuloori.whiteboard.service;
 
 import com.github.djuloori.whiteboard.dao.AssignmentDao;
+import com.github.djuloori.whiteboard.model.AssignmentEO;
 import com.github.djuloori.whiteboard.rest.AssignmentRO;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,23 +16,28 @@ public class AssignmentService {
    @Autowired
    private AssignmentDao assignmentDao;
 
-   @Autowired
-   private AssignmentRO assignmentRO;
-
-   //ToDo - Make Use of RO's
-
-   public String syncAssignment(String assignment_id, String total_points, String assignment_name, InputStream test, String class_id) throws IOException {
-      return assignmentDao.addAssignment(assignment_id,total_points,assignment_name,test,class_id);
+   public String syncAssignment(String assignmentId, String totalPoints, String assignmentName, InputStream stream, String classId) throws IOException {
+      AssignmentEO assignment = new AssignmentEO();
+      assignment.setAssignmentId(assignmentId);
+      assignment.setAssignmentName(assignmentName);
+      assignment.setTotalPoints(totalPoints);
+      assignment.setAssignment(IOUtils.toByteArray(stream));
+      assignment.setClassId(classId);
+      return assignmentDao.addAssignment(assignment);
    }
 
-   public String modifyAssignment(String assignment_id, String total_points, String assignment_name, InputStream test, String class_id) throws IOException{
-      return assignmentDao.editAssignment(assignment_id,total_points,assignment_name,test,class_id);
+   public String modifyAssignment(String assignmentId, String totalPoints, String assignmentName, InputStream stream, String classId) throws IOException{
+      AssignmentEO assignment = new AssignmentEO();
+      assignment.setAssignmentId(assignmentId);
+      assignment.setAssignmentName(assignmentName);
+      assignment.setAssignment(IOUtils.toByteArray(stream));
+      assignment.setClassId(classId);
+      assignment.setTotalPoints(totalPoints);
+      return assignmentDao.editAssignment(assignment);
    }
 
    public String removeAssignment(String Assignmentid){
-      assignmentRO.setAssignmentId(Assignmentid);
       return assignmentDao.removeAssignment(Assignmentid);
    }
-
 
 }
