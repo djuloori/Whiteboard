@@ -2,14 +2,10 @@ package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.UserEO;
-import com.github.djuloori.whiteboard.rest.UserRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.*;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 @Component
 public class UserDao {
@@ -18,15 +14,14 @@ public class UserDao {
     private SecurableEntityManager m_SecurableEntityManager;
 
     @Transactional
-    public String findUser(UserRO userRO){
+    public String findUser(UserEO user){
         try {
             Query query = m_SecurableEntityManager.createQuery("UserEntity.Validation", UserEO.class);
-            String hashedPassword = getMD5(userRO.getPassword());
-            query.setParameter("username",userRO.getUsername());
-            query.setParameter("password",hashedPassword);
-            UserEO user = (UserEO) query.getSingleResult();
-            if(userRO.getUsername().equals(user.getUsername()) && hashedPassword.equals(user.getPassword())){
-                return user.getUserType();
+            query.setParameter("username",user.getUsername());
+            query.setParameter("password",user.getPassword());
+            UserEO userEO = (UserEO) query.getSingleResult();
+            if(userEO.getUsername().equals(user.getUsername()) && userEO.getPassword().equals(user.getPassword())){
+                return userEO.getUserType();
             }else{
                 return "failed";
             }
@@ -36,33 +31,12 @@ public class UserDao {
     }
 
     @Transactional
-    public String createUser(UserRO userRO){
+    public String createUser(UserEO user){
         try {
-            UserEO user = new UserEO();
-            user.setUsername(userRO.getUsername());
-            String hashedPassword = getMD5(userRO.getPassword());
-            user.setPassword(hashedPassword);
-            user.setUserType(userRO.getUsertype());
             m_SecurableEntityManager.save(user);
             return "Success";
         }catch (Exception e){
             return "failed";
-        }
-    }
-
-    private String getMD5(String input) {
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            byte[] messageDigest = md.digest(input.getBytes());
-            BigInteger number = new BigInteger(1, messageDigest);
-            String hashtext = number.toString(16);
-            while (hashtext.length() < 32) {
-                hashtext = "0" + hashtext;
-            }
-            return hashtext;
-        }
-        catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
         }
     }
 
