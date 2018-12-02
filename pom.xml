@@ -165,16 +165,17 @@
                     <execution>
                         <id>exec-npm-run-build</id>
                         <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
                         <configuration>
                             <workingDirectory>${project.basedir}/src/main/pages</workingDirectory>
                             <executable>npm</executable>
                             <arguments>
+                                <argument>run</argument>
                                 <argument>build</argument>
                             </arguments>
                         </configuration>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
                     </execution>
                 </executions>
             </plugin>
