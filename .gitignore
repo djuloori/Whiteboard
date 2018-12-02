@@ -6,3 +6,4 @@ target/
 *.iml
 src/main/resources/META-INF/db.properties
 node_modules
+dist/
