@@ -6,7 +6,6 @@ import java.util.List;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.AssignmentEO;
-import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,14 +17,8 @@ public class AssignmentDao {
     private SecurableEntityManager m_SecurableEntityManager;
 
     @Transactional
-    public String addAssignment(String assignmentId, String totalPoints, String assignmentName, InputStream test, String classId)throws IOException {
+    public String addAssignment(AssignmentEO assignment)throws IOException {
         try {
-            AssignmentEO assignment = new AssignmentEO();
-            assignment.setAssignmentId(assignmentId);
-            assignment.setAssignmentName(assignmentName);
-            assignment.setTotalPoints(totalPoints);
-            assignment.setAssignment(IOUtils.toByteArray(test));
-            assignment.setClassId(classId);
             m_SecurableEntityManager.save(assignment);
             return "Perfect";
         }catch (Exception e){
@@ -35,20 +28,14 @@ public class AssignmentDao {
 
     @Transactional
     public List getAllAssignments(){
-        Query query = m_SecurableEntityManager.createQuery("AssignmentsEntity.findAll", AssignmentEO.class);;
+        Query query = m_SecurableEntityManager.createQuery("AssignmentsEntity.findAll", AssignmentEO.class);
         List<AssignmentEO> assignments = query.getResultList();
         return assignments;
     }
 
     @Transactional
-    public String editAssignment(String assignmentId, String assignmentName, String totalPoints, InputStream stream, String classId) throws IOException {
+    public String editAssignment(AssignmentEO assignment) throws IOException {
         try {
-            AssignmentEO assignment = new AssignmentEO();
-            assignment.setAssignmentId(assignmentId);
-            assignment.setAssignmentName(assignmentName);
-            assignment.setAssignment(IOUtils.toByteArray(stream));
-            assignment.setClassId(classId);
-            assignment.setTotalPoints(totalPoints);
             m_SecurableEntityManager.update(assignment);
             return "Editing Successful";
         } catch (Exception e) {

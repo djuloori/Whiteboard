@@ -24,14 +24,8 @@ public class ScheduleDao {
     }
 
     @Transactional
-    public String addSchedule(ScheduleRO scheduleRO){
+    public String addSchedule(ScheduleEO schedule){
         try {
-            ScheduleEO schedule = new ScheduleEO();
-            schedule.setTimings(scheduleRO.getTimings());
-            schedule.setDay(scheduleRO.getDay());
-            schedule.setLocation(scheduleRO.getLocation());
-            schedule.setClassId(scheduleRO.getCLASS_ID());
-            schedule.setScheduleId(scheduleRO.getScheduleId());
             m_SecurableEntityManager.save(schedule);
             return "Schedule Added";
         }catch (Exception e){
@@ -40,14 +34,8 @@ public class ScheduleDao {
     }
 
     @Transactional
-    public String editSchedule(ScheduleRO scheduleRO){
+    public String editSchedule(ScheduleEO schedule){
         try {
-            ScheduleEO schedule = new ScheduleEO();
-            schedule.setTimings(scheduleRO.getTimings());
-            schedule.setDay(scheduleRO.getDay());
-            schedule.setLocation(scheduleRO.getLocation());
-            schedule.setClassId(scheduleRO.getCLASS_ID());
-            schedule.setScheduleId(scheduleRO.getScheduleId());
             m_SecurableEntityManager.update(schedule);
             return "Schedule Edited";
         }catch (Exception e){
@@ -56,9 +44,9 @@ public class ScheduleDao {
     }
 
     @Transactional
-    public String removeSchedule(ScheduleRO scheduleRO){
+    public String removeSchedule(ScheduleEO schedule){
         try {
-            m_SecurableEntityManager.delete(ScheduleEO.class,scheduleRO.getScheduleId());
+            m_SecurableEntityManager.delete(ScheduleEO.class,schedule.getScheduleId());
             return "Schedule Removed";
         }catch (Exception e){
             return "Not Removed";

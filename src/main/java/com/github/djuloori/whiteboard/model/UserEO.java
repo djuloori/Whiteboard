@@ -53,7 +53,9 @@ public class UserEO implements Serializable{
         return classList;
     }
 
-    public void setClasses(List<ClassesEO> classes) {  this.classList = classList; }
+    public void setClasses(List<ClassesEO> classes) {
+        this.classList = classes;
+    }
 
 
 }

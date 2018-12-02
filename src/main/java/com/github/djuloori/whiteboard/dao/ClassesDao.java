@@ -2,7 +2,6 @@ package com.github.djuloori.whiteboard.dao;
 
 import com.github.djuloori.whiteboard.framework.SecurableEntityManager;
 import com.github.djuloori.whiteboard.model.ClassesEO;
-import com.github.djuloori.whiteboard.rest.ClassesRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,12 +17,8 @@ public class ClassesDao {
 
 
     @Transactional
-    public String addClass(ClassesRO classesRO){
+    public String addClass(ClassesEO course){
         try {
-            ClassesEO course = new ClassesEO();
-            course.setClassId(classesRO.getClassId());
-            course.setClassName(classesRO.getClassName());
-            course.setUsername(classesRO.getUserName());
             m_SecurableEntityManager.save(course);
             return "Inserted";
         }catch (Exception e){
@@ -43,12 +38,8 @@ public class ClassesDao {
     }
 
     @Transactional
-    public String editClass(ClassesRO classesRO) {
+    public String editClass(ClassesEO course) {
         try {
-            ClassesEO course = new ClassesEO();
-            course.setClassId(classesRO.getClassId());
-            course.setClassName(classesRO.getClassName());
-            course.setUsername(classesRO.getUserName());
             m_SecurableEntityManager.update(course);
             return "Edited";
         } catch (Exception e) {
@@ -57,9 +48,9 @@ public class ClassesDao {
     }
 
     @Transactional
-    public String removeClass(ClassesRO classesRO){
+    public String removeClass(ClassesEO course){
         try {
-            m_SecurableEntityManager.delete(ClassesEO.class,classesRO.getClassId());
+            m_SecurableEntityManager.delete(ClassesEO.class,course.getClassId());
             return "Removed";
         }catch (Exception e){
             return "Not Removed";

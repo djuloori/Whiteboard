@@ -29,7 +29,7 @@ public class StudentEO implements Serializable {
 
     @Column(name = "CLASS_ID",nullable = true)
     private String classId;
-    //getter and setter methods
+
     public String getClassId() {
         return classId;
     }
@@ -58,7 +58,9 @@ public class StudentEO implements Serializable {
         this.studentId = studentId;
     }
 
-    public String getStudentName() { return studentName; }
+    public String getStudentName() {
+        return studentName;
+    }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;

@@ -1,6 +1,7 @@
 package com.github.djuloori.whiteboard.service;
 
 import com.github.djuloori.whiteboard.dao.SyllabusDao;
+import com.github.djuloori.whiteboard.model.SyllabusEO;
 import com.github.djuloori.whiteboard.rest.SyllabusRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,20 +15,16 @@ public class SyllabusService {
   @Autowired
   private SyllabusDao syllabusDao;
 
-  @Autowired
-  private SyllabusRO syllabusRO;
-
-
-  //ToDo - Make use of RO's
-  public String syncSyllabus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
-    return syllabusDao.addsyllubus(class_id,inputStream,syllabusid);
+  public String syncSyllabus(String classId, InputStream inputStream, String syllabusId) throws IOException {
+    SyllabusEO syllabus = new SyllabusEO();
+    syllabus.setClassId(classId);
+    syllabus.setSyllabusId(syllabusId);
+    syllabus.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
+    return syllabusDao.addsyllubus(syllabus);
   }
 
-  public String removeSyllabus(String syllabusid){
-    return syllabusDao.removeSyllabus(syllabusid);
+  public String removeSyllabus(String syllabusId){
+    return syllabusDao.removeSyllabus(syllabusId);
   }
-
-
-
 
 }

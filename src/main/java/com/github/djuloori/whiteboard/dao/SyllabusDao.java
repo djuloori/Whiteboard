@@ -25,12 +25,8 @@ public class SyllabusDao {
     }
 
     @Transactional
-    public String addsyllubus(String class_id, InputStream inputStream, String syllabusid) throws IOException {
+    public String addsyllubus(SyllabusEO syllabus) throws IOException {
         try {
-            SyllabusEO syllabus = new SyllabusEO();
-            syllabus.setClassId(class_id);
-            syllabus.setSyllabusId(syllabusid);
-            syllabus.setSyllabus(org.apache.commons.io.IOUtils.toByteArray(inputStream));
             m_SecurableEntityManager.save(syllabus);
             return "done";
         }catch (Exception e){
@@ -39,9 +35,9 @@ public class SyllabusDao {
     }
 
     @Transactional
-    public String removeSyllabus(String syllabus_id){
+    public String removeSyllabus(String syllabusId){
         try {
-            m_SecurableEntityManager.delete(SyllabusEO.class,syllabus_id);
+            m_SecurableEntityManager.delete(SyllabusEO.class,syllabusId);
             return "Syllabus Removed";
         }catch (Exception e){
             return "Not Removed";
