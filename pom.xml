@@ -18,6 +18,10 @@
             <name>Dhruva Juloori</name>
             <email>djuloori@hawk.iit.edu</email>
         </developer>
+        <developer>
+            <name>Saiteja Konda</name>
+            <email>skw36@mst.edu</email>
+        </developer>
     </developers>
 
     <scm>
@@ -120,6 +124,15 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources/META-INF</directory>
+                <excludes>
+                    <exclude>**/*.template</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
