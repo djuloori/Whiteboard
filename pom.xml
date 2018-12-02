@@ -119,6 +119,68 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler-plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>pages/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven.war-plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>pages/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${maven.exec-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>run-npm-install</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/src/main/pages</workingDirectory>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>install</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>exec-npm-run-build</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/src/main/pages</workingDirectory>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>build</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
     <properties>
         <spring.version>4.3.19.RELEASE</spring.version>
         <glassfish.jersey.version>2.25.1</glassfish.jersey.version>
@@ -128,5 +190,8 @@
         <commons-io.version>2.6</commons-io.version>
         <eclipselink.version>2.7.2</eclipselink.version>
         <sql.jdbc.version>5.1.44</sql.jdbc.version>
+        <maven.compiler-plugin.version>3.6.1</maven.compiler-plugin.version>
+        <maven.war-plugin.version>3.1.0</maven.war-plugin.version>
+        <maven.exec-plugin.version>1.6.0</maven.exec-plugin.version>
     </properties>
 </project>
