@@ -18,6 +18,10 @@
             <name>Dhruva Juloori</name>
             <email>djuloori@hawk.iit.edu</email>
         </developer>
+        <developer>
+            <name>Saiteja Konda</name>
+            <email>skw36@mst.edu</email>
+        </developer>
     </developers>
 
     <scm>
@@ -118,6 +122,17 @@
             <version>${glassfish.jersey.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory> src/main/resources/META-INF</directory>
+                <excludes>
+                    <exclude>**/*.template</exclude>
+                </excludes>
+            </resource>
+        </resources>
+    </build>
 
     <properties>
         <spring.version>4.3.19.RELEASE</spring.version>
