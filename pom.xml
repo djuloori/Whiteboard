@@ -150,9 +150,11 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${maven.war-plugin.version}</version>
                 <configuration>
-                    <excludes>
-                        <exclude>pages/**</exclude>
-                    </excludes>
+                    <webResources>
+                        <resource>
+                            <directory>${project.basedir}/src/main/pages/dist</directory>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
 
