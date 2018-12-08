@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './components/Login';
+import App from './components/App';
+
 
 const root = document.getElementById('root');
-root ? ReactDOM.render(<Login />, root) : false;
+root ? ReactDOM.render(<App />, root) : false;

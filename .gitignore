@@ -7,3 +7,4 @@ target/
 src/main/resources/META-INF/db.properties
 node_modules
 dist/
+.DS_Store
