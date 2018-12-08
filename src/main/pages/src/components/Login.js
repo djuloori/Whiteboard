@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom';
 
 class Login extends React.Component {
     constructor(props) {
@@ -46,7 +47,7 @@ class Login extends React.Component {
                         </div>
                         <div className="card-footer">
                             <div className="d-flex justify-content-center links">
-                                Don't have an account?<a href="#">Sign Up</a>
+                                Don't have an account?<NavLink exact to = "/SignUp" activeClassName='active-link'>Sign Up</NavLink>
                             </div>
                             <div className="d-flex justify-content-center">
                                 <a href="#">Forgot your password?</a>
