@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import VpnKey from '@material-ui/icons/VpnKey'
 
 class LoginPage extends React.Component{
 
@@ -21,6 +23,9 @@ class LoginPage extends React.Component{
     render(){
         return (
             <div className="container-box">
+                <div className="d-flex justify-content-center title">
+                    <h1>Whiteboard</h1>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3>Sign In</h3>
@@ -29,14 +34,14 @@ class LoginPage extends React.Component{
                         <form>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-user"></i></span>
+                                    <span className="input-group-text"><AccountCircle className="user_icon"></AccountCircle></span>
                                 </div>
                                 <input type="text" className="form-control" placeholder="username" onChange={(event) => this.setState({username:event.target.value})}/>
 
                             </div>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-key"></i></span>
+                                    <span className="input-group-text"><VpnKey className="key_icon"></VpnKey></span>
                                 </div>
                                 <input type="password" className="form-control" placeholder="password" onChange={(event) => this.setState({password:event.target.value})}/>
                             </div>
@@ -49,11 +54,11 @@ class LoginPage extends React.Component{
                         </form>
                     </div>
                     <div className="card-footer">
-                        <div className="d-flex justify-content-center links">
-                            Don't have an account?<NavLink exact to = "/SignUp" activeClassName='active-link'>Sign Up</NavLink>
+                        <div className="d-flex justify-content-center links account-text">
+                            Don't have an account?&nbsp;<NavLink exact to = "/SignUp" className='signup-link'>Sign Up</NavLink>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <a href="#">Forgot your password?</a>
+                            <a className='forgotpass-link' href="#">Forgot your password?</a>
                         </div>
                     </div>
                 </div>
