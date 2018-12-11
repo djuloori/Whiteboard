@@ -1,6 +1,11 @@
 import React from 'react';
-import '../css/Login.css';
+import Email from '@material-ui/icons/Email';
+import Lock from '@material-ui/icons/Lock';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Login.css';
+import {NavLink} from "react-router-dom";
+
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -17,6 +22,9 @@ class SignUp extends React.Component {
         return (
             <body>
             <div className="container-box">
+                <div className="d-flex justify-content-center title">
+                    <h1>Whiteboard</h1>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3>Sign Up</h3>
@@ -25,40 +33,36 @@ class SignUp extends React.Component {
                         <form>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-user"></i></span>
+                                    <span className="input-group-text"><Email className="user_icon"></Email></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder="First Name"/>
+                                <input type="text" className="form-control" placeholder="Email "/>
 
                             </div>
 
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-key"></i></span>
+                                    <span className="input-group-text"><Lock className="user_icon"></Lock></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder="Last Name"/>
+                                <input type="text" className="form-control" placeholder="Password"/>
                             </div>
 
-                            <div className="input-group form-group">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-key"></i></span>
+                            <div className="row align-items-center type">
+                                <div className="radio">
+                                    <label><input type="radio" name="optradio"/>&nbsp;Professor</label>
                                 </div>
-                                <input type="email" className="form-control" placeholder="Email"/>
-                            </div>
-
-                            <div className="input-group form-group">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text"><i className="glyphicon glyphicon-key"></i></span>
+                                <div className="radio">
+                                    <label><input type="radio" name="optradio"/>&nbsp;Student</label>
                                 </div>
-                                <input type="password" className="form-control" placeholder="Password"/>
-                            </div>
-
-                            <div className="row align-items-center remember">
-                                <input type="checkbox"/>Already have an account
                             </div>
                             <div className="form-group">
-                                <input type="submit" value="Login" className="btn float-right login_btn"/>
+                                <input type="submit" value="Register" className="btn float-right register_btn"/>
                             </div>
                         </form>
+                    </div>
+                    <div className="card-footer">
+                        <div className="d-flex justify-content-center links account-text">
+                            Already have an account?&nbsp;<NavLink exact to = "/" className='login-link'>Login In</NavLink>
+                        </div>
                     </div>
                 </div>
 

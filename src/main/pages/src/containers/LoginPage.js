@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Login.css';
 import { NavLink } from 'react-router-dom';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VpnKey from '@material-ui/icons/VpnKey'
@@ -36,14 +36,14 @@ class LoginPage extends React.Component{
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><AccountCircle className="user_icon"></AccountCircle></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder="username" onChange={(event) => this.setState({username:event.target.value})}/>
+                                <input type="text" className="form-control" placeholder="Username" onChange={(event) => this.setState({username:event.target.value})}/>
 
                             </div>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><VpnKey className="key_icon"></VpnKey></span>
                                 </div>
-                                <input type="password" className="form-control" placeholder="password" onChange={(event) => this.setState({password:event.target.value})}/>
+                                <input type="password" className="form-control" placeholder="Password" onChange={(event) => this.setState({password:event.target.value})}/>
                             </div>
                             <div className="row align-items-center remember">
                                 <input type="checkbox"/>Remember Me
