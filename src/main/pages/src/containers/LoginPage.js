@@ -1,6 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/Login.css';
+import '../styles/AcountPageCustom.css';
 import { NavLink } from 'react-router-dom';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VpnKey from '@material-ui/icons/VpnKey'
@@ -22,7 +21,7 @@ class LoginPage extends React.Component{
 
     render(){
         return (
-            <div className="container-box">
+            <div className="container">
                 <div className="d-flex justify-content-center title">
                     <h1>Whiteboard</h1>
                 </div>

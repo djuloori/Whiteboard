@@ -1,6 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/Login.css';
 import SignUpPage from '../containers/SignUpPage';
 
 

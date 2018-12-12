@@ -1,10 +1,8 @@
 import React from 'react';
+import '../styles/AcountPageCustom.css';
+import {NavLink} from "react-router-dom";
 import Email from '@material-ui/icons/Email';
 import Lock from '@material-ui/icons/Lock';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/Login.css';
-import {NavLink} from "react-router-dom";
 
 class SignUpPage extends React.Component {
 
@@ -24,7 +22,7 @@ class SignUpPage extends React.Component {
 
     render(){
         return (
-            <div className="container-box">
+            <div className="container">
                 <div className="d-flex justify-content-center title">
                     <h1>Whiteboard</h1>
                 </div>
@@ -36,7 +34,7 @@ class SignUpPage extends React.Component {
                         <form>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><Email className="user_icon"></Email></span>
+                                    <span className="input-group-text"><Email className="email_icon"></Email></span>
                                 </div>
                                 <input type="text" className="form-control" placeholder="Email" onChange={(event) => this.setState({username:event.target.value})}/>
 
@@ -44,7 +42,7 @@ class SignUpPage extends React.Component {
 
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text"><Lock className="user_icon"></Lock></span>
+                                    <span className="input-group-text"><Lock className="lock_icon"></Lock></span>
                                 </div>
                                 <input type="text" className="form-control" placeholder="Password" onChange={(event) => this.setState({password:event.target.value})}/>
                             </div>

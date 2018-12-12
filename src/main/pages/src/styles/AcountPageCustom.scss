@@ -1,16 +1,18 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
 .title {
     position:relative;
     top:10%;
+    h1 {
+      font-size: 5vw;
+    }
 }
 
-.title h1 {
-    font-size: 5vw;
-}
 .card-header h3{
     color: white;
 }
 
-.container-box{
+.container{
     margin:0px auto;
     height:100vh;
     width: 50%;
@@ -25,36 +27,39 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0,0,0,0.5) !important;
-
+    background-color: rgba(0,0,0,0.5);
+    border-radius:1rem;
 }
 
 .input-group-prepend span{
     width: 50px;
     background-color: white;
     color: black;
-    border:0 !important;
+    border:0;
 }
 
 .remember{
     color: white;
-}
-
-.remember input
-{
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    margin-right: 5px;
-}
-
-.type{
-    color: white;
+    input
+    {
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+      margin-right: 5px;
+    }
 }
 
 .radio{
     margin-left: 15px;
     margin-right: 5px;
+}
+
+.account-text{
+  color: white;
+}
+
+.account-text{
+  color: white;
 }
 
 .login_btn{
@@ -63,13 +68,12 @@
     width: 100px;
     transition-delay: 0.3s;
     transition-duration: 0.2s;
-}
-
-.login_btn:hover{
-    color: black;
-    background-color: burlywood;
-    font-weight: bold;
-    transition: 0.4s all 0s;
+    &:hover{
+      color: black;
+      background-color: burlywood;
+      font-weight: bold;
+      transition: 0.4s all 0s;
+    }
 }
 
 .register_btn{
@@ -78,53 +82,45 @@
     width: 100px;
     transition-delay: 0.3s;
     transition-duration: 0.2s;
-}
-
-.register_btn:hover{
-    color: black;
-    background-color: burlywood;
-    font-weight: bold;
-    transition: 0.4s all 0s;
-}
-
-.account-text{
-    color: white;
+    &:hover{
+      color: black;
+      background-color: burlywood;
+      font-weight: bold;
+      transition: 0.4s all 0s;
+    }
 }
 
 .signup-link{
     color: white;
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-}
-
-.signup-link:hover{
-    color: burlywood;
-    font-weight: bold;
-    transition: 0.2s all 0s;
+    &:hover{
+      color: burlywood;
+      font-weight: bold;
+      transition: 0.2s all 0s;
+    }
 }
 
 .forgotpass-link{
     color: white;
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-}
-
-.forgotpass-link:hover{
-    color:burlywood;
-    font-weight: bold;
-    transition: 0.2s all 0s;
+    &:hover{
+      color:burlywood;
+      font-weight: bold;
+      transition: 0.2s all 0s;
+    }
 }
 
 .login-link{
     color: white;
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-}
-
-.login-link:hover{
-    color: burlywood;
-    font-weight: bold;
-    transition: 0.2s all 0s;
+    &:hover{
+      color: burlywood;
+      font-weight: bold;
+      transition: 0.2s all 0s;
+    }
 }
 
 input:focus, input[type]:focus, .uneditable-input:focus {
