@@ -1,6 +1,4 @@
 import React from 'react';
-import '../css/Login.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginPage from '../containers/LoginPage';
 
 class Login extends React.Component {
