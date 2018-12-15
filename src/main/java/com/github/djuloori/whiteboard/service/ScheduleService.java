@@ -6,6 +6,8 @@ import com.github.djuloori.whiteboard.rest.ScheduleRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class ScheduleService {
 
@@ -36,6 +38,10 @@ public class ScheduleService {
         ScheduleEO schedule = new ScheduleEO();
         schedule.setScheduleId(scheduleId);
         return scheduleDao.removeSchedule(schedule);
+    }
+
+    public List viewSchedule(){
+        return scheduleDao.getAllschedule();
     }
 
 }

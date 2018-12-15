@@ -10,6 +10,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 @Path("Classes")
 public class ClassResource {
@@ -38,11 +39,13 @@ public class ClassResource {
         return Response.ok(classService.modifyClass(classesRO)).build();
    }
 
-   /*@GET - Not Needed
-   @Produces(MediaType.TEXT_PLAIN)
-   public List ReadClass(){
-        return classService.viewAllClasses();
-   }*/
+
+   @GET
+   @Path("/getCourses")
+   @Produces(MediaType.APPLICATION_JSON)
+   public Response getCourses(){
+        return Response.ok(classService.viewAllClasses()).build();
+   }
 
    @DELETE
    @Path("/DeleteClass/{Classid}")

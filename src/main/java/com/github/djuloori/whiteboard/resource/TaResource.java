@@ -14,10 +14,6 @@ public class TaResource {
     @Autowired
     private TaService taService;
 
-    @Autowired
-    private TaRO taRO;
-
-
     @POST
     @Path("/AddTa")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -30,6 +26,13 @@ public class TaResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response DeleteTa(@PathParam("Taid") String Taid){
         return Response.ok(taService.removeTa(Taid)).build();
+    }
+
+    @GET
+    @Path("/GetTeachingAssistants")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTeachingAssistants(){
+        return Response.ok(taService.viewTeachingAssistants()).build();
     }
 
 }

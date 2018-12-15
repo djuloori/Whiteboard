@@ -6,6 +6,8 @@ import com.github.djuloori.whiteboard.rest.TaRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class TaService {
 
@@ -26,6 +28,10 @@ public class TaService {
 
     public String removeTa(String id){
         return taDao.removeTa(id);
+    }
+
+    public List viewTeachingAssistants(){
+        return taDao.getAllTa();
     }
 
 }

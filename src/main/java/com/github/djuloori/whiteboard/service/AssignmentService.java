@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Component
 public class AssignmentService {
@@ -38,6 +39,10 @@ public class AssignmentService {
 
    public String removeAssignment(String Assignmentid){
       return assignmentDao.removeAssignment(Assignmentid);
+   }
+
+   public List viewAllAssignments(){
+      return assignmentDao.getAllAssignments();
    }
 
 }
