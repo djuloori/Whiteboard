@@ -36,6 +36,11 @@ public class ScheduleResource {
         return Response.ok(scheduleService.removeSchedule(Scheduleid)).build();
     }
 
-
+    @GET
+    @Path("/GetSchedule")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getSchedule(){
+        return Response.ok(scheduleService.viewSchedule()).build();
+    }
 
 }

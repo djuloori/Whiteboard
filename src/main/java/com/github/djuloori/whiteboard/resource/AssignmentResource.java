@@ -24,6 +24,13 @@ public class AssignmentResource {
          return Response.ok(result).build();
      }
 
+     @GET
+     @Path("/GetAssignments")
+     @Produces(MediaType.APPLICATION_JSON)
+     public Response getAssignments(){
+         return Response.ok(assignmentService.viewAllAssignments()).build();
+     }
+
 
     @DELETE
     @Path("/DeleteAssignment/{assignment_id}")

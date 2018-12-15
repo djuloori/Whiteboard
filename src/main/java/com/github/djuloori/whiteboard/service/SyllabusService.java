@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Component
 public class SyllabusService {
@@ -25,6 +26,10 @@ public class SyllabusService {
 
   public String removeSyllabus(String syllabusId){
     return syllabusDao.removeSyllabus(syllabusId);
+  }
+
+  public List viewSyllabus(){
+     return syllabusDao.getAllSyllubus();
   }
 
 }
