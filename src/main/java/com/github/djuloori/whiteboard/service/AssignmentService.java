@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -42,7 +43,17 @@ public class AssignmentService {
    }
 
    public List viewAllAssignments(){
-      return assignmentDao.getAllAssignments();
+      List<AssignmentEO> assignments = assignmentDao.getAllAssignments();
+      List<AssignmentRO> assignmentList = new ArrayList<>(assignments.size());
+      for(AssignmentEO assignment : assignments){
+         AssignmentRO assignmentRO = new AssignmentRO();
+         assignmentRO.setAssignmentId(assignment.getAssignmentId());
+         assignmentRO.setAssignmentName(assignment.getAssignmentName());
+         assignmentRO.setAssignment(assignment.getAssignment());
+         assignmentRO.setTotalPoints(assignment.getTotalPoints());
+         assignmentList.add(assignmentRO);
+      }
+      return assignmentList;
    }
 
 }
