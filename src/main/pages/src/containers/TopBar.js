@@ -16,6 +16,8 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 const styles = theme => ({
     root: {
         width: '100%',
+        zIndex: '100',
+        position: 'absolute',
     },
     grow: {
         flexGrow: 1,
@@ -133,7 +135,7 @@ class PrimarySearchAppBar extends React.Component {
             >
                 <MenuItem>
                     <IconButton color="inherit">
-                        <Badge badgeContent={4} color="secondary">
+                        <Badge badgeContent={0} color="secondary">
                             <MailIcon />
                         </Badge>
                     </IconButton>
@@ -141,7 +143,7 @@ class PrimarySearchAppBar extends React.Component {
                 </MenuItem>
                 <MenuItem>
                     <IconButton color="inherit">
-                        <Badge badgeContent={11} color="secondary">
+                        <Badge badgeContent={0} color="secondary">
                             <NotificationsIcon />
                         </Badge>
                     </IconButton>
@@ -160,7 +162,7 @@ class PrimarySearchAppBar extends React.Component {
             <div className={classes.root}>
                 <AppBar position="static">
                     <Toolbar className={classes.toolbarCustom}>
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
+                        <IconButton onClick={this.props.handleClick} className={classes.menuButton} color="inherit" aria-label="Open drawer">
                             <MenuIcon />
                         </IconButton>
                         <Typography className={classes.title} variant="h6" color="inherit" noWrap>
