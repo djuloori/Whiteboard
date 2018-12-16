@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -29,7 +30,16 @@ public class SyllabusService {
   }
 
   public List viewSyllabus(){
-     return syllabusDao.getAllSyllubus();
+     List<SyllabusEO> syllabusList = syllabusDao.getAllSyllubus();
+     List<SyllabusRO> syllabus = new ArrayList<>();
+     for(SyllabusEO syllabusEO: syllabusList){
+         SyllabusRO syllabusRO = new SyllabusRO();
+         syllabusRO.setIdsyllabus(syllabusEO.getSyllabusId());
+         syllabusRO.setCLASS_ID(syllabusEO.getClassId());
+         syllabusRO.setSyllabus(syllabusEO.getSyllabus());
+         syllabus.add(syllabusRO);
+     }
+     return syllabus;
   }
 
 }
