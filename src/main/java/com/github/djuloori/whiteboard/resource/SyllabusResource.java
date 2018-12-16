@@ -29,8 +29,15 @@ public class SyllabusResource {
     @DELETE
     @Path("/DeleteSyllabus/{syllabusid}")
     @Produces(MediaType.TEXT_PLAIN)
-    public Response DeleteAssignment(@PathParam("syllabusid") String syllabusid){
+    public Response DeleteSyllabus(@PathParam("syllabusid") String syllabusid){
         return Response.ok(syllabusService.removeSyllabus(syllabusid)).build();
+    }
+
+    @GET
+    @Path("/GetSyllabus")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getSyllabus(){
+        return Response.ok(syllabusService.viewSyllabus()).build();
     }
 
 

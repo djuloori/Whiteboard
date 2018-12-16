@@ -6,6 +6,7 @@ import com.github.djuloori.whiteboard.rest.ClassesRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -31,7 +32,15 @@ public class ClassService {
     }
 
     public List viewAllClasses(){
-        return classesDao.getAllCourses();
+        List<ClassesEO> classList = classesDao.getAllCourses();
+        List<ClassesRO> courseList = new ArrayList<>(classList.size());
+        for(ClassesEO classesEO: classList){
+            ClassesRO course = new ClassesRO();
+            course.setClassId(classesEO.getClassId());
+            course.setClassName(classesEO.getClassName());
+            courseList.add(course);
+        }
+        return courseList;
     }
 
     public String removeClass(String Classid){
