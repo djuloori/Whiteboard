@@ -1,8 +1,115 @@
 import React from 'react';
-import '../styles/AcountPageCustom.css';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import FormControl from '@material-ui/core/FormControl';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import VpnKey from '@material-ui/icons/VpnKey'
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import withStyles from '@material-ui/core/styles/withStyles';
+import orange from '@material-ui/core/colors/orange';
+import grey from '@material-ui/core/colors/grey';
+
+const styles = theme => ({
+    root: {
+        color: orange[600],
+        '&$checked': {
+            color: orange[500],
+        },
+    },
+    checked: {},
+    title: {
+        fontSize: '80px',
+        marginTop: theme.spacing.unit * 15,
+        marginLeft: theme.spacing.unit * 3,
+        marginRight: theme.spacing.unit * 3,
+        [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+            width: 400,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        },
+    },
+    main: {
+        width: 'auto',
+        display: 'block', // Fix IE 11 issue.
+        marginLeft: theme.spacing.unit * 3,
+        marginRight: theme.spacing.unit * 3,
+        [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+            width: 350,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        },
+    },
+    paper: {
+        marginTop: theme.spacing.unit * 2,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
+        borderRadius: '20px',
+    },
+    avatar: {
+        margin: theme.spacing.unit,
+        backgroundColor: '#212121',
+        width: 60,
+        height: 60,
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing.unit,
+        color: 'black',
+    },
+    formControl:{
+        '&:focus': {
+            fontWeight: 'bold',
+            backgroundColor: orange[500],
+        },
+    },
+    submit: {
+        marginTop: theme.spacing.unit * 2.5,
+        color: theme.palette.getContrastText(orange[300]),
+        backgroundColor: orange[300],
+        '&:hover': {
+            fontWeight: 'bold',
+            fontSize: '15px',
+            backgroundColor: orange[500],
+        },
+        '&:focus': {
+            outline: 'none',
+        }
+    },
+    signupmessage: {
+        marginTop: theme.spacing.unit * 3,
+    },
+    signuplink: {
+        color: grey[900],
+        '&:hover': {
+            fontWeight: 'bold',
+            fontSize: '16px',
+            color: orange[500],
+        },
+
+    },
+    cssLabel: {
+        '&$cssFocused': {
+            fontWeight: 'bold',
+            color: orange[500],
+        },
+    },
+    cssFocused: {},
+    cssUnderline: {
+        '&:after': {
+            fontWeight: 'bold',
+            borderBottomColor: orange[500],
+        },
+    },
+});
 
 class LoginPage extends React.Component{
 
@@ -20,49 +127,88 @@ class LoginPage extends React.Component{
     }
 
     render(){
-        return (
-            <div className="container">
-                <div className="d-flex justify-content-center title">
-                    <h1>Whiteboard</h1>
-                </div>
-                <div className="card">
-                    <div className="card-header">
-                        <h3>Sign In</h3>
-                    </div>
-                    <div className="card-body">
-                        <form>
-                            <div className="input-group form-group">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text"><AccountCircle className="user_icon"></AccountCircle></span>
-                                </div>
-                                <input type="text" className="form-control" placeholder="Username" onChange={(event) => this.setState({username:event.target.value})}/>
+        const { classes } = this.props;
 
-                            </div>
-                            <div className="input-group form-group">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text"><VpnKey className="key_icon"></VpnKey></span>
-                                </div>
-                                <input type="password" className="form-control" placeholder="Password" onChange={(event) => this.setState({password:event.target.value})}/>
-                            </div>
-                            <div className="row align-items-center remember">
-                                <input type="checkbox"/>Remember Me
-                            </div>
-                            <div className="form-group">
-                                <input type="submit" value="Login" onClick={this.handleChange} className="btn float-right login_btn"/>
-                            </div>
+        return (
+            <div>
+                <Typography className={classes.title}>
+                    Whiteboard
+                </Typography>
+                <main className={classes.main}>
+                    <CssBaseline />
+                    <Paper className={classes.paper}>
+                        <Avatar className={classes.avatar}>
+                            <AccountCircle style={{ fontSize: 50 }} />
+                        </Avatar>
+                        <form className={classes.form}>
+                            <FormControl margin="normal" required fullWidth>
+                                <InputLabel
+                                    htmlFor="email"
+                                    classes={{
+                                        root: classes.cssLabel,
+                                        focused: classes.cssFocused,
+                                    }}
+                                >Email Address</InputLabel>
+                                <Input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    classes={{
+                                        underline: classes.cssUnderline,
+                                    }}
+                                />
+                            </FormControl>
+                            <FormControl margin="normal" required fullWidth>
+                                <InputLabel
+                                    htmlFor="password"
+                                    classes={{
+                                        root: classes.cssLabel,
+                                        focused: classes.cssFocused,
+                                    }}
+                                >Password</InputLabel>
+                                <Input
+                                    name="password"
+                                    type="password"
+                                    id="password"
+                                    classes={{
+                                        underline: classes.cssUnderline,
+                                    }}
+                                />
+                            </FormControl>
+                            <FormControlLabel
+                                control={<Checkbox
+                                    value="remember"
+                                    classes={{
+                                        root: classes.root,
+                                        checked: classes.checked,
+                                    }}
+                                />}
+                                label="Remember me"
+                            />
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                className={classes.submit}
+                            >
+                                Sign in
+                            </Button>
+                            <Typography
+                                className={classes.signupmessage}
+                                align="center"
+                            >
+                                Don't have an account?&nbsp;<NavLink exact to = "/SignUp" className={classes.signuplink}>Sign Up</NavLink>
+                            </Typography>
                         </form>
-                    </div>
-                    <div className="card-footer">
-                        <div className="d-flex justify-content-center links account-text">
-                            Don't have an account?&nbsp;<NavLink exact to = "/SignUp" className='signup-link'>Sign Up</NavLink>
-                        </div>
-                        <div className="d-flex justify-content-center">
-                            <a className='forgotpass-link' href="#">Forgot your password?</a>
-                        </div>
-                    </div>
-                </div>
+                    </Paper>
+                </main>
             </div>
         );
     }
 }
-export default LoginPage;
+
+LoginPage.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(LoginPage);
