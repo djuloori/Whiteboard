@@ -156,6 +156,8 @@ class LoginPage extends React.Component{
                                     classes={{
                                         underline: classes.cssUnderline,
                                     }}
+                                    onChange={(event) => this.setState({username:event.target.value})}
+
                                 />
                             </FormControl>
                             <FormControl margin="normal" required fullWidth>
@@ -173,6 +175,7 @@ class LoginPage extends React.Component{
                                     classes={{
                                         underline: classes.cssUnderline,
                                     }}
+                                    onChange={(event) => this.setState({password:event.target.value})}
                                 />
                             </FormControl>
                             <FormControlLabel
@@ -190,6 +193,7 @@ class LoginPage extends React.Component{
                                 fullWidth
                                 variant="contained"
                                 className={classes.submit}
+                                onClick={this.handleChange}
                             >
                                 Sign in
                             </Button>
