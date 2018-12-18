@@ -1,6 +1,6 @@
 import React from 'react';
-import Topbar from './TopBar';
-import Sidebar from './SideBar';
+import Topbar from '../framework/TopBar';
+import Sidebar from '../framework/SideBar';
 
 class ToolbarView extends React.Component {
     constructor() {
