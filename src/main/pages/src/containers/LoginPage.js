@@ -151,7 +151,7 @@ class LoginPage extends React.Component{
                                 >Email Address</InputLabel>
                                 <Input
                                     id="email"
-                                    type="email"
+                                    type="text"
                                     name="email"
                                     classes={{
                                         underline: classes.cssUnderline,
