@@ -2,6 +2,7 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
+import { Redirect, Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -12,6 +13,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import {NavLink} from 'react-router-dom';
 
 const styles = theme => ({
     root: {
@@ -87,6 +89,7 @@ class PrimarySearchAppBar extends React.Component {
     state = {
         anchorEl: null,
         mobileMoreAnchorEl: null,
+        referrer: false
     };
 
     handleProfileMenuOpen = event => {
@@ -106,11 +109,16 @@ class PrimarySearchAppBar extends React.Component {
         this.setState({ mobileMoreAnchorEl: null });
     };
 
+    handleSignOut = () => {
+        this.setState({ referrer: true});
+    };
+
     render() {
         const { anchorEl, mobileMoreAnchorEl } = this.state;
         const { classes } = this.props;
         const isMenuOpen = Boolean(anchorEl);
         const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+        if (this.state.referrer) return <Redirect to="/" />;
 
         const renderMenu = (
             <Menu
@@ -121,7 +129,7 @@ class PrimarySearchAppBar extends React.Component {
                 onClose={this.handleMenuClose}
             >
                 <MenuItem onClick={this.handleMenuClose}>My account</MenuItem>
-                <MenuItem onClick={this.handleMenuClose}>Sign out</MenuItem>
+                <MenuItem onClick={this.handleSignOut}>Sign out</MenuItem>
             </Menu>
         );
 
