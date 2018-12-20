@@ -83,6 +83,10 @@ const styles = theme => ({
         color: 'black',
         backgroundColor: 'white',
     },
+    appbarCustom: {
+        boxShadow: 'none',
+        borderBottom: '1px solid orange',
+    }
 });
 
 class PrimarySearchAppBar extends React.Component {
@@ -168,7 +172,7 @@ class PrimarySearchAppBar extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position="static">
+                <AppBar className={classes.appbarCustom} position="static">
                     <Toolbar className={classes.toolbarCustom}>
                         <IconButton onClick={this.props.handleClick} className={classes.menuButton} color="inherit" aria-label="Open drawer">
                             <MenuIcon />
