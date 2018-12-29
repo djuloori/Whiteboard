@@ -126,7 +126,7 @@
     <build>
         <resources>
             <resource>
-                <directory>${project.basedir}/src/main/resources/META-INF</directory>
+                <directory>${project.basedir}/src/main/resources</directory>
                 <excludes>
                     <exclude>**/*.template</exclude>
                 </excludes>
