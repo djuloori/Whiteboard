@@ -18,11 +18,14 @@
             <name>Dhruva Juloori</name>
             <email>djuloori@hawk.iit.edu</email>
         </developer>
-        <developer>
+    </developers>
+
+    <contributors>
+        <contributor>
             <name>Saiteja Konda</name>
             <email>skw36@mst.edu</email>
-        </developer>
-    </developers>
+        </contributor>
+    </contributors>
 
     <scm>
         <connection>scm:git://github.com/djuloori/Whiteboard.git</connection>
