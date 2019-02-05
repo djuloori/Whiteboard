@@ -15,14 +15,15 @@ import Assignments from '@material-ui/icons/Assignment';
 import Syllabus from '@material-ui/icons/Description';
 import Schedule from '@material-ui/icons/Schedule';
 import TA from '@material-ui/icons/People';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
     root: {
         display: 'flex',
-        position: 'absolute',
-        zIndex: '50;'
+        position: 'relative',
+        zIndex: '2;'
     },
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
@@ -82,27 +83,33 @@ class MiniDrawer extends React.Component {
         const list = [
             {
                 label: 'Home',
-                icon: <Home className={classes.Home} />
+                icon: <Home className={classes.Home} />,
+                link: '/Courses'
             },
             {
                 label: 'Courses',
-                icon: <Courses className={classes.Courses} />
+                icon: <Courses className={classes.Courses} />,
+                link: '/Courses'
             },
             {
                 label: 'Assignments',
-                icon: <Assignments className={classes.Assignments} />
+                icon: <Assignments className={classes.Assignments} />,
+                link: '/Courses'
             },
             {
                 label: 'Syllabus',
-                icon: <Syllabus className={classes.Syllabus}/>
+                icon: <Syllabus className={classes.Syllabus} />,
+                link: '/Courses'
             },
             {
                 label: 'Schedule',
-                icon: <Schedule className={classes.Schedule}/>
+                icon: <Schedule className={classes.Schedule} />,
+                link: '/Courses'
             },
             {
                 label: 'Teaching Assistance',
-                icon: <TA className={classes.TA}/>
+                icon: <TA className={classes.TA} />,
+                link: '/Courses'
             }
         ];
 
@@ -127,7 +134,7 @@ class MiniDrawer extends React.Component {
                     <Divider />
                     <List>
                         {list.map((item, index) => (
-                            <ListItem button key={index}>
+                            <ListItem button key={index} component={Link} to={item.link}>
                                 <ListItemIcon>
                                     {item.icon}
                                 </ListItemIcon>
