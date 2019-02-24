@@ -19,6 +19,7 @@ const styles = theme => ({
         cursor: 'pointer',
     },
     tableRowHover: {
+        outline: 'none',
         '&:hover': {
             backgroundColor: theme.palette.grey[200],
         },
@@ -126,6 +127,7 @@ class MuiVirtualizedTable extends React.PureComponent {
                                 />
                             );
                         })}
+
                     </Table>
                 )}
             </AutoSizer>
@@ -163,4 +165,3 @@ MuiVirtualizedTable.defaultProps = {
 };
 
 export default withStyles(styles)(MuiVirtualizedTable);
-
