@@ -13,6 +13,7 @@ const styles = theme => ({
         marginTop: theme.spacing.unit * 3,
     },
     cssRoot: {
+        float: 'right',
         borderRadius: '10px',
         border: '1px solid black',
         color: theme.palette.getContrastText(grey[50]),
@@ -27,6 +28,7 @@ const styles = theme => ({
         },
     },
     cssSelect: {
+        float: 'right',
         borderRadius: '10px',
         border: '1px solid orange',
         color: theme.palette.getContrastText(orange[300]),
@@ -50,7 +52,6 @@ class DeleteButton extends React.PureComponent {
             itemCount: 'All',
             buttonStyle: classes.cssRoot,
         };
-
     }
     componentDidUpdate() {
         const { classes } = this.props;
@@ -61,7 +62,6 @@ class DeleteButton extends React.PureComponent {
             this.setState({itemCount: item.length, buttonStyle: classes.cssSelect });
         }
     }
-
     render() {
         const { classes } = this.props;
         return (
