@@ -34,6 +34,17 @@ const styles = theme => ({
         marginTop: theme.spacing.unit * -2,
     },
 
+    marginError: {
+        margin: theme.spacing.unit,
+        marginTop: theme.spacing.unit * 1,
+        marginBottom: theme.spacing.unit * -2,
+    },
+
+    errorCss: {
+        fontWeight: 'bold',
+        color: red[500],
+    },
+
     cssCancel: {
         float: 'right',
         borderRadius: '10px',
@@ -66,9 +77,13 @@ class FormDialog extends React.Component {
         super(props);
         this.state = {
             open: false,
-            textField: {}
+            error: false,
+            updatedAddList: [],
+            textField: {},
+            textError: ''
         };
         this.props.handleFormOn(false);
+        this.props.handleUpdateList([]);
     }
 
     static getDerivedStateFromProps(props, state) {
@@ -86,29 +101,62 @@ class FormDialog extends React.Component {
             ...textField,
             [propertyName.dataKey]: event.target.value
         };
-        this.setState({ textField: newTextField });
+        this.setState({
+            textField: newTextField,
+            error: false,
+            textError: ''
+        });
     };
 
     handleCancel = () => {
         const off = false;
-        this.setState({ open: off });
+        this.setState({
+            open: off,
+            textField: {},
+            error: false,
+            textError: '',
+        });
         this.props.handleFormOn(off);
     };
 
     handleSubmit = () => {
-        const { fields, addCourseUrl } = this.props;
+        const { fields, getCourseUrl, addCourseUrl } = this.props;
+        const off = false;
         const textFieldJson = this.state.textField;
-        {fields.map(({ dataKey }) => {
-            console.log(textFieldJson[dataKey]);
-        })}
-        axios.put(addCourseUrl,{}
-            //textFieldJson
-        ).then(res => {
-            console.log(res);
-        }).catch(error => {
-            console.log(error);
+        var notEmpty = fields.map(({ dataKey }) => {
+            if (!textFieldJson[dataKey]) {
+                this.setState({
+                    error: true,
+                    textError: 'Incomplete'
+                });
+                return false;
+            }
+            return true;
         });
 
+        if (!notEmpty.includes(false)) {
+            axios.post(addCourseUrl,
+                textFieldJson
+            ).then(res => {
+                if (res.data === 'Inserted') {
+                    axios.get(getCourseUrl)
+                        .then(response => {
+                            this.setState({
+                                updatedAddList: response.data,
+                                textField: {}
+                            });
+                            this.props.handleUpdateList(response.data);
+                        })
+                        .catch(error => console.log(error));
+                }
+            }).catch(error => {
+                console.log(error);
+            });
+            this.setState({
+                open: off
+            });
+            this.props.handleFormOn(off);
+        }
     };
 
     render() {
@@ -127,6 +175,7 @@ class FormDialog extends React.Component {
                     {fields.map(({ label, dataKey, type }, index) => {
                         return (
                             <TextField
+                                error = {this.state.error}
                                 InputLabelProps={{
                                     classes: {
                                         root: classes.cssLabel,
@@ -147,10 +196,15 @@ class FormDialog extends React.Component {
                                 type={type}
                                 fullWidth
                                 onChange={this.handleChangeFor({dataKey})}
+                                helperText=''
                             />
                         );
                     })}
-
+                    <DialogContentText
+                        className={classes.marginError + ' ' + classes.errorCss}
+                    >
+                        {this.state.textError}
+                    </DialogContentText>
                 </DialogContent>
                 <DialogActions>
                     <Button

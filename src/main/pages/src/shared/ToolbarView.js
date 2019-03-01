@@ -7,7 +7,7 @@ class ToolbarView extends React.Component {
         super();
         this.state = {
             open: false,
-        }
+        };
         this.handleClick = this.handleClick.bind(this);
     }
 

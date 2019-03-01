@@ -244,6 +244,7 @@ class CoursesPage extends React.Component{
         this.handleDeleteItem = this.handleDeleteItem.bind(this);
         this.handleAddItem = this.handleAddItem.bind(this);
         this.handleFormOn = this.handleFormOn.bind(this);
+        this.handleUpdateList = this.handleUpdateList.bind(this);
     }
     componentDidMount() {
         axios.get('app/Classes/getCourses')
@@ -274,8 +275,10 @@ class CoursesPage extends React.Component{
             this.setState({selectedIndexPage: []});
         } catch (error) {
             console.log('Fail to delete item' + error);
-            this.setState({items: allItems});
-            this.setState({selectedIndexPage: []});
+            this.setState({
+                items: allItems,
+                selectedIndexPage: []
+            });
         }
     }
     handleAddItem() {
@@ -283,6 +286,9 @@ class CoursesPage extends React.Component{
     }
     handleFormOn(off) {
         this.setState({isFormOn: off});
+    }
+    handleUpdateList(updatedAddList) {
+        this.setState({items: updatedAddList});
     }
     render() {
         var { isLoaded, items } = this.state;
@@ -338,7 +344,9 @@ class CoursesPage extends React.Component{
                         dialogTitle='Add Course'
                         dialogContent='Please fill in the course information'
                         addCourseUrl='/app/Classes/AddClass'
+                        getCourseUrl='app/Classes/getCourses'
                         handleFormOn={this.handleFormOn}
+                        handleUpdateList={this.handleUpdateList}
                         fields={[
                             {
                                 label: 'Class ID',
