@@ -115,8 +115,14 @@ class TableView extends React.Component{
                         {
                             width: 100,
                             flexGrow: 0.5,
-                            label: 'Schedule ID',
-                            dataKey: 'scheduleId',
+                            label: 'TA ID',
+                            dataKey: 'taId',
+                        },
+                        {
+                            width: 100,
+                            flexGrow: 0.5,
+                            label: 'Name',
+                            dataKey: 'taName',
                         },
                         {
                             width: 100,
@@ -128,14 +134,20 @@ class TableView extends React.Component{
                             width: 100,
                             flexGrow: 0.5,
                             label: 'Time',
-                            dataKey: 'timings',
+                            dataKey: 'taTimings',
                         },
                         {
                             width: 100,
                             flexGrow: 0.5,
-                            label: 'Location',
-                            dataKey: 'location',
+                            label: 'Email',
+                            dataKey: 'taEmail',
                         },
+                        {
+                            width: 100,
+                            flexGrow: 0.5,
+                            label: 'Phone',
+                            dataKey: 'taPhone',
+                        }
                     ]}
                 />
             </Paper>
@@ -198,8 +210,14 @@ class TableEdit extends React.Component{
                             {
                                 width: 100,
                                 flexGrow: 0.5,
-                                label: 'Schedule ID',
-                                dataKey: 'scheduleId',
+                                label: 'TA ID',
+                                dataKey: 'taId',
+                            },
+                            {
+                                width: 100,
+                                flexGrow: 0.5,
+                                label: 'Name',
+                                dataKey: 'taName',
                             },
                             {
                                 width: 100,
@@ -211,13 +229,19 @@ class TableEdit extends React.Component{
                                 width: 100,
                                 flexGrow: 0.5,
                                 label: 'Time',
-                                dataKey: 'timings',
+                                dataKey: 'taTimings',
                             },
                             {
                                 width: 100,
                                 flexGrow: 0.5,
-                                label: 'Location',
-                                dataKey: 'location',
+                                label: 'Email',
+                                dataKey: 'taEmail',
+                            },
+                            {
+                                width: 100,
+                                flexGrow: 0.5,
+                                label: 'Phone',
+                                dataKey: 'taPhone',
                             }
                         ]}
                     />
@@ -265,7 +289,7 @@ class TableRender extends React.Component{
     }
 }
 
-class SchedulePage extends React.Component{
+class TAPage extends React.Component{
 
     constructor(props) {
         super(props);
@@ -283,7 +307,7 @@ class SchedulePage extends React.Component{
         this.handleUpdateList = this.handleUpdateList.bind(this);
     }
     componentDidMount() {
-        axios.get('app/Schedule/GetSchedule')
+        axios.get('app/Ta/GetTeachingAssistants')
             .then(response => this.setState({ items: response.data }))
             .catch(error => console.log(error));
     }
@@ -307,7 +331,7 @@ class SchedulePage extends React.Component{
         }
 
         try {
-            axios.all(selectedIndexPage.map(i => axios.delete('/app/Schedule/DeleteSchedule/' + allItems[i].scheduleId)));
+            axios.all(selectedIndexPage.map(i => axios.delete('/app/Ta/DeleteTa/' + allItems[i].taId)));
             this.setState({selectedIndexPage: []});
         } catch (error) {
             console.log('Fail to delete item' + error);
@@ -337,7 +361,7 @@ class SchedulePage extends React.Component{
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Typography className={classes.title}>
-                        Schedule
+                        Teaching Assistance
                     </Typography>
                     <FormGroup row className={classes.editswitch}>
                         <FormControlLabel classes={{ label: classes.editlabel }}
@@ -377,10 +401,10 @@ class SchedulePage extends React.Component{
                     </div>
                     <FormDialog
                         isFormOn={this.state.isFormOn}
-                        dialogTitle='Add Schedule'
-                        dialogContent='Please fill in the schedule information'
-                        addCourseUrl='app/Schedule/AddSchedule'
-                        getCourseUrl='app/Schedule/GetSchedule'
+                        dialogTitle='Add Assistance'
+                        dialogContent='Please fill in the assistance information'
+                        addCourseUrl='app/Ta/AddTa'
+                        getCourseUrl='app/Ta/GetTeachingAssistants'
                         handleFormOn={this.handleFormOn}
                         handleUpdateList={this.handleUpdateList}
                         fields={[
@@ -390,9 +414,13 @@ class SchedulePage extends React.Component{
                                 type: 'number'
                             },
                             {
-                                label: 'Schedule ID',
-                                dataKey: 'scheduleId',
+                                label: 'TA ID',
+                                dataKey: 'taId',
                                 type: 'number'
+                            },
+                            {
+                                label: 'Name',
+                                dataKey: 'taName'
                             },
                             {
                                 label: 'Day',
@@ -400,14 +428,19 @@ class SchedulePage extends React.Component{
                             },
                             {
                                 label: 'Time',
-                                dataKey: 'timings',
+                                dataKey: 'taTimings',
                                 type: 'time'
                             },
                             {
-                                label: 'Location',
-                                dataKey: 'location',
+                                label: 'Email',
+                                dataKey: 'taEmail',
+                                type: 'email'
+                            },
+                            {
+                                label: 'Phone',
+                                dataKey: 'taPhone',
+                                type: 'number'
                             }
-
                         ]}
                     />
                 </main>
@@ -416,8 +449,8 @@ class SchedulePage extends React.Component{
     }
 }
 
-SchedulePage.propTypes = {
+TAPage.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles) (SchedulePage);
+export default withStyles(styles) (TAPage);
