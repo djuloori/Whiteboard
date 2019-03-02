@@ -30,6 +30,9 @@ const styles = theme => ({
     noClick: {
         cursor: 'initial',
     },
+    gridStyle: {
+        outline: 'none',
+    }
 });
 
 class MuiVirtualizedTable extends React.PureComponent {
@@ -94,6 +97,7 @@ class MuiVirtualizedTable extends React.PureComponent {
                 {({ height, width }) => (
                     <Table
                         className={classes.table}
+                        gridClassName={classes.gridStyle}
                         height={height}
                         width={width}
                         {...tableProps}

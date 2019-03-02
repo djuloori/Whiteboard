@@ -1,9 +1,10 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
-import $ from 'jquery';
 import axios from 'axios';
 import VirtualizedTable from '../framework/VirtualizedTable';
-import DeleteButton from '../framework/DeleteBUtton';
+import DeleteButton from '../framework/DeleteButton';
+import AddButton from '../framework/AddButton';
+import FormDialog from '../framework/FormDialog';
 import PropTypes from "prop-types";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ToolbarView from "../shared/ToolbarView";
@@ -13,7 +14,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import withStyles from "@material-ui/core/styles/withStyles";
 import orange from '@material-ui/core/colors/orange';
-import grey from '@material-ui/core/colors/grey';
 
 const styles = theme => ({
     root: {
@@ -159,7 +159,6 @@ class TableEdit extends React.Component{
             return ({backgroundColor: orange[200]});
         }
     };
-
     render() {
         const items = this.props.items;
         return(
@@ -238,10 +237,14 @@ class CoursesPage extends React.Component{
             items: [],
             selectedIndexPage: [],
             isLoaded: false,
-            isOn: false
+            isOn: false,
+            isFormOn: false
         };
         this.handleSelectedIndexFromTableRender = this.handleSelectedIndexFromTableRender.bind(this);
         this.handleDeleteItem = this.handleDeleteItem.bind(this);
+        this.handleAddItem = this.handleAddItem.bind(this);
+        this.handleFormOn = this.handleFormOn.bind(this);
+        this.handleUpdateList = this.handleUpdateList.bind(this);
     }
     componentDidMount() {
         axios.get('app/Classes/getCourses')
@@ -272,11 +275,21 @@ class CoursesPage extends React.Component{
             this.setState({selectedIndexPage: []});
         } catch (error) {
             console.log('Fail to delete item' + error);
-            this.setState({items: allItems});
-            this.setState({selectedIndexPage: []});
+            this.setState({
+                items: allItems,
+                selectedIndexPage: []
+            });
         }
     }
-
+    handleAddItem() {
+        this.setState({isFormOn: true});
+    }
+    handleFormOn(off) {
+        this.setState({isFormOn: off});
+    }
+    handleUpdateList(updatedAddList) {
+        this.setState({items: updatedAddList});
+    }
     render() {
         var { isLoaded, items } = this.state;
         const { classes } = this.props;
@@ -315,10 +328,37 @@ class CoursesPage extends React.Component{
                         selectedIndexPage={this.state.selectedIndexPage}
                         handleSelectedIndexFromTableRender = {this.handleSelectedIndexFromTableRender}
                     />
-                    <DeleteButton
-                        isEditOn={this.state.isOn}
-                        selectedIndex={this.state.selectedIndexPage}
-                        onClick={this.handleDeleteItem}
+                    <div>
+                        <AddButton
+                            isEditOn={this.state.isOn}
+                            onClick={this.handleAddItem}
+                        />
+                        <DeleteButton
+                            isEditOn={this.state.isOn}
+                            selectedIndex={this.state.selectedIndexPage}
+                            onClick={this.handleDeleteItem}
+                        />
+                    </div>
+                    <FormDialog
+                        isFormOn={this.state.isFormOn}
+                        dialogTitle='Add Course'
+                        dialogContent='Please fill in the course information'
+                        addCourseUrl='/app/Classes/AddClass'
+                        getCourseUrl='app/Classes/getCourses'
+                        handleFormOn={this.handleFormOn}
+                        handleUpdateList={this.handleUpdateList}
+                        fields={[
+                            {
+                                label: 'Class ID',
+                                dataKey: 'classId',
+                                type: 'number'
+                            },
+                            {
+                                label: 'Class Name',
+                                dataKey: 'className',
+                                type: 'text'
+                            }
+                        ]}
                     />
                 </main>
             </div>
