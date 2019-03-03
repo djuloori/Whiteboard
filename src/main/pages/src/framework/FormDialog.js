@@ -14,6 +14,7 @@ import axios from 'axios';
 
 const styles = theme => ({
     cssLabel: {
+        fontSize: '20px',
         '&$cssFocused': {
             fontWeight: 'bold',
             color: orange[500]
@@ -38,6 +39,11 @@ const styles = theme => ({
         margin: theme.spacing.unit,
         marginTop: theme.spacing.unit * 1,
         marginBottom: theme.spacing.unit * -2,
+    },
+
+    marginContent: {
+        margin: theme.spacing.unit,
+        marginTop: theme.spacing.unit * 0,
     },
 
     errorCss: {
@@ -138,7 +144,7 @@ class FormDialog extends React.Component {
             axios.post(addCourseUrl,
                 textFieldJson
             ).then(res => {
-                if (res.data === 'Inserted') {
+                if (res.data !== null) {
                     axios.get(getCourseUrl)
                         .then(response => {
                             this.setState({
@@ -169,7 +175,9 @@ class FormDialog extends React.Component {
             >
                 <DialogTitle id="form-dialog-title">{dialogTitle}</DialogTitle>
                 <DialogContent>
-                    <DialogContentText>
+                    <DialogContentText
+                        className={classes.marginContent}
+                    >
                         {dialogContent}
                     </DialogContentText>
                     {fields.map(({ label, dataKey, type }, index) => {
@@ -177,6 +185,7 @@ class FormDialog extends React.Component {
                             <TextField
                                 error = {this.state.error}
                                 InputLabelProps={{
+                                    shrink: true,
                                     classes: {
                                         root: classes.cssLabel,
                                         focused: classes.cssFocused,
