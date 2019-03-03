@@ -109,7 +109,7 @@ class MiniDrawer extends React.Component {
             {
                 label: 'Teaching Assistance',
                 icon: <TA className={classes.TA} />,
-                link: '/Courses'
+                link: '/TA'
             }
         ];
 
