@@ -343,8 +343,8 @@ class CoursesPage extends React.Component{
                         isFormOn={this.state.isFormOn}
                         dialogTitle='Add Course'
                         dialogContent='Please fill in the course information'
-                        addCourseUrl='/app/Classes/AddClass'
-                        getCourseUrl='app/Classes/getCourses'
+                        addUrl='/app/Classes/AddClass'
+                        getUrl='app/Classes/getCourses'
                         handleFormOn={this.handleFormOn}
                         handleUpdateList={this.handleUpdateList}
                         fields={[

@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import TableCell from '@material-ui/core/TableCell';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
+import { Link } from 'react-router-dom';
 import { AutoSizer, Column, SortDirection, Table } from 'react-virtualized';
 
 const styles = theme => ({
@@ -42,6 +43,24 @@ class MuiVirtualizedTable extends React.PureComponent {
         return classNames(classes.tableRow, classes.flexContainer, rowClassName, {
             [classes.tableRowHover]: index !== -1 && onRowClick != null,
         });
+    };
+
+    cellRendererViewLink = ({ cellData, columnIndex = null }) => {
+        const { rowHeight, rowFontSize, rowFontWeight, columns, classes, onRowClick } = this.props;
+        return (
+            <TableCell
+                component="div"
+                className={classNames(classes.tableCell, classes.flexContainer, {
+                    [classes.noClick]: onRowClick == null,
+                })}
+                variant="body"
+                style={{ height: rowHeight, fontSize: rowFontSize, fontWeight: rowFontWeight }}
+                align={(columnIndex != null && columns[columnIndex].numeric) || false ? 'right' : 'left'}
+            >
+
+                <Link to={{ pathname: '/ViewDoc', state: { data: cellData } }} > View </Link>
+            </TableCell>
+        );
     };
 
     cellRenderer = ({ cellData, columnIndex = null }) => {
@@ -111,6 +130,8 @@ class MuiVirtualizedTable extends React.PureComponent {
                                         cellData: cellContentRenderer(cellRendererProps),
                                         columnIndex: index,
                                     });
+                            } else if (dataKey === 'syllabus') {
+                                renderer = this.cellRendererViewLink;
                             } else {
                                 renderer = this.cellRenderer;
                             }

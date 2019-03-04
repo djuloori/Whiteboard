@@ -115,39 +115,15 @@ class TableView extends React.Component{
                         {
                             width: 100,
                             flexGrow: 0.5,
-                            label: 'TA ID',
-                            dataKey: 'taId',
+                            label: 'Syllabus ID',
+                            dataKey: 'idsyllabus',
                         },
                         {
                             width: 100,
                             flexGrow: 0.5,
-                            label: 'Name',
-                            dataKey: 'taName',
+                            label: 'Syllabus',
+                            dataKey: 'syllabus',
                         },
-                        {
-                            width: 100,
-                            flexGrow: 0.5,
-                            label: 'Day',
-                            dataKey: 'day',
-                        },
-                        {
-                            width: 100,
-                            flexGrow: 0.5,
-                            label: 'Time',
-                            dataKey: 'taTimings',
-                        },
-                        {
-                            width: 100,
-                            flexGrow: 0.5,
-                            label: 'Email',
-                            dataKey: 'taEmail',
-                        },
-                        {
-                            width: 100,
-                            flexGrow: 0.5,
-                            label: 'Phone',
-                            dataKey: 'taPhone',
-                        }
                     ]}
                 />
             </Paper>
@@ -210,39 +186,15 @@ class TableEdit extends React.Component{
                             {
                                 width: 100,
                                 flexGrow: 0.5,
-                                label: 'TA ID',
-                                dataKey: 'taId',
+                                label: 'Syllabus ID',
+                                dataKey: 'idsyllabus',
                             },
                             {
                                 width: 100,
                                 flexGrow: 0.5,
-                                label: 'Name',
-                                dataKey: 'taName',
+                                label: 'view',
+                                dataKey: 'syllabus',
                             },
-                            {
-                                width: 100,
-                                flexGrow: 0.5,
-                                label: 'Day',
-                                dataKey: 'day',
-                            },
-                            {
-                                width: 100,
-                                flexGrow: 0.5,
-                                label: 'Time',
-                                dataKey: 'taTimings',
-                            },
-                            {
-                                width: 100,
-                                flexGrow: 0.5,
-                                label: 'Email',
-                                dataKey: 'taEmail',
-                            },
-                            {
-                                width: 100,
-                                flexGrow: 0.5,
-                                label: 'Phone',
-                                dataKey: 'taPhone',
-                            }
                         ]}
                     />
                 </Paper>
@@ -289,7 +241,7 @@ class TableRender extends React.Component{
     }
 }
 
-class TAPage extends React.Component{
+class SyllabusPage extends React.Component{
 
     constructor(props) {
         super(props);
@@ -307,7 +259,7 @@ class TAPage extends React.Component{
         this.handleUpdateList = this.handleUpdateList.bind(this);
     }
     componentDidMount() {
-        axios.get('app/Ta/GetTeachingAssistants')
+        axios.get('app/Syllabus/GetSyllabus')
             .then(response => this.setState({ items: response.data }))
             .catch(error => console.log(error));
     }
@@ -331,7 +283,7 @@ class TAPage extends React.Component{
         }
 
         try {
-            axios.all(selectedIndexPage.map(i => axios.delete('/app/Ta/DeleteTa/' + allItems[i].taId)));
+            axios.all(selectedIndexPage.map(i => axios.delete('/app/Syllabus/DeleteSyllabus/' + allItems[i].idsyllabus)));
             this.setState({selectedIndexPage: []});
         } catch (error) {
             console.log('Fail to delete item' + error);
@@ -401,10 +353,10 @@ class TAPage extends React.Component{
                     </div>
                     <FormDialog
                         isFormOn={this.state.isFormOn}
-                        dialogTitle='Add Assistance'
-                        dialogContent='Please fill in the assistance information'
-                        addUrl='app/Ta/AddTa'
-                        getUrl='app/Ta/GetTeachingAssistants'
+                        dialogTitle='Add Syllabus'
+                        dialogContent='Please fill in the syllabus information'
+                        addUrl='app/Syllabus/AddSyllabus'
+                        getUrl='app/Syllabus/GetSyllabus'
                         handleFormOn={this.handleFormOn}
                         handleUpdateList={this.handleUpdateList}
                         fields={[
@@ -414,32 +366,14 @@ class TAPage extends React.Component{
                                 type: 'number'
                             },
                             {
-                                label: 'TA ID',
-                                dataKey: 'taId',
+                                label: 'Syllabus ID',
+                                dataKey: 'idsyllabus',
                                 type: 'number'
                             },
                             {
-                                label: 'Name',
-                                dataKey: 'taName'
-                            },
-                            {
-                                label: 'Day',
-                                dataKey: 'day',
-                            },
-                            {
-                                label: 'Time',
-                                dataKey: 'taTimings',
-                                type: 'time'
-                            },
-                            {
-                                label: 'Email',
-                                dataKey: 'taEmail',
-                                type: 'email'
-                            },
-                            {
-                                label: 'Phone',
-                                dataKey: 'taPhone',
-                                type: 'number'
+                                label: 'File',
+                                dataKey: 'syllabus',
+                                type: 'file'
                             }
                         ]}
                     />
@@ -449,8 +383,8 @@ class TAPage extends React.Component{
     }
 }
 
-TAPage.propTypes = {
+SyllabusPage.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles) (TAPage);
+export default withStyles(styles) (SyllabusPage);

@@ -379,8 +379,8 @@ class SchedulePage extends React.Component{
                         isFormOn={this.state.isFormOn}
                         dialogTitle='Add Schedule'
                         dialogContent='Please fill in the schedule information'
-                        addCourseUrl='app/Schedule/AddSchedule'
-                        getCourseUrl='app/Schedule/GetSchedule'
+                        addUrl='app/Schedule/AddSchedule'
+                        getUrl='app/Schedule/GetSchedule'
                         handleFormOn={this.handleFormOn}
                         handleUpdateList={this.handleUpdateList}
                         fields={[

@@ -43,7 +43,7 @@ const styles = theme => ({
 
     marginContent: {
         margin: theme.spacing.unit,
-        marginTop: theme.spacing.unit * 0,
+        marginTop: 0,
     },
 
     errorCss: {
@@ -126,7 +126,7 @@ class FormDialog extends React.Component {
     };
 
     handleSubmit = () => {
-        const { fields, getCourseUrl, addCourseUrl } = this.props;
+        const { fields, getUrl, addUrl } = this.props;
         const off = false;
         const textFieldJson = this.state.textField;
         var notEmpty = fields.map(({ dataKey }) => {
@@ -141,11 +141,11 @@ class FormDialog extends React.Component {
         });
 
         if (!notEmpty.includes(false)) {
-            axios.post(addCourseUrl,
+            axios.post(addUrl,
                 textFieldJson
             ).then(res => {
                 if (res.data !== null) {
-                    axios.get(getCourseUrl)
+                    axios.get(getUrl)
                         .then(response => {
                             this.setState({
                                 updatedAddList: response.data,
