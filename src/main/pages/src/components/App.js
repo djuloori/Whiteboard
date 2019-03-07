@@ -5,6 +5,7 @@ import Courses from './Courses';
 import Schedule from './Schedule';
 import TA from './TA';
 import Syllabus from './Syllabus';
+import Assignments from './Assignments'
 import ToolBar from '../shared/ToolbarView';
 import ViewDoc from '../framework/ViewDoc';
 
@@ -22,6 +23,7 @@ class App extends React.Component {
                     <Route path="/Schedule" component={Schedule}/>
                     <Route path="/TA" component={TA}/>
                     <Route path="/Syllabus" component={Syllabus}/>
+                    <Route path="/Assignments" component={Assignments}/>
                     <Route path="/ViewDoc" component={ViewDoc}/>
                 </div>
             </HashRouter>

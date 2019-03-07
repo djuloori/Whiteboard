@@ -47,6 +47,7 @@ public class AssignmentService {
       List<AssignmentRO> assignmentList = new ArrayList<>(assignments.size());
       for(AssignmentEO assignment : assignments){
          AssignmentRO assignmentRO = new AssignmentRO();
+         assignmentRO.setCLASS_ID(assignment.getClassId());
          assignmentRO.setAssignmentId(assignment.getAssignmentId());
          assignmentRO.setAssignmentName(assignment.getAssignmentName());
          assignmentRO.setAssignment(assignment.getAssignment());

@@ -133,6 +133,7 @@ class FormDialog extends React.Component {
         this.props.handleFormOn(off);
     };
 
+    //This method should be move for each page in the future.
     handleSubmit = () => {
         const { fields, getUrl, addUrl } = this.props;
         const off = false;
@@ -148,7 +149,7 @@ class FormDialog extends React.Component {
             return dataKey;
         });
 
-        if (!notEmpty.includes(false) && !notEmpty.includes('syllabus')) {
+        if (!notEmpty.includes(false) && !notEmpty.includes('syllabus') && !notEmpty.includes('assignment')) {
             axios.post(addUrl,
                 textFieldJson
             ).then(res => {
@@ -182,11 +183,19 @@ class FormDialog extends React.Component {
                 return;
             }
 
-            if (textFieldJson.idsyllabus !== null) {
+            if (textFieldJson.idsyllabus) {
                 formData.append('courseId', textFieldJson.class_ID);
                 formData.append('idsyllabus', textFieldJson.idsyllabus);
                 formData.append('Assignment-doc', pdfFile);
             }
+            else if (textFieldJson.assignmentId) {
+                formData.append('classid', textFieldJson.class_ID);
+                formData.append('Assignment-ID', textFieldJson.assignmentId);
+                formData.append('Assignment-Name', textFieldJson.assignmentName);
+                formData.append('Total-Points', textFieldJson.totalPoints);
+                formData.append('Assignment-doc', pdfFile);
+            }
+
             axios.post(addUrl, formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
