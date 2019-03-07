@@ -1,6 +1,7 @@
 import React from 'react';
 import Login from './Login';
 import SignUp from './SignUp';
+import Home from './Home';
 import Courses from './Courses';
 import Schedule from './Schedule';
 import TA from './TA';
@@ -19,6 +20,7 @@ class App extends React.Component {
                     <Route exact path='/' component={Login} />
                     <Route path="/SignUp" component={SignUp} />
                     <Route path="/ToolBar" component={ToolBar}/>
+                    <Route path="/Home" component={Home}/>
                     <Route path="/Courses" component={Courses}/>
                     <Route path="/Schedule" component={Schedule}/>
                     <Route path="/TA" component={TA}/>
