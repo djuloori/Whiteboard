@@ -86,7 +86,8 @@ class FormDialog extends React.Component {
             error: false,
             updatedAddList: [],
             textField: {},
-            textError: ''
+            textError: '',
+            file: null
         };
         this.props.handleFormOn(false);
         this.props.handleUpdateList([]);
@@ -110,7 +111,14 @@ class FormDialog extends React.Component {
         this.setState({
             textField: newTextField,
             error: false,
-            textError: ''
+            textError: '',
+            file: event.target.files
+        });
+    };
+
+    handleChangeFile = event => {
+        this.setState({
+            file: event.target.files
         });
     };
 
@@ -137,10 +145,10 @@ class FormDialog extends React.Component {
                 });
                 return false;
             }
-            return true;
+            return dataKey;
         });
 
-        if (!notEmpty.includes(false)) {
+        if (!notEmpty.includes(false) && !notEmpty.includes('syllabus')) {
             axios.post(addUrl,
                 textFieldJson
             ).then(res => {
@@ -150,6 +158,48 @@ class FormDialog extends React.Component {
                             this.setState({
                                 updatedAddList: response.data,
                                 textField: {}
+                            });
+                            this.props.handleUpdateList(response.data);
+                        })
+                        .catch(error => console.log(error));
+                }
+            }).catch(error => {
+                console.log(error);
+            });
+            this.setState({
+                open: off
+            });
+            this.props.handleFormOn(off);
+        } else if (!notEmpty.includes(false)) {
+            var formData = new FormData();
+            var pdfFile = this.state.file[0];
+
+            if (pdfFile.type !== 'application/pdf') {
+                this.setState({
+                    error: true,
+                    textError: 'File need to be in PDF'
+                });
+                return;
+            }
+
+            if (textFieldJson.idsyllabus !== null) {
+                formData.append('courseId', textFieldJson.class_ID);
+                formData.append('idsyllabus', textFieldJson.idsyllabus);
+                formData.append('Assignment-doc', pdfFile);
+            }
+            axios.post(addUrl, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }
+            ).then(res => {
+                if (res.data !== null) {
+                    axios.get(getUrl)
+                        .then(response => {
+                            this.setState({
+                                updatedAddList: response.data,
+                                textField: {},
+                                file: null
                             });
                             this.props.handleUpdateList(response.data);
                         })
@@ -180,7 +230,36 @@ class FormDialog extends React.Component {
                     >
                         {dialogContent}
                     </DialogContentText>
-                    {fields.map(({ label, dataKey, type }, index) => {
+                    {fields.map(({ label, dataKey, type, helperText }, index) => {
+                        if (type === 'file') {
+                            return (
+                                <TextField
+                                    error = {this.state.error}
+                                    InputLabelProps={{
+                                        shrink: true,
+                                        classes: {
+                                            root: classes.cssLabel,
+                                            focused: classes.cssFocused,
+                                        },
+                                    }}
+                                    InputProps={{
+                                        classes: {
+                                            root: classes.cssOutlinedInput,
+                                            focused: classes.cssFocused,
+                                            notchedOutline: classes.notchedOutline,
+                                        },
+                                    }}
+                                    margin='normal'
+                                    variant='outlined'
+                                    key={dataKey}
+                                    label={label}
+                                    type={type}
+                                    fullWidth
+                                    onChange={this.handleChangeFor({dataKey})}
+                                    helperText={helperText}
+                                />
+                            );
+                        }
                         return (
                             <TextField
                                 error = {this.state.error}

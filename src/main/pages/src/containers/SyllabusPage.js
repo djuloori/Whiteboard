@@ -313,7 +313,7 @@ class SyllabusPage extends React.Component{
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Typography className={classes.title}>
-                        Teaching Assistance
+                        Syllabus
                     </Typography>
                     <FormGroup row className={classes.editswitch}>
                         <FormControlLabel classes={{ label: classes.editlabel }}
@@ -373,7 +373,8 @@ class SyllabusPage extends React.Component{
                             {
                                 label: 'File',
                                 dataKey: 'syllabus',
-                                type: 'file'
+                                type: 'file',
+                                helperText: 'Only accept PDF file'
                             }
                         ]}
                     />
