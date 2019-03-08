@@ -130,7 +130,7 @@ class MuiVirtualizedTable extends React.PureComponent {
                                         cellData: cellContentRenderer(cellRendererProps),
                                         columnIndex: index,
                                     });
-                            } else if (dataKey === 'syllabus') {
+                            } else if ((dataKey === 'syllabus') || (dataKey === 'assignment')) {
                                 renderer = this.cellRendererViewLink;
                             } else {
                                 renderer = this.cellRenderer;

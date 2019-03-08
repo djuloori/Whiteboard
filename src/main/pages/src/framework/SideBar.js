@@ -94,7 +94,7 @@ class MiniDrawer extends React.Component {
             {
                 label: 'Assignments',
                 icon: <Assignments className={classes.Assignments} />,
-                link: '/Courses'
+                link: '/Assignments'
             },
             {
                 label: 'Syllabus',
