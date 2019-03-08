@@ -100,7 +100,7 @@ class TableView extends React.Component{
     render() {
         const items = this.props.items;
         return(
-            <Paper style={{ height: 400, width: '100%' }}>
+            <Paper style={{ height: 600, width: '100%' }}>
                 <VirtualizedTable
                     rowCount={items.length}
                     rowGetter={({ index }) => items[index]}
@@ -163,7 +163,7 @@ class TableEdit extends React.Component{
         const items = this.props.items;
         return(
             <div>
-                <Paper style={{ height: 400, width: '100%' }}>
+                <Paper style={{ height: 600, width: '100%' }}>
                     <VirtualizedTable
                         rowCount={items.length}
                         rowGetter={({ index }) => items[index]}
