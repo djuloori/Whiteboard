@@ -5,6 +5,7 @@ import ToolbarView from "../shared/ToolbarView";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Typography from "@material-ui/core/es/Typography/Typography";
 import Slide from '@material-ui/core/Slide';
+import MasonryGrid from '../components/MasonryGrid';
 
 const styles = theme => ({
     root: {
@@ -18,10 +19,12 @@ const styles = theme => ({
         ...theme.mixins.toolbar,
     },
     content: {
+        display: 'inline-block',
         flexGrow: 1,
         padding: theme.spacing.unit * 3,
     },
     introText: {
+
         fontSize: '80px',
         marginTop: theme.spacing.unit * 30,
         marginLeft: theme.spacing.unit * 3,
@@ -31,6 +34,13 @@ const styles = theme => ({
             marginLeft: 'auto',
             marginRight: 'auto',
         },
+    },
+    masonry: {
+        marginTop: theme.spacing.unit * 20,
+        marginRight: theme.spacing.unit * 10,
+        display: 'inline-block',
+        width: '60%',
+        height: '100%'
     }
 });
 
@@ -53,10 +63,14 @@ class HomePage extends React.Component{
                 <ToolbarView/>
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
-                    <Slide direction="up" in={true} timeout={'500ms'} mountOnEnter unmountOnExit>
+                    <Slide direction="up" in={true} mountOnEnter unmountOnExit>
                         <Typography className={classes.introText}>Welcome <br/> to Whiteboard</Typography>
                     </Slide>
+
                 </main>
+                <div className={classes.masonry}>
+                    <MasonryGrid/>
+                </div>
             </div>
         );
     }
