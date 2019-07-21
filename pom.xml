@@ -18,11 +18,14 @@
             <name>Dhruva Juloori</name>
             <email>djuloori@hawk.iit.edu</email>
         </developer>
-        <developer>
+    </developers>
+
+    <contributors>
+        <contributor>
             <name>Saiteja Konda</name>
             <email>skw36@mst.edu</email>
-        </developer>
-    </developers>
+        </contributor>
+    </contributors>
 
     <scm>
         <connection>scm:git://github.com/djuloori/Whiteboard.git</connection>
@@ -121,6 +124,18 @@
             <artifactId>jersey-spring3</artifactId>
             <version>${glassfish.jersey.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -132,6 +147,71 @@
                 </excludes>
             </resource>
         </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler-plugin.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <excludes>
+                        <exclude>pages/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven.war-plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${project.basedir}/src/main/pages/dist</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${maven.exec-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>run-npm-install</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/src/main/pages</workingDirectory>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>install</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>exec-npm-run-build</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <workingDirectory>${project.basedir}/src/main/pages</workingDirectory>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>run</argument>
+                                <argument>build</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
     <properties>
@@ -139,9 +219,12 @@
         <glassfish.jersey.version>2.25.1</glassfish.jersey.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <codehausjackson.version>1.9.13</codehausjackson.version>
-        <fasterxml.version>2.9.7</fasterxml.version>
+        <fasterxml.version>2.9.8</fasterxml.version>
         <commons-io.version>2.6</commons-io.version>
         <eclipselink.version>2.7.2</eclipselink.version>
         <sql.jdbc.version>5.1.44</sql.jdbc.version>
+        <maven.compiler-plugin.version>3.6.1</maven.compiler-plugin.version>
+        <maven.war-plugin.version>3.1.0</maven.war-plugin.version>
+        <maven.exec-plugin.version>1.6.0</maven.exec-plugin.version>
     </properties>
 </project>

@@ -6,6 +6,9 @@ import com.github.djuloori.whiteboard.rest.TaRO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class TaService {
 
@@ -26,6 +29,23 @@ public class TaService {
 
     public String removeTa(String id){
         return taDao.removeTa(id);
+    }
+
+    public List viewTeachingAssistants(){
+        List<TeachingAssistantEO> teachingAssistants = taDao.getAllTa();
+        List<TaRO> teachingAssistantList = new ArrayList<>();
+        for(TeachingAssistantEO teachingAssistant: teachingAssistants){
+            TaRO ta = new TaRO();
+            ta.setCLASS_ID(teachingAssistant.getClassId());
+            ta.setTaId(teachingAssistant.getId());
+            ta.setTaName(teachingAssistant.getName());
+            ta.setTaPhone(teachingAssistant.getPhone());
+            ta.setTaEmail(teachingAssistant.getEmail());
+            ta.setTaTimings(teachingAssistant.getTimings());
+            ta.setDay(teachingAssistant.getDay());
+            teachingAssistantList.add(ta);
+        }
+        return teachingAssistantList;
     }
 
 }
