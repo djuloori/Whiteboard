@@ -222,7 +222,7 @@
         <fasterxml.version>2.9.8</fasterxml.version>
         <commons-io.version>2.6</commons-io.version>
         <eclipselink.version>2.7.2</eclipselink.version>
-        <sql.jdbc.version>5.1.44</sql.jdbc.version>
+        <sql.jdbc.version>8.0.16</sql.jdbc.version>
         <maven.compiler-plugin.version>3.6.1</maven.compiler-plugin.version>
         <maven.war-plugin.version>3.1.0</maven.war-plugin.version>
         <maven.exec-plugin.version>1.6.0</maven.exec-plugin.version>
